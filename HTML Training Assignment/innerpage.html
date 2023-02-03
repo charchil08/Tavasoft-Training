@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analysis</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/dashboard_md.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/innerpage.css" />
+    <script src="./js/custom.js" defer>
+      "Enable JavaScript"
+    </script>
+  </head>
+  <body style="display: block">
+    <div class="dashboard_page inner_page">
+      <section class="nav">
+        <div class="nav_left">
+          <img
+            src="./images/menu-bar.svg"
+            alt="open-close menu"
+            class="img_menubar"
+          />
+          <img
+            src="./images/header-logo.svg"
+            alt="header logo"
+            class="img_header_logo"
+          />
+        </div>
+        <div class="nav_middle">
+          <div class="nav_middle_1">
+            <img
+              src="./images/search-icon.svg"
+              alt="search-icon"
+              class="img_search"
+            />
+            <input type="search" placeholder="Search" class="searchbox" />
+          </div>
+          <div class="nav_middle_2">
+            <img
+              src="./images/notification-icon.svg"
+              alt="alert"
+              class="img_alert"
+            />
+          </div>
+        </div>
+        <div class="nav_right">
+          <img
+            src="./images/profile.png"
+            class="img_profile"
+            alt="profile pic"
+          />
+          <p>John Doe</p>
+          <img
+            src="./images/downward-arrow.svg"
+            class="img_dropdown"
+            alt="dropdown"
+          />
+        </div>
+      </section>
+      <section class="sidebar"></section>
+      <section class="analysis">
+        <header>
+          <h3>Analysis</h3>
+        </header>
+        <div class="form_wrapper">
+          <div class="part part_1">
+            <h4>One Column</h4>
+            <input type="text" class="ip_text" placeholder="Name" />
+            <select class="ip_dropdown" aria-placeholder="DropDown">
+              <option value="d">DropDown</option>
+            </select>
+            <textarea
+              class="ip_textarea"
+              placeholder="Multiple line"
+              cols="30"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="container part part-2">
+            <h4>Two Column</h4>
+            <div class="row">
+              <div class="col col-sm-12 col-lg-6">
+                <input
+                  type="text"
+                  class="form-control ip_text"
+                  placeholder="First name"
+                />
+              </div>
+              <div class="col col-sm-12 col-lg-6">
+                <div class="did-floating-label-content">
+                  <input
+                    class="form-control did-floating-input three-column-field ip_text"
+                    type="text"
+                    value="John Doe"
+                  />
+                  <label class="did-floating-label">Username</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-sm-12 col-lg-6">
+                <input
+                  type="password"
+                  class="form-control ip_text"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="col col-sm-12 col-lg-6">
+                <select
+                  class="ip_dropdown form-control"
+                  aria-placeholder="DropDown"
+                >
+                  <option value="d">DropDown</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="container part part-3">
+            <h4>Three Column</h4>
+            <div class="row">
+              <div class="col col-xs-12 col-sm-4">
+                <div class="did-floating-label-content">
+                  <input
+                    class="form-control did-floating-input three-column-field ip_text focus"
+                    type="text"
+                    value=""
+                    style="border: 1px solid #c8242f"
+                    autofocus
+                  />
+                  <label class="did-floating-label">Focus</label>
+                </div>
+              </div>
+              <div class="col col-xs-12 col-sm-4">
+                <div class="did-floating-label-content">
+                  <input
+                    class="form-control did-floating-input three-column-field ip_text"
+                    type="password"
+                    value="00000000"
+                    style="background-color: #ffffff"
+                    disabled
+                  />
+                  <label class="did-floating-label">Password</label>
+                </div>
+              </div>
+              <div class="col col-xs-12 col-sm-4">
+                <div class="did-floating-label-content">
+                  <input
+                    class="form-control did-floating-input three-column-field ip_text"
+                    type="text"
+                    value="johndoe"
+                    style="
+                      border: 1px dashed #adadad;
+                      border-radius: 5px;
+                      background-color: #ffffff;
+                    "
+                    disabled
+                  />
+                  <label class="did-floating-label">Disabled</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container part part-4">
+            <h4>Four Column</h4>
+            <div class="row">
+              <div class="col">
+                <div class="did-floating-label-content">
+                  <input
+                    class="form-control did-floating-input three-column-field ip_text focus"
+                    type="text"
+                    value="UI Designer"
+                    style="border: 1px solid #c8242f"
+                    autofocus
+                  />
+                  <label class="did-floating-label" style="color: #c8242f"
+                    >Designation</label
+                  >
+                  <p class="validate_desgination">Enter valid data</p>
+                </div>
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control ip_text"
+                  placeholder="Name"
+                  disabled
+                />
+                <p class="validate_username">Enter your full name as per ID</p>
+              </div>
+              <div class="col">
+                <div class="did-floating-label-content">
+                  <input
+                    class="form-control did-floating-input three-column-field ip_text"
+                    type="text"
+                    value="John Doe"
+                    disabled
+                  />
+                  <label class="did-floating-label">Username</label>
+                </div>
+              </div>
+              <div class="col">
+                <select
+                  class="ip_dropdown form-select"
+                  aria-placeholder="DropDown"
+                  disabled
+                >
+                  <option value="d">Select</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="container part part-5">
+            <h4>Other Deign Elements</h4>
+            <h5>File Upload</h5>
+            <div class="file_select">
+              <label for="file-upload" class="custom-file-upload">
+                <img src="./images/cloud-upload-icon.svg" alt="upload" />
+                <span> Upload</span>
+              </label>
+              <input id="file-upload" type="file" />
+              <span class="file_status">No file choosen</span>
+            </div>
+          </div>
+          <div class="container part part-6">
+            <h4>Radio button</h4>
+            <input
+              type="radio"
+              name="rd"
+              class="rd_btn"
+              value="v1"
+              style="accent-color: red"
+            />
+            Option1
+            <input
+              type="radio"
+              name="rd"
+              class="rd_btn"
+              value="v2"
+              checked
+              style="accent-color: red"
+            />
+            Option2
+          </div>
+          <div class="container part part-7">
+            <h4>Checkbox</h4>
+            <input
+              type="checkbox"
+              name="rd"
+              class="chk_btn"
+              value="v1"
+              style="accent-color: red"
+            />
+            Option1
+            <input
+              type="checkbox"
+              name="rd"
+              class="chk_btn"
+              value="v2"
+              style="accent-color: red"
+              checked
+            />
+            Option2
+          </div>
+          <div class="container part part-8">
+            <h4>Snackbar</h4>
+            <div class="row row-1">
+              <div class="col">
+                <img
+                  src="./images/error-icon.svg"
+                  alt=""
+                  class="img img_error"
+                />&nbsp;&nbsp;&nbsp;
+                <span>This is an error message</span>
+              </div>
+              <div class="col">
+                <img
+                  src="./images/info-icon.svg"
+                  alt=""
+                  class="img img_info"
+                />&nbsp;&nbsp;&nbsp;
+                <span>This is an information message</span>
+              </div>
+            </div>
+            <div class="row row-2">
+              <div class="col">
+                <img
+                  src="./images/warning-icon.svg"
+                  alt=""
+                  class="img img_warn"
+                />&nbsp;&nbsp;&nbsp;
+                <span>This is a warning message</span>
+              </div>
+              <div class="col">
+                <img
+                  src="./images/success-icon.svg"
+                  alt=""
+                  class="img img_success"
+                />
+                &nbsp;&nbsp;&nbsp;
+                <span>This is a success message</span>
+              </div>
+            </div>
+          </div>
+          <div class="container part part-9">
+            <h4>Call to action</h4>
+            <button class="btn btn_primary">Primary</button>
+            <button class="btn btn_primary_outline">Secondary</button>
+          </div>
+          <div class="container part part-10">
+            <h5>Tabs</h5>
+            <menu class="tab_menu">
+              <div class="tab_1 tab active_tab">Tab 1</div>
+              <div class="tab_2 tab">Tab 2</div>
+              <div class="tab_3 tab">Tab 3</div>
+            </menu>
+            <hr />
+            <p class="para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              deleniti saepe atque dolorum debitis impedit? Accusamus quibusdam
+              necessitatibus numquam ipsum fuga itaque quidem, iusto sit
+              blanditiis ex voluptatibus eligendi deleniti! Optio voluptates
+              illo dolore, minus dolores sapiente dignissimos quas dolorum autem
+              ipsum quisquam quae eaque ipsa tenetur possimus ex consequuntur?
+              Voluptates labore iusto praesentium architecto temporibus
+              voluptatum cum dicta libero.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

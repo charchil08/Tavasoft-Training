@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboad Page</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/dashboard_md.css" />
+    <script src="./js/custom.js" defer>
+      "Enable JavaScript"
+    </script>
+  </head>
+  <body style="display: block">
+    <div class="dashboard_page">
+      <section class="nav">
+        <div class="nav_left">
+          <img
+            src="./images/menu-bar.svg"
+            alt="open-close menu"
+            class="img_menubar"
+          />
+          <img
+            src="./images/header-logo.svg"
+            alt="header logo"
+            class="img_header_logo"
+          />
+        </div>
+        <div class="nav_middle">
+          <div class="nav_middle_1">
+            <img
+              src="./images/search-icon.svg"
+              alt="search-icon"
+              class="img_search"
+            />
+            <input type="search" placeholder="Search" class="searchbox" />
+          </div>
+          <div class="nav_middle_2">
+            <img
+              src="./images/notification-icon.svg"
+              alt="alert"
+              class="img_alert"
+            />
+          </div>
+        </div>
+        <div class="nav_right">
+          <img
+            src="./images/profile.png"
+            class="img_profile"
+            alt="profile pic"
+          />
+          <p>John Doe</p>
+          <img
+            src="./images/downward-arrow.svg"
+            class="img_dropdown"
+            alt="dropdown"
+          />
+        </div>
+      </section>
+      <section class="sidebar open"></section>
+      <section class="dashboard_content">
+        <header class="dashboard_header">
+          <h3>Dashboard</h3>
+        </header>
+        <div class="sales_cards"></div>
+        <div class="charts">
+          <div class="chart-item-1 chart-item">
+            <div class="sale_wrapper">
+              <h4>Sale</h4>
+              <ul class="list_items">
+                <li class="list_item list_item_1">
+                  <a href="#">Weekly</a>
+                </li>
+                <li class="list_item list_item_2">
+                  <a href="#">Monthly</a>
+                </li>
+                <li class="active list_item list_item_3">
+                  <a href="#">Yearly</a>
+                </li>
+              </ul>
+            </div>
+            <img src="./images/data-graph.png" class="img_datagraph" alt="" />
+          </div>
+          <div class="chart-item-2 chart-item">
+            <h4>Sales by Country</h4>
+            <img src="./images/pie-chart.svg" class="img_piegraph" alt="" />
+            <ul class="countries">
+              <li class="country country_1">
+                <p class="color color_1"></p>
+                <p>United States of America</p>
+              </li>
+              <li class="country country_2">
+                <p class="color color_2"></p>
+                <p>Canada</p>
+              </li>
+              <li class="country country_3">
+                <p class="color color_3"></p>
+                <p>Russia</p>
+              </li>
+              <li class="country country_4">
+                <p class="color color_4"></p>
+                <p>India</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="invoice">
+          <div class="heading">
+            <h4>Invoices</h4>
+            <p><a href="#">view all</a></p>
+          </div>
+          <div class="">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">INVOICE</th>
+                  <th scope="col">COMPANY NAME</th>
+                  <th scope="col">EMAIL</th>
+                  <th scope="col">DUE DATE</th>
+                  <th scope="col">STATUS</th>
+                  <th scope="col">AMOUNT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>651535</td>
+                  <td>Public Adjusting Firm</td>
+                  <td>georgia.young@example.com</td>
+                  <td>24 May, 2020</td>
+                  <td><span class="text-success">Paid</span></td>
+                  <td>$47,800</td>
+                </tr>
+                <tr>
+                  <td>558612</td>
+                  <td>Other</td>
+                  <td>jessica.hanson@example.com</td>
+                  <td>24 May, 2020</td>
+                  <td><span class="text-success">Paid</span></td>
+                  <td>$98,000</td>
+                </tr>
+                <tr>
+                  <td>558612</td>
+                  <td>Vendor</td>
+                  <td>alma.lawson@example.com</td>
+                  <td>8 Sep, 2020</td>
+                  <td><span class="text-success">Paid</span></td>
+                  <td>$20,900</td>
+                </tr>
+                <tr>
+                  <td>558612</td>
+                  <td>Property Management Company</td>
+                  <td>kenzi.lawson@example.com</td>
+                  <td>22 Oct, 2020</td>
+                  <td><span class="text-success">Paid</span></td>
+                  <td>$10,570</td>
+                </tr>
+                <tr>
+                  <td>651535</td>
+                  <td>Subcontractor Company</td>
+                  <td>jackson.graham@example.com</td>
+                  <td>1 Feb, 2020</td>
+                  <td><span class="text-danger">Failed</span></td>
+                  <td>$10,200</td>
+                </tr>
+                <tr>
+                  <td>653518</td>
+                  <td>Mortgage Company</td>
+                  <td>felicia.reid@example.com</td>
+                  <td>22 Oct, 2020</td>
+                  <td><span class="text-secondary">Pending</span></td>
+                  <td>$12,600</td>
+                </tr>
+                <tr>
+                  <td>487441</td>
+                  <td>TPA</td>
+                  <td>dolores.chambers@example.com</td>
+                  <td>21 Sep, 2020</td>
+                  <td><span class="text-success">Paid</span></td>
+                  <td>$11,170</td>
+                </tr>
+                <tr>
+                  <td>267400</td>
+                  <td>Fire Department</td>
+                  <td>nevaeh.simmons@example.com</td>
+                  <td>17 Oct, 2020</td>
+                  <td><span class="text-danger">Failed</span></td>
+                  <td>$28,000</td>
+                </tr>
+                <tr>
+                  <td>449003</td>
+                  <td>Insurance Carrier</td>
+                  <td>curtis.weaver@example.com</td>
+                  <td>21 Sep, 2020</td>
+                  <td><span class="text-success">Paid</span></td>
+                  <td>$10,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
