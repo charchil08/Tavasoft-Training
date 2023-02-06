@@ -28,7 +28,8 @@ FROM dbo.Products
 GROUP BY Discontinued;
 
 
--- 6. Write a query to get Product list (name, units on order , units in stock) of stock is less than the quantity on order
+-- 6. Write a query to get Product list (name, units on order , units in stock) of stock is less than the quantity on order
+
 SELECT ProductName, UnitsOnOrder, UnitsInStock
 FROM dbo.Products
 WHERE UnitsInStock < UnitsOnOrder;
