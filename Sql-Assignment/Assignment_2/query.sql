@@ -133,11 +133,11 @@ left join orders o on o.customer_id = c.customer_id;
 -- more customers or yet to join any of the customers. The customer may have placed,
 -- either one or more orders on or above order amount 2000 and must have a grade, or
 -- he may not have placed any order to the associated supplier.
-select * 
+select s.salesman_id, s.name 'Salesman', s.city, c.customer_id, c.cust_name 'Customer', o.ord_no, o.purch_amt 
 from salesman s
 left join customer c on c.salesman_id = s.salesman_id
 left join orders o on o.customer_id = c.customer_id
-where ((c.grade is not null) AND (o.purch_amt >=2000)) OR (c.customer_id ); 
+where ((c.grade is not null) AND (o.purch_amt >=2000)) or (o.ord_no is null); 
 
 
 -- 15. Write a SQL statement to generate a list of all the salesmen who either work for one
