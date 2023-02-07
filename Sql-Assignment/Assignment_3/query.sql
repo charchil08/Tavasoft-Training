@@ -9,8 +9,8 @@ select dp.dep_id, ep.salary, ep.emp_name, dp.dep_name
 from Department dp
 left join Employees ep on ep.dep_id = dp.dep_id
 where 
-ep.salary in (select MAX(salary) as "sal"  from Employees group by dep_id) or 
-ep.salary is null;
+ep.salary in (select dep_id,MAX(salary) as "sal"  from Employees group by dep_id) or 
+ep.salary is null ;
 
 -- 2nd option by creating view
 create view vwMaxSalaryByDepartment
