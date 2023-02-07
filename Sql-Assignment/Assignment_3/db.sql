@@ -40,7 +40,3 @@ values (68319,'KAYLING','PRESIDENT',null,'1991-11-18',6000.00,null,1001)
     ,(69062,'FRANK','ANALYST',65646,'1991-12-03',3100.00,null,2001)
     ,(63679,'SANDRINE','CLERK',69062,'1990-12-18',900.00,null,2001)
 go
-
-
-select * from Department;
-truncate table dbo.Department;

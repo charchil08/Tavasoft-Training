@@ -1,3 +1,4 @@
+
 -- 1. write a SQL query to find the salesperson and customer who reside in the same city.
 -- Return Salesman, cust_name and city
 SELECT s.name 'SalesPerson', c.cust_name 'Customer', c.city
