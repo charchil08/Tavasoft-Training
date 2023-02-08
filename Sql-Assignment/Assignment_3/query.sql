@@ -4,13 +4,14 @@ go
 select * from Employees;
 
 -- 1. write a SQL query to find Employees who have the biggest salary in their Department
-
-select dp.dep_id, ep.salary, ep.emp_name, dp.dep_name
+select dp.dep_id,dp.dep_name,  ep.emp_name, ISNULL(ep.salary,0) 'Salary' 
 from Department dp
 left join Employees ep on ep.dep_id = dp.dep_id
 where 
-ep.salary in (select dep_id,MAX(salary) as "sal"  from Employees group by dep_id) or 
-ep.salary is null ;
+(ep.emp_id in 
+(select emp_id from Employees where salary in (select MAX(salary) as "sal"  from Employees group by dep_id))) 
+or 
+ep.salary is null;
 
 -- 2nd option by creating view
 create view vwMaxSalaryByDepartment
