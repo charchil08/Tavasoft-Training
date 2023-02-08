@@ -9,7 +9,7 @@ from Department dp
 left join Employees ep on ep.dep_id = dp.dep_id
 where 
 (ep.emp_id in 
-(select emp_id from Employees where salary in (select MAX(salary) as "sal"  from Employees group by dep_id))) 
+(select emp_id from Employees where CONCAT(CAST(dep_id as nvarchar(4)),CAST(salary as nvarchar(8))) in (select CONCAT(CAST(dep_id as nvarchar(4)),CAST(MAX(salary) as nvarchar(8))) as "sal"  from Employees group by dep_id))) 
 or 
 ep.salary is null;
 
