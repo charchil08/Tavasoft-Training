@@ -241,17 +241,21 @@ create or alter proc spInsertNewOrder
 @Discount real
 as
 insert into [dbo].[Order Details] values (@OrderID, @ProductID, @UnitPrice, @Quantity, @Discount)
+go
 
 --Execute --
-DECLARE	@return_value int
-
-EXEC	@return_value = [dbo].[spInsertNewOrder]
+EXEC	dbo.spInsertNewOrder
 		@OrderID = 10249,
 		@ProductID = 74,
 		@UnitPrice = 34.80,
 		@Quantity = 4,
 		@Discount = 0.00
-SELECT	'Return Value' = @return_value
+go
+select * from [Order Details]
+go
+
+-- SELECT	'Return Value' = @return_value
+
 
 -- SELECT * FROM Orders;
 -- SELECT * FROM [Order Details];
@@ -270,12 +274,16 @@ update [dbo].[Order Details]
 set 
 Quantity = @Quantity
 where OrderId = @OrderID AND ProductId = @ProductID
-
+go
 --execute --
-DECLARE	@return_value int
-EXEC	@return_value = [dbo].[spUpdateOrder]
+SELECT	* from [Order Details] where OrderID = 10249;
+go
+
+EXEC	[dbo].[spUpdateOrder]
 		@OrderID = 10249,
 		@ProductID = 74,
-		@Quantity = 2
+		@Quantity = 6
+go
 
-SELECT	'Return Value' = @return_value
+SELECT	* from [Order Details] where OrderID = 10249;
+go
