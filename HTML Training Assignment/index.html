@@ -4,47 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>login page</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
   </head>
   <body>
-    <div class="landing_page">
-      <section class="hero">
-        <img
-          src="./images/hero-image.png"
-          alt="hero_image"
-          class="hero_image"
-        />
-      </section>
-      <section class="info">
-        <div class="desc">
-          <!-- <header class="heading_wrapper"> -->
-          <img
-            src="./images/header-logo.svg"
-            alt="header logo"
-            class="img-fluid header_image"
-          />
-          <div class="header_desc">
-            <p class="line">We are <span>experts</span> in business,</p>
-            <p class="line">marketing, growth, & sales.</p>
-          </div>
-          <p>Login into your account</p>
-          <!-- </header> -->
+    <div class="login-page ">
+      <div class="login-wrapper off-white-bg">
+        <div class="image-wrapper">
+          <div class="img"></div>
         </div>
-        <form class="login">
-          <input type="text" name="username" placeholder="Username" />
-          <input type="password" name="password" placeholder="Password" />
-          <div class="button_wrapper">
-            <button type="submit" class="btn btn_login">Login</button>
-            <p>Forgot Password?</p>
+
+        <div class="login-form">
+          <div class="form-wrapper">
+            <img class="company-logo" src="./images/header-logo.svg" />
+            <h1 class="info-text">
+              we are <span>experts</span> in Business, marketing, growth &
+              sales.
+            </h1>
+            <p class="form-label">Login into your account</p>
+            <div class="form">
+              <input
+                class="input-username"
+                type="text"
+                name=""
+                id=""
+                placeholder="Username"
+              />
+              <input
+                class="input-password"
+                type="password"
+                name=""
+                id=""
+                placeholder="Password"
+              />
+              <div class="login-btn-wrapper">
+                <button class="btn-login">
+                  <span class="login-text">Login</span>
+                </button>
+                <p class="forgot-pwd">Forgot Password?</p>
+              </div>
+
+              <p class="register-link">
+                Are you a new Member ? <span class="link">Register here</span>
+              </p>
+            </div>
           </div>
-          <div class="register">
-            <p>Are you a new member?</p>
-            <a href="#">Register here</a>
-          </div>
-        </form>
-      </section>
+        </div>
+      </div>
     </div>
   </body>
 </html>

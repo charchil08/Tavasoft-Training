@@ -4,332 +4,502 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Analysis</title>
+    <title>inner page</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/mdb.min.css" rel="stylesheet" />
+    <script src="./js/mdb.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
 
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/dashboard_md.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/innerpage.css" />
-    <script src="./js/custom.js" defer>
-      "Enable JavaScript"
-    </script>
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/responsive.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
   </head>
-  <body style="display: block">
-    <div class="dashboard_page inner_page">
-      <section class="nav">
-        <div class="nav_left">
-          <img
-            src="./images/menu-bar.svg"
-            alt="open-close menu"
-            class="img_menubar"
-          />
-          <img
-            src="./images/header-logo.svg"
-            alt="header logo"
-            class="img_header_logo"
-          />
-        </div>
-        <div class="nav_middle">
-          <div class="nav_middle_1">
-            <img
-              src="./images/search-icon.svg"
-              alt="search-icon"
-              class="img_search"
-            />
-            <input type="search" placeholder="Search" class="searchbox" />
+
+  <body>
+    <div class="innerpage">
+      <div class="navbar" style="box-shadow: none">
+        <div class="nav-wrapper">
+          <div class="nav-left">
+            <button
+              class="btn d-lg-none toggle-button"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasResponsive"
+              aria-controls="offcanvasResponsive"
+              style="box-shadow: none"
+            >
+              <img src="./images/menu-bar.svg" alt="" />
+            </button>
+
+            <div class="nav-logo"></div>
+            <div class="nav-search">
+              <img src="./images/search-icon.svg" alt="" class="search-icon" />
+              <input
+                type="search"
+                id="gsearch"
+                name="gsearch"
+                class="nav-search-field"
+                placeholder="Search"
+              />
+            </div>
           </div>
-          <div class="nav_middle_2">
+          <div class="nav-right">
             <img
               src="./images/notification-icon.svg"
-              alt="alert"
-              class="img_alert"
+              alt=""
+              class="notify-img"
             />
+            <div class="profile-img"></div>
+            <h6 class="username">John Doe</h6>
+            <img src="./images/downward-arrow.svg" alt="" class="down-arrow" />
           </div>
         </div>
-        <div class="nav_right">
-          <img
-            src="./images/profile.png"
-            class="img_profile"
-            alt="profile pic"
-          />
-          <p>John Doe</p>
-          <img
-            src="./images/downward-arrow.svg"
-            class="img_dropdown"
-            alt="dropdown"
-          />
-        </div>
-      </section>
-      <section class="sidebar"></section>
-      <section class="analysis">
-        <header>
-          <h3>Analysis</h3>
-        </header>
-        <div class="form_wrapper">
-          <div class="part part_1">
-            <h4>One Column</h4>
-            <input type="text" class="ip_text" placeholder="Name" />
-            <select class="ip_dropdown" aria-placeholder="DropDown">
-              <option value="d">DropDown</option>
-            </select>
-            <textarea
-              class="ip_textarea"
-              placeholder="Multiple line"
-              cols="30"
-              rows="3"
-            ></textarea>
-          </div>
-          <div class="container part part-2">
-            <h4>Two Column</h4>
-            <div class="row">
-              <div class="col col-sm-12 col-lg-6">
-                <input
-                  type="text"
-                  class="form-control ip_text"
-                  placeholder="First name"
-                />
-              </div>
-              <div class="col col-sm-12 col-lg-6">
-                <div class="did-floating-label-content">
-                  <input
-                    class="form-control did-floating-input three-column-field ip_text"
-                    type="text"
-                    value="John Doe"
-                  />
-                  <label class="did-floating-label">Username</label>
-                </div>
-              </div>
+      </div>
+
+      <div class="innerpage-wrapper">
+        <section class="page">
+          <div
+            class="offcanvas-lg offcanvas-start"
+            tabindex="-1"
+            id="offcanvasResponsive"
+            aria-labelledby="offcanvasResponsiveLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">
+                <img src="./images/header-logo.svg" alt="">
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                data-bs-target="#offcanvasResponsive"
+                aria-label="Close"
+              ></button>
             </div>
-            <div class="row">
-              <div class="col col-sm-12 col-lg-6">
-                <input
-                  type="password"
-                  class="form-control ip_text"
-                  placeholder="Password"
-                />
-              </div>
-              <div class="col col-sm-12 col-lg-6">
-                <select
-                  class="ip_dropdown form-control"
-                  aria-placeholder="DropDown"
-                >
-                  <option value="d">DropDown</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="container part part-3">
-            <h4>Three Column</h4>
-            <div class="row">
-              <div class="col col-xs-12 col-sm-4">
-                <div class="did-floating-label-content">
-                  <input
-                    class="form-control did-floating-input three-column-field ip_text focus"
-                    type="text"
-                    value=""
-                    style="border: 1px solid #c8242f"
-                    autofocus
-                  />
-                  <label class="did-floating-label">Focus</label>
-                </div>
-              </div>
-              <div class="col col-xs-12 col-sm-4">
-                <div class="did-floating-label-content">
-                  <input
-                    class="form-control did-floating-input three-column-field ip_text"
-                    type="password"
-                    value="00000000"
-                    style="background-color: #ffffff"
-                    disabled
-                  />
-                  <label class="did-floating-label">Password</label>
-                </div>
-              </div>
-              <div class="col col-xs-12 col-sm-4">
-                <div class="did-floating-label-content">
-                  <input
-                    class="form-control did-floating-input three-column-field ip_text"
-                    type="text"
-                    value="johndoe"
-                    style="
-                      border: 1px dashed #adadad;
-                      border-radius: 5px;
-                      background-color: #ffffff;
-                    "
-                    disabled
-                  />
-                  <label class="did-floating-label">Disabled</label>
+            <div class="offcanvas-body">
+              <div class="mb-0">
+                <div class="sidebar">
+                  <div class="sidebar-wrapper">
+                    <div class="sidebar-items">
+                      <div class="sidebar-item item-1 ">
+                        <img
+                          class="dashboard-sidebar-icon"
+                          src="./images/dashboard-default.svg"
+                          alt=""
+                        />
+                        <h6 class="sidebar-text ">Dashboard</h6>
+                      </div>
+                      <div class="sidebar-item item-2 active-item">
+                        <img
+                          class="dashboard-sidebar-icon"
+                          src="./images/graph-active.svg"
+                          alt=""
+                        />
+                        <h6 class="sidebar-text active-text">Analysis</h6>
+                      </div>
+                      <div class="sidebar-item item-3">
+                        <img
+                          class="dashboard-sidebar-icon"
+                          src="./images/inbox-default.svg"
+                          alt=""
+                        />
+                        <h6 class="sidebar-text">Inbox</h6>
+                      </div>
+                      <div class="sidebar-item item-4">
+                        <img
+                          class="dashboard-sidebar-icon"
+                          src="./images/clock-default.svg"
+                          alt=""
+                        />
+                        <h6 class="sidebar-text">History</h6>
+                      </div>
+                      <div class="sidebar-item item-5">
+                        <img
+                          class="dashboard-sidebar-icon"
+                          src="./images/user-default.svg"
+                          alt=""
+                        />
+                        <h6 class="sidebar-text">Users</h6>
+                      </div>
+                      <div class="sidebar-item item-6">
+                        <img
+                          class="dashboard-sidebar-icon"
+                          src="./images/maintenance-default.svg"
+                          alt=""
+                        />
+                        <h6 class="sidebar-text">Maintenance</h6>
+                      </div>
+                      <div class="sidebar-item item-7">
+                        <img
+                          class="dashboard-sidebar-icon"
+                          src="./images/setting-default.svg"
+                          alt=""
+                        />
+                        <h6 class="sidebar-text">Setting</h6>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="container part part-4">
-            <h4>Four Column</h4>
-            <div class="row">
-              <div class="col">
-                <div class="did-floating-label-content">
-                  <input
-                    class="form-control did-floating-input three-column-field ip_text focus"
-                    type="text"
-                    value="UI Designer"
-                    style="border: 1px solid #c8242f"
-                    autofocus
-                  />
-                  <label class="did-floating-label" style="color: #c8242f"
-                    >Designation</label
+
+          <div class="analysis-form off-white-bg">
+            <div class="page-title">
+              <h5>Analysis</h5>
+            </div>
+            <div class="analysis-form-wrapper white-bg">
+              <div class="one-column">
+                <div class="sub-title">
+                  <span>One Column</span>
+                </div>
+                <form>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div class="form-group dropdown">
+                    <label for="dropdown"></label>
+                    <select
+                      class="form-select"
+                      name="dropdown"
+                      aria-label="Dropdown"
+                    >
+                      <option selected>Dropdown</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="mt-4">
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="5"
+                      placeholder="Multiple line"
+                    ></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="two-column">
+                <div class="sub-title">
+                  <span>Two Column</span>
+                </div>
+                <form>
+                  <div
+                    class="d-flex w-100 justify-content-between two-column-input-1"
                   >
-                  <p class="validate_desgination">Enter valid data</p>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control w-40 two-field"
+                        id="exampleFormControlInput1"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="did-floating-label-content">
+                      <input
+                        class="form-control did-floating-input two-field"
+                        type="text"
+                        placeholder=""
+                      />
+                      <label class="did-floating-label">User Name</label>
+                    </div>
+                  </div>
+                  <div class="d-flex w-100 justify-content-between two-column-input-2">
+                    <div class="form-group">
+                      <input
+                        type="password"
+                        class="form-control two-field"
+                        id="exampleFormControlInput1"
+                        placeholder="Password"
+                      />
+                    </div>
+                    <div class="">
+                      <select
+                        class="form-select two-field"
+                        name="dropdown"
+                        aria-label="Dropdown"
+                      >
+                        <option selected>Dropdown</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="three-column">
+                <div class="sub-title">
+                  <span>Three Column</span>
+                </div>
+                <div class="d-flex justify-content-between three-column-inputs">
+                  <div class="did-floating-label-content">
+                    <input
+                      class="form-control did-floating-input three-column-field"
+                      type="text"
+                      placeholder=""
+                      style="border: 1px solid #c8242f"
+                    />
+                    <label class="did-floating-label">Focus</label>
+                  </div>
+
+                  <div class="did-floating-label-content">
+                    <input
+                      class="form-control did-floating-input three-column-field"
+                      type="password"
+                      placeholder=""
+                    />
+                    <label class="did-floating-label">Password</label>
+                  </div>
+
+                  <div class="did-floating-label-content">
+                    <input
+                      class="form-control disabled-field did-floating-input three-column-field"
+                      type="text"
+                      placeholder=""
+                      style="
+                        background: rgb(255, 251, 251);
+                        border-style: dashed;
+                      "
+                      disabled
+                    />
+                    <label class="did-floating-label">Disabled</label>
+                  </div>
                 </div>
               </div>
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control ip_text"
-                  placeholder="Name"
-                  disabled
-                />
-                <p class="validate_username">Enter your full name as per ID</p>
-              </div>
-              <div class="col">
-                <div class="did-floating-label-content">
-                  <input
-                    class="form-control did-floating-input three-column-field ip_text"
-                    type="text"
-                    value="John Doe"
-                    disabled
-                  />
-                  <label class="did-floating-label">Username</label>
+
+              <div class="four-column-main">
+                <div class="sub-title">
+                  <span>Four Column</span>
                 </div>
-              </div>
-              <div class="col">
-                <select
-                  class="ip_dropdown form-select"
-                  aria-placeholder="DropDown"
-                  disabled
+                <div
+                  class="d-flex justify-content-between w-100 four-columns-inputs"
                 >
-                  <option value="d">Select</option>
-                </select>
+                  <div class="did-floating-label-content">
+                    <input
+                      class="form-control did-floating-input two-field is-invalid four-column"
+                      type="text"
+                      placeholder=""
+                      id="validationServer03"
+                    />
+                    <label class="did-floating-label">User Name</label>
+                    <div class="invalid-feedback" style="padding-left: 15px">
+                      Enter Valid data
+                    </div>
+                  </div>
+
+                  <div class="did-floating-label-content">
+                    <input
+                      class="form-control did-floating-input two-field is-invalid four-column"
+                      type="text"
+                      placeholder=""
+                      id="validationServer03"
+                    />
+                    <label class="did-floating-label">User Name</label>
+                    <div
+                      class="invalid-feedback text-dark-emphasis"
+                      style="padding-left: 15px"
+                    >
+                      Enter your full name as per ID
+                    </div>
+                  </div>
+
+                  <div class="did-floating-label-content">
+                    <input
+                      class="form-control did-floating-input two-field four-column"
+                      type="text"
+                      placeholder=""
+                    />
+                    <label class="did-floating-label">User Name</label>
+                  </div>
+
+                  <div class="">
+                    <select
+                      class="form-select four-column"
+                      name="dropdown"
+                      aria-label="Dropdown"
+                    >
+                      <option selected>Dropdown</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="other-design-element-main">
+                <div class="sub-title">
+                  <span>Other Design Elements</span>
+                </div>
+                <div class="upload">
+                  <div class="sub-title-2">
+                    <span>File Upload</span>
+                  </div>
+                  <div class="d-flex">
+                    <div
+                      class="upload-btn d-flex justify-content-center align-items-center"
+                    >
+                      <img
+                        class="mx-2"
+                        src="./images/cloud-upload-icon.svg"
+                        alt=""
+                      />
+                      <span class="upload-text text-danger">Upload</span>
+                    </div>
+                    <div
+                      class="upload-file-text d-flex align-items-center mx-4"
+                    >
+                      <span> No item selected </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="radio-button">
+                  <div class="sub-title-2">
+                    <span>Radio Button</span>
+                  </div>
+                  <div class="radio-options d-flex">
+                    <div class="">
+                      <input type="radio" id="auto" value="auto" />
+                      <label for="auto">Option 1</label><br />
+                    </div>
+                    <div class="form-check mx-3">
+                      <input type="radio" id="Red" value="Red" />
+                      <label for="Red">Option 2</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="check-box">
+                  <div class="sub-title-2">
+                    <span>Checkbox</span>
+                  </div>
+                  <div class="d-flex">
+                    <div class="check-1 d-flex">
+                      <label class="contain">
+                        <input type="checkbox" disabled />
+                        <span class="checkmark"></span>
+                      </label>
+                      <div class="check-text">
+                        <span>Option 1</span>
+                      </div>
+                    </div>
+                    <div class="check-2 mx-4">
+                      <label class="contain">
+                        <input type="checkbox" checked="checked" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <div class="check-text">
+                        <span>Option 2</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="snackbar">
+                  <div class="sub-title-2">
+                    <span>Snackbar</span>
+                  </div>
+
+                  <div class="snakes">
+                    <div
+                      class="d-flex align-item-center justify-content-between mb-3 snacks-fields-1"
+                    >
+                      <div class="snack-1 snack d-flex align-items-center">
+                        <img
+                          src="./images/error-icon.svg "
+                          class="snack-img"
+                          alt=""
+                        />
+                        <span class="mx-2">This is an error Message</span>
+                      </div>
+                      <div class="snack-2 snack d-flex align-items-center">
+                        <img
+                          src="./images/info-icon.svg "
+                          class="snack-img"
+                          alt=""
+                        />
+                        <span class="mx-2">This is an information Message</span>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-item-center justify-content-between snacks-fields-2"
+                    >
+                      <div class="snack-3 snack d-flex align-items-center">
+                        <img
+                          src="./images/warning-icon.svg "
+                          class="snack-img"
+                          alt=""
+                        />
+                        <span class="mx-2">This is a warning Message</span>
+                      </div>
+                      <div class="snack-4 snack d-flex align-items-center">
+                        <img
+                          src="./images/success-icon.svg "
+                          class="snack-img"
+                          alt=""
+                        />
+                        <span class="mx-2">This is a Success Message</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="call-to-action">
+                  <div class="sub-title-2">
+                    <span>Call to action</span>
+                  </div>
+
+                  <div class="buttons d-flex">
+                    <div
+                      class="button-1 d-flex align-items-center justify-content-center"
+                    >
+                      Primary
+                    </div>
+                    <div
+                      class="button-2 d-flex align-items-center justify-content-center"
+                    >
+                      Secondary
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tabs-and-text">
+                  <div class="tabs d-flex">
+                    <span class="tab-1 tab text-center active-tab">Tab 1</span>
+                    <span class="tab-2 tab text-center">Tab 2</span>
+                    <span class="tab-3 tab text-center">Tab 3</span>
+                  </div>
+                  <div class="line">
+                    <hr />
+                  </div>
+                  <div class="tab-text">
+                    <span
+                      >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Similique expedita earum iusto praesentium tenetur
+                      voluptatum voluptatem eaque aliquam. Aliquam ipsam natus
+                      consequatur mollitia quis quasi, numquam dolore dolorum,
+                      commodi pariatur odio excepturi sit blanditiis nam
+                      facilis.lore Lorem ipsum dolor sit, amet consectetur
+                      adipisicing elit. Excepturi veniam illo ipsa perferendis
+                      hic! Culpa cumque maxime porro, debitis veritatis itaque,
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="container part part-5">
-            <h4>Other Deign Elements</h4>
-            <h5>File Upload</h5>
-            <div class="file_select">
-              <label for="file-upload" class="custom-file-upload">
-                <img src="./images/cloud-upload-icon.svg" alt="upload" />
-                <span> Upload</span>
-              </label>
-              <input id="file-upload" type="file" />
-              <span class="file_status">No file choosen</span>
-            </div>
-          </div>
-          <div class="container part part-6">
-            <h4>Radio button</h4>
-            <input
-              type="radio"
-              name="rd"
-              class="rd_btn"
-              value="v1"
-              style="accent-color: red"
-            />
-            Option1
-            <input
-              type="radio"
-              name="rd"
-              class="rd_btn"
-              value="v2"
-              checked
-              style="accent-color: red"
-            />
-            Option2
-          </div>
-          <div class="container part part-7">
-            <h4>Checkbox</h4>
-            <input
-              type="checkbox"
-              name="rd"
-              class="chk_btn"
-              value="v1"
-              style="accent-color: red"
-            />
-            Option1
-            <input
-              type="checkbox"
-              name="rd"
-              class="chk_btn"
-              value="v2"
-              style="accent-color: red"
-              checked
-            />
-            Option2
-          </div>
-          <div class="container part part-8">
-            <h4>Snackbar</h4>
-            <div class="row row-1">
-              <div class="col">
-                <img
-                  src="./images/error-icon.svg"
-                  alt=""
-                  class="img img_error"
-                />&nbsp;&nbsp;&nbsp;
-                <span>This is an error message</span>
-              </div>
-              <div class="col">
-                <img
-                  src="./images/info-icon.svg"
-                  alt=""
-                  class="img img_info"
-                />&nbsp;&nbsp;&nbsp;
-                <span>This is an information message</span>
-              </div>
-            </div>
-            <div class="row row-2">
-              <div class="col">
-                <img
-                  src="./images/warning-icon.svg"
-                  alt=""
-                  class="img img_warn"
-                />&nbsp;&nbsp;&nbsp;
-                <span>This is a warning message</span>
-              </div>
-              <div class="col">
-                <img
-                  src="./images/success-icon.svg"
-                  alt=""
-                  class="img img_success"
-                />
-                &nbsp;&nbsp;&nbsp;
-                <span>This is a success message</span>
-              </div>
-            </div>
-          </div>
-          <div class="container part part-9">
-            <h4>Call to action</h4>
-            <button class="btn btn_primary">Primary</button>
-            <button class="btn btn_primary_outline">Secondary</button>
-          </div>
-          <div class="container part part-10">
-            <h5>Tabs</h5>
-            <menu class="tab_menu">
-              <div class="tab_1 tab active_tab">Tab 1</div>
-              <div class="tab_2 tab">Tab 2</div>
-              <div class="tab_3 tab">Tab 3</div>
-            </menu>
-            <hr />
-            <p class="para">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-              deleniti saepe atque dolorum debitis impedit? Accusamus quibusdam
-              necessitatibus numquam ipsum fuga itaque quidem, iusto sit
-              blanditiis ex voluptatibus eligendi deleniti! Optio voluptates
-              illo dolore, minus dolores sapiente dignissimos quas dolorum autem
-              ipsum quisquam quae eaque ipsa tenetur possimus ex consequuntur?
-              Voluptates labore iusto praesentium architecto temporibus
-              voluptatum cum dicta libero.
-            </p>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   </body>
 </html>

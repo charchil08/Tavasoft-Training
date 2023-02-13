@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Pbi+JSa3LdY/iwsy3ayrTBUTRn49Z8WwHXcOQQpbHAIIWsZkxvJJe/7An3n4Q9bbUp+ESlVpU4E/4seMKhcsrg==",
+  "dgSpecHash": "B9x4Vmy9axfeava9nTSRE0JgGv6Zukz/xI07L42Ns12x3AbJeOAalVYNJrPmEBLyrT6xSLhO987KlFMZsDeFUw==",
   "success": true,
   "projectFilePath": "D:\\CHARCHIL\\Tatvasoft-Training\\ASP.NET-MVC-VIDEO\\BulkyBook\\BulkyBook\\BulkyBook.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\pci141\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.2\\microsoft.entityframeworkcore.design.7.0.2.nupkg.sha512",
     "C:\\Users\\pci141\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.2\\microsoft.entityframeworkcore.relational.7.0.2.nupkg.sha512",
     "C:\\Users\\pci141\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.2\\microsoft.entityframeworkcore.sqlserver.7.0.2.nupkg.sha512",
+    "C:\\Users\\pci141\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.2\\microsoft.entityframeworkcore.tools.7.0.2.nupkg.sha512",
     "C:\\Users\\pci141\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\pci141\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\pci141\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
