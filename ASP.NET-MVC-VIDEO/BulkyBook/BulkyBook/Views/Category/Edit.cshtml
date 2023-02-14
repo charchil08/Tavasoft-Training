@@ -1,0 +1,25 @@
+﻿@model BulkyBook.Models.Category
+
+@{
+    ViewData["Title"] = "Edit Category";
+}
+
+<form method="post" class="border p-3 pt-4" asp-action="Edit" >
+    <div class="row pb-2">
+        <h2 class="text-primary">Update Category</h2>
+    </div>
+    <div class="row my-3">
+        <label asp-for="Name" ></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger" ></span>
+    </div>
+    <div class="row my-3">
+        <label asp-for="DisplayOrder"></label>
+        <input asp-for="DisplayOrder" class="form-control" />
+        <span asp-validation-for="DisplayOrder" class="text-danger"></span>
+    </div>
+    <div class="d-flex my-4 flex-row justify-content-center align-content-center" >
+        <button type="submit" class="btn btn-outline-primary mx-2">Update</button>
+        <a class="btn btn-outline-warning" asp-controller="Category" asp-action="Index"> Back to Category List </a>
+    </div>
+</form>
