@@ -1,0 +1,27 @@
+﻿@model BulkyBook.Models.Category;
+@{
+    ViewData["Title"] = "Delete Category";
+}
+
+<partial name="_Notification" />
+
+<form method="post" class="border p-3 pt-4" asp-action="Delete" >
+    <div class="row pb-2">
+        <h2 class="text-primary">Delete Category</h2>
+    </div>
+    <input asp-for="Name" hidden />
+    <input asp-for="DisplayOrder" hidden />
+    <div class="row my-3">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" disabled />
+    </div>
+    <div class="row my-3">
+        <label asp-for="DisplayOrder"></label>
+        <input asp-for="DisplayOrder" class="form-control" disabled />
+    </div>
+    <div class="d-flex my-4 flex-row justify-content-center align-content-center" >
+        <button type="submit" class="btn btn-outline-primary mx-2">Delete</button>
+        <a class="btn btn-outline-warning" asp-controller="Category" asp-action="Index"> Back to Category List </a>
+    </div>
+</form>
+

@@ -4,12 +4,14 @@
     ViewData["Title"] = "Index";
 }
 
+<partial name="_Notification" />
+
 <div class="container p-3">
     <div class="row pt-4">
-        <div class="col-sm-6">
+        <div class="col-md-6 text-center text-md-start my-4 my-md-0">
             <h2>Category List</h2>
         </div>
-        <div class="col-sm-6 text-end">
+        <div class="col-md-6 text-center text-md-end">
             <a class="btn btn-outline-primary" asp-controller="Category" asp-action="Create" >
                 <i class="bi bi-plus-circle"></i>
                 Create New Category</a>
@@ -21,7 +23,7 @@
     <thead class="my-4">
         <tr class="">
             <th class="h4 text-info">Category Name</th>
-            <th class="h4 text-info">Display order</th>
+            <th class="h4 text-info text-center">Display order</th>
             <th></th>
         </tr>
     </thead>
@@ -29,16 +31,23 @@
         @foreach (var item in  Model)
        {
            <tr class="pt-4">
-               <td class="w-50 align-middle">
+               <td class="align-middle w-md-50">
                    @item.Name
                </td>
-                <td class="w-25 align-middle">
+                <td class="align-middle w-md-25 text-center">
                     @item.DisplayOrder
                </td>
-               <td class="w-25">
-                   <div class="btn btn-outline-info px-4 py-1" role="group" >
-                       <a style="text-decoration:none;" asp-controller="Category"  asp-action="Edit" asp-route-id=@item.Id class="text-light"  >
-                       <i class="bi bi-pencil-square px-1"></i>Edit 
+               <td  class="w-md-25 d-md-flex justify-content-center justify-content-lg-end">
+                   <div class="d-flex" role="group" >
+                    <a style="text-decoration:none;" class="d-flex px-2 px-sm-4 py-1 mx-1 mx-sm-2 btn btn-outline-warning" asp-controller="Category"  asp-action="Edit" asp-route-id=@item.Id class="text-light"  >
+                       <i class="bi bi-pencil-square px-1"></i>
+                       <span class="d-none d-sm-inline" >Edit</span> 
+                   </a>
+              
+                    <a style="text-decoration:none;" class="d-flex px-2 px-sm-4 py-1 mx-1 mx-sm-2 btn btn-outline-danger" asp-controller="Category"  asp-action="Delete" asp-route-id=@item.Id class="text-light"  >
+                    <i class="bi bi-trash"></i>
+                    <span class="d-none d-sm-inline-block" >Delete </span> 
+                       
                    </a>
                    </div>
                </td>

@@ -4,6 +4,8 @@
     ViewData["Title"] = "Edit Category";
 }
 
+<partial name="_Notification" />
+
 <form method="post" class="border p-3 pt-4" asp-action="Edit" >
     <div class="row pb-2">
         <h2 class="text-primary">Update Category</h2>
@@ -23,3 +25,9 @@
         <a class="btn btn-outline-warning" asp-controller="Category" asp-action="Index"> Back to Category List </a>
     </div>
 </form>
+
+@section scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

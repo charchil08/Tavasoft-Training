@@ -19,6 +19,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/CHARCHIL/Tatvasoft-Training/ASP.NET-MVC-VIDEO/BulkyBook/BulkyBook/Views/Category/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/CHARCHIL/Tatvasoft-Training/ASP.NET-MVC-VIDEO/BulkyBook/BulkyBook/Views/Category/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -37,6 +41,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/CHARCHIL/Tatvasoft-Training/ASP.NET-MVC-VIDEO/BulkyBook/BulkyBook/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CHARCHIL/Tatvasoft-Training/ASP.NET-MVC-VIDEO/BulkyBook/BulkyBook/Views/Shared/_Notification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/CHARCHIL/Tatvasoft-Training/ASP.NET-MVC-VIDEO/BulkyBook/BulkyBook/Views/Shared/_ValidationScriptsPartial.cshtml]
