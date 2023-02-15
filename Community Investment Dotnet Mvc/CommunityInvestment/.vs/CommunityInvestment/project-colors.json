@@ -5,7 +5,12 @@
       "ProjectGuid": "8714eadb-138c-4e48-8a09-02226ddb2fae",
       "DisplayName": "CommunityInvestment",
       "ColorIndex": 0
+    },
+    "e9026bc2-4614-4186-afb4-12b1bf4163ca": {
+      "ProjectGuid": "e9026bc2-4614-4186-afb4-12b1bf4163ca",
+      "DisplayName": "CommunityInvestment.Models",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
