@@ -10,6 +10,11 @@
       "ProjectGuid": "e9026bc2-4614-4186-afb4-12b1bf4163ca",
       "DisplayName": "CommunityInvestment.Models",
       "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 2
