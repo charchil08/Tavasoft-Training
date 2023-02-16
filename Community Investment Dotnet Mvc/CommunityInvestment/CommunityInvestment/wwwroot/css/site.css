@@ -17,8 +17,8 @@ a {
 }
 
 .form-label {
-    color:#414141;
-    font-weight:bold;
+    color: #414141;
+    font-weight: bold;
 }
 
 .custom_btn {
@@ -26,9 +26,9 @@ a {
     border-radius: 24px;
     border: 1px solid var(--clr-orange);
     color: var(--clr-orange);
-    transition:all 1s;
+    transition: all 1s;
 }
 
-.custom_btn:hover {
-    background-color: var(--clr-orange);
-}
+    .custom_btn:hover {
+        background-color: var(--clr-orange);
+    }
