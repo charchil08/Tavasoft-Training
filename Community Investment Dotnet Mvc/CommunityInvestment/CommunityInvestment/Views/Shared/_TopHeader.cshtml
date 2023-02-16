@@ -1,1 +1,198 @@
-﻿
+﻿<nav class="navbar navbar-expand-lg container-fluid container-lg">
+  <div class="nav_left">
+    @*Mobile menu toggler button*@
+    <button
+      class="navbar-toggler mr-4"
+      type="button"
+      data-bs-toggle="offcanvas"
+      -moz-text-size-adjust
+      data-bs-target="#offcanvasNavbar" 
+      aria-controls="offcanvasNavbar"
+    >
+      <i class="bi bi-list navbar-toggler-icon"  style="border:none" ></i>
+    </button>
+
+    <a class="navbar-brand mx-2" asp-controller="Home" asp-action="Index">
+      <img alt="optimy" src="~/assets/logo.png" />
+    </a>
+  </div>
+
+  <div
+    class="alert-light offcanvas offcanvas-start"
+    tabindex="-1"
+    id="offcanvasNavbar"
+    area-labelledby="offcanvasNavbarLabel"
+  >
+    <div class="offcanvas-body">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Explore
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            @*
+            <li><hr class="dropdown-divider" /></li>
+            *@
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Stories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Policy
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            @*
+            <li><hr class="dropdown-divider" /></li>
+            *@
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="nav_right">
+    <div class="btn-group mx-3 mx-md-4">
+      <div
+        class="dropdown-toggle position-relative hide_dropdown_arrow"
+        type="button"
+        data-bs-toggle="dropdown"
+        data-bs-display="static"
+        data-bs-auto-close="true"
+        aria-expanded="false"
+      >
+        <img src="~/assets/bell.png" alt="alert" />
+        <span
+          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+        >
+          4
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </div>
+      <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+        <li class="container-fluid px-0">
+          <div
+            class="px-1 dropdown-item d-flex justify-content-between"
+            href="/"
+          >
+            <div class="m-0 p-0">
+              <img src="~/assets/settings.png" alt="." />
+            </div>
+            <div class="align-middle">
+              <h5 class="text-center fw-bold">Notification</h5>
+            </div>
+            <div class="text-end">
+              <a class="text-muted" href="/">clear all</a>
+            </div>
+          </div>
+        </li>
+        <li><hr class="dropdown-divider" /></li>
+        <li class="container-fluid px-0">
+          <div
+            class="px-1 dropdown-item d-flex justify-content-between"
+            href="/"
+          >
+            <div class="m-0 p-0">
+              <img src="~/assets/user1.png" alt="." />
+            </div>
+            <div class="align-middle">
+              <p class="mx-2" style="font-size: 14px">
+                John Doe recoomand mission: <b>Grow trees</b>
+              </p>
+            </div>
+            <div class="text-end">
+              <a class="text-muted" href="/">
+                <img src="~/assets/checked.png" alt="." />
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="container-fluid px-0">
+          <div class="px-1 dropdown-item d-flex justify-content-between">
+            <div class="m-0 p-0">
+              <img src="~/assets/user1.png" alt="." />
+            </div>
+            <div class="align-middle mx-2">
+              <p class="" style="font-size: 14px">
+                John Doe recoomand mission: <b>Grow trees</b>
+              </p>
+            </div>
+            <div class="text-end">
+              <a class="text-muted" href="/">
+                <img src="~/assets/checked.png" alt="." />
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="container-fluid px-0">
+          <div
+            class="px-1 h-75 bg-gray text-light dropdown-item d-flex align-items-center justify-content-center"
+          >
+            <p class="fw-bold">yesterday</p>
+          </div>
+        </li>
+        <li class="container-fluid px-0">
+          <div
+            class="px-1 dropdown-item d-flex justify-content-between align-items-center"
+          >
+            <div class="m-0 p-0">
+              <img src="~/assets/mission.png" alt="." />
+            </div>
+            <div class="mx-2">
+              <p class="m-auto" style="font-size: 14px">
+                New mission: <b>Save world</b>
+              </p>
+            </div>
+            <div class="text-end status status-online"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="btn-group ml-3 ml-lg-3">
+      <div
+        class="dropdown-toggle d-flex justify-content-center align-items-center header_profile"
+        type="button"
+        data-bs-toggle="dropdown"
+        data-bs-display="static"
+        data-bs-auto-close="true"
+        aria-expanded="false"
+      >
+        <img
+          src="~/assets/user-img.png"
+          class="rounded-circle profile_img"
+          alt="."
+        />
+        <span class="px-1 d-none d-sm-inline-block">John Doe</span>
+      </div>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item text-center" href="#">Dashboard</a></li>
+        <li><a class="dropdown-item text-center" href="#">My Account</a></li>
+        <li><a class="dropdown-item text-center" href="#">Help Center</a></li>
+        <li><a class="dropdown-item text-center" href="#">Log Out</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

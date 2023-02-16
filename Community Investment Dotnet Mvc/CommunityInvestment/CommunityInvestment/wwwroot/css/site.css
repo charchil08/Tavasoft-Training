@@ -2,6 +2,7 @@
 
 :root {
     --clr-orange: #f88634;
+    --clr-gray: #808080;
 }
 
 * {
@@ -32,3 +33,33 @@ a {
     .custom_btn:hover {
         background-color: var(--clr-orange);
     }
+
+.hide_dropdown_arrow.dropdown-toggle::after {
+    display: none;
+}
+
+.bg-gray {
+    background-color: var(--clr-gray);
+}
+
+.status {
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+}
+
+.status-online {
+    background-color: #ff6a00;
+}
+
+.status-offline {
+    background-color: var(--clr-gray);
+}
+
+header .header_profile .profile_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+}
