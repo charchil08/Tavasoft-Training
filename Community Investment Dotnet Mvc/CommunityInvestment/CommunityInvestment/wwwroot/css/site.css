@@ -13,6 +13,44 @@ a {
     text-decoration: none;
 }
 
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+input[type=text]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=text]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=text]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=text]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
 .carousel h1 {
     font-weight: bold;
 }
@@ -63,3 +101,15 @@ header .header_profile .profile_img {
     border-radius: 50%;
     border: none;
 }
+
+.hide_border_select {
+    border-top: none;
+    border-bottom: none;
+    outline: none;
+}
+
+    .hide_border_select:focus, .hide_border_select:focus, .hide_border_select:focus-within {
+        border: none;
+        outline: none;
+        border-radius: 0;
+    }
