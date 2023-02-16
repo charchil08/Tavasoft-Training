@@ -2,12 +2,8 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-    ViewData["Title"] = "Lost Password";
 }
-
-<div class="container-fluid custom_container">
-      <div class="row d-flex align-items-center content_wrapper">
-        <div class="col-xl-8">
+<div class="col-xl-8">
           <div
             id="carouselExampleCaptions"
             class="carousel slide"
@@ -41,6 +37,8 @@
                   src="../../assets/Grow-Trees-On-the-path-to-environment-sustainability-login.png"
                   class="d-block w-100"
                   alt="..."
+                  asp-controller="Auth"
+                  asp-action="Index"
                 />
                 <div class="carousel-caption d-none d-md-block text-start">
                   <h1>Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
@@ -59,6 +57,8 @@
                   src="../../assets/Grow-Trees-On-the-path-to-environment-sustainability-login.png"
                   class="d-block w-100"
                   alt="..."
+                  asp-controller="Auth"
+                  asp-action="Index"
                 />
                 <div class="carousel-caption d-none d-md-block text-start">
                   <h1>Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
@@ -77,6 +77,8 @@
                   src="../../assets/Grow-Trees-On-the-path-to-environment-sustainability-login.png"
                   class="d-block w-100"
                   alt="..."
+                  asp-controller="Auth"
+                  asp-action="Index"
                 />
                 <div class="carousel-caption d-none d-md-block text-start">
                   <h1>Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
@@ -117,47 +119,3 @@
             </button>
           </div>
         </div>
-        <div
-          class="form_container col-xl-4 d-flex flex-column justify-content-center align-items-center mt-4"
-        >
-          <div class="my-2 text-center">
-            <h5><strong> Forgot Password</strong></h5>
-            <p>
-              Enter your email address you've using for your account below and
-              we will send you a password reset link
-            </p>
-          </div>
-          <form class="w-75 m-auto">
-            <div class="mb-3">
-              <label for="exampleInputText" class="form-label"
-                >Email Address
-              </label>
-              <input
-                type="email"
-                class="form-control custom_input"
-                id="exampleInputText"
-                placeholder="Enter your Email Address ..."
-                aria-describedby="NameHelp"
-              />
-            </div>
-
-            <button
-              type="submit"
-              class="btn btn-outline-warning w-100 custom_btn"
-              
-            >
-              Reset my Password
-            </button>
-          </form>
-          <div class="add_opt mt-2 text-center">
-            <p>
-              <a class="text-dark" asp-controller="Home" asp-action="Index" >Login</a>
-            </p>
-          </div>
-         <div class="privacy mt-lg-4 text-center">
-            <a asp-controller="Home" asp-action="Privacy" class="text-dark" >Privacy Policy</a>
-          </div>
-        </div>
-      </div>
-    </div>
-

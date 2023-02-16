@@ -24,3 +24,29 @@ D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet\CommunityInvestment\C
 D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\ref\CommunityInvestment.dll
 D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\CommunityInvestment.pdb
 D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\CommunityInvestment.genruntimeconfig.cache
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\bin\Debug\net6.0\appsettings.Development.json
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\bin\Debug\net6.0\appsettings.json
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\bin\Debug\net6.0\CommunityInvestment.staticwebassets.runtime.json
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\bin\Debug\net6.0\CommunityInvestment.exe
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\bin\Debug\net6.0\CommunityInvestment.deps.json
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\bin\Debug\net6.0\CommunityInvestment.runtimeconfig.json
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\bin\Debug\net6.0\CommunityInvestment.dll
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\bin\Debug\net6.0\ref\CommunityInvestment.dll
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\bin\Debug\net6.0\CommunityInvestment.pdb
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\CommunityInvestment.csproj.AssemblyReference.cache
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\CommunityInvestment.GeneratedMSBuildEditorConfig.editorconfig
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\CommunityInvestment.AssemblyInfoInputs.cache
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\CommunityInvestment.AssemblyInfo.cs
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\CommunityInvestment.csproj.CoreCompileInputs.cache
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\CommunityInvestment.MvcApplicationPartsAssemblyInfo.cache
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\CommunityInvestment.RazorAssemblyInfo.cache
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\CommunityInvestment.RazorAssemblyInfo.cs
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\staticwebassets.build.json
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\staticwebassets.development.json
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\scopedcss\bundle\CommunityInvestment.styles.css
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\scopedcss\projectbundle\CommunityInvestment.bundle.scp.css
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\CommunityInvestment.dll
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\ref\CommunityInvestment.dll
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\CommunityInvestment.pdb
+D:\CHARCHIL\Tatvasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\obj\Debug\net6.0\CommunityInvestment.genruntimeconfig.cache
