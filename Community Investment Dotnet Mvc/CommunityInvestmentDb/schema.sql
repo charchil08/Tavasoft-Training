@@ -1,6 +1,131 @@
 create Database CommunityInvestment
 go
 
+use CommunityInvestment
+go
+
+
+-- ---------------------
+-- Enum kind of tables
+-- ---------------------
+
+-- Create a new table called 'mission_type' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.mission_type', 'U') IS NOT NULL
+DROP TABLE dbo.mission_type
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.mission_type
+(
+	mission_type_id TINYINT PRIMARY KEY IDENTITY(1,1) CHECK (mission_type_id > 0),
+	[name] VARCHAR(16),
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime
+);
+GO
+
+
+-- Create a new table called 'availability' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.availability', 'U') IS NOT NULL
+DROP TABLE dbo.availability
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.availability
+(
+	availability_id TINYINT PRIMARY KEY IDENTITY(1,1) CHECK (availability_id > 0),
+	[name] VARCHAR(16),
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime
+
+);
+GO
+
+
+
+-- Create a new table called 'approval_status' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.approval_status', 'U') IS NOT NULL
+DROP TABLE dbo.approval_status
+GO
+
+-- Create the table in the specified schema
+CREATE TABLE dbo.approval_status
+(
+	approval_status_id TINYINT PRIMARY KEY IDENTITY(1,1) CHECK (approval_status_id > 0),
+	[name] VARCHAR(16) NOT NULL,
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime,
+);
+GO
+
+
+-- Create a new table called 'story_status' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.story_status', 'U') IS NOT NULL
+DROP TABLE dbo.story_status
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.story_status
+(
+	story_status_id TINYINT PRIMARY KEY IDENTITY(1,1) CHECK (story_status_id > 0),
+	[name] VARCHAR(16) NOT NULL,
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime,
+);
+GO
+
+
+
+-- INSERT VALUES IN ABOVE ENUM KIND OF TABLES
+-- SO THAT DEFAULT VALUE CAN BE SET IN MAIN TABLES.
+
+INSERT INTO mission_type
+	([name])
+VALUES
+	('TIME'),
+	('GOAL')
+GO
+
+
+INSERT INTO dbo.availability
+	([name])
+VALUES
+	('DAILY'),
+	('WEEKLY'),
+	('WEEK-END'),
+	('MONTHLY')
+GO
+
+
+INSERT INTO dbo.approval_status
+	([name])
+VALUES
+	('PENDING'),
+	('APPROVED'),
+	('DECLINED')
+GO
+
+
+INSERT INTO dbo.story_status
+	([name])
+VALUES
+	('DRAFT'),
+	('PENDING'),
+	('PUBLISHED'),
+	('DECLINED')
+GO
+
+
+
+-- #####################
+-- MAIN DATABASE TABLES
+-- #####################
+
 create table admin
 (
 	admin_id bigint primary key identity(1,1) check (admin_id>0),
@@ -63,8 +188,6 @@ CREATE TABLE dbo.city
 	created_at timestamp not null,
 	updated_at datetime default null,
 	deleted_at datetime default null,
-
-	CONSTRAINT fk_city_cityId FOREIGN KEY (city_id) REFERENCES dbo.country(country_id)
 );
 GO
 
@@ -135,5 +258,340 @@ CREATE TABLE dbo.skill
 	created_at timestamp not null,
 	updated_at datetime default null,
 	deleted_at datetime default null
+);
+GO
+
+
+-- Create a new table called 'user' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.user', 'U') IS NOT NULL
+DROP TABLE dbo.[user]
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.[user]
+(
+	[user_id] bigint PRIMARY KEY IDENTITY(1,1) CHECK (user_id > 0),
+	first_name VARCHAR(16),
+	last_name VARCHAR(16),
+	email VARCHAR(128) not null,
+	[password] VARCHAR(255) NOT NULL,
+	phone_number int not NULL,
+	avatar VARCHAR(2048),
+	why_i_volunteer text,
+	employee_id VARCHAR(16),
+	department VARCHAR(16),
+	city_id bigint not null,
+	country_id bigint not NULL,
+	profile_text text,
+	linked_in_url VARCHAR(255),
+	[title] VARCHAR(255),
+	status bit not NULL DEFAULT 1,
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime,
+
+);
+GO
+
+
+-- Create a new table called 'user_skill' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.user_skill', 'U') IS NOT NULL
+DROP TABLE dbo.user_skill
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.user_skill
+(
+	user_skill_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (user_skill_id > 0),
+	user_id bigint not null,
+	skill_id bigint not null,
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime
+);
+GO
+
+
+
+-- Create a new table called 'mission' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.mission', 'U') IS NOT NULL
+DROP TABLE dbo.mission
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.mission
+(
+	mission_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (mission_id > 0),
+	mission_theme_id bigint not NULL,
+	city_id bigint not null,
+	country_id bigint not null,
+	title VARCHAR(128) not NULL,
+	short_description text,
+	[description] text,
+	start_date DATETIME,
+	end_date DATETIME,
+	mission_type_id TINYINT not null,
+	[status] bit not null DEFAULT 0,
+	organization_name VARCHAR(255),
+	organization_detail VARCHAR(255),
+	availability_id TINYINT,
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime,
+);
+GO
+
+
+
+-- Create a new table called 'mission_application' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.mission_application', 'U') IS NOT NULL
+DROP TABLE dbo.mission_application
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.mission_application
+(
+	mission_application_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (mission_application_id > 0),
+	mission_id bigint not null,
+	[user_id] bigint NOT null,
+	applied_at datetime not NULL,
+	approval_status_id TINYINT,
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime,
+);
+GO
+
+-- Create a new table called 'mission_document' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.mission_document', 'U') IS NOT NULL
+DROP TABLE dbo.mission_document
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.mission_document
+(
+	mission_document_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (mission_document_id > 0),
+	mission_id bigint not null,
+	document_name VARCHAR(255) NOT NULL,
+	doucment_type VARCHAR(255),
+	document_path VARCHAR(255),
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime,
+);
+GO
+
+-- Create a new table called 'mission_invite' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.mission_invite', 'U') IS NOT NULL
+DROP TABLE dbo.mission_invite
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.mission_invite
+(
+	mission_invite_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (mission_invite_id > 0),
+	mission_id bigint not null,
+	from_user_id bigint not NULL,
+	to_user_id bigint not NULL,
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime,
+);
+GO
+
+-- Create a new table called 'mission_media' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.mission_media', 'U') IS NOT NULL
+DROP TABLE dbo.mission_media
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.mission_media
+(
+	mission_media_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (mission_media_id > 0),
+	mission_id bigint not null,
+	media_name VARCHAR(64),
+	media_type VARCHAR(4),
+	media_path VARCHAR(255),
+	[default] bit,
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime,
+);
+GO
+
+-- Create a new table called 'mission_rating' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.mission_rating', 'U') IS NOT NULL
+DROP TABLE dbo.mission_rating
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.mission_rating
+(
+	mission_rating_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (mission_rating_id > 0),
+	mission_id bigint not null,
+	[user_id] bigint not null,
+	media_name VARCHAR(64),
+	rating TINYINT CHECK (rating<=5 and rating>=1),
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime,
+);
+GO
+
+-- Create a new table called 'mission_skill' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.mission_skill', 'U') IS NOT NULL
+DROP TABLE dbo.mission_skill
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.mission_skill
+(
+	mission_skill_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (mission_skill_id > 0),
+	mission_id bigint,
+	skill_id bigint not null,
+	media_name VARCHAR(64),
+	rating TINYINT CHECK (rating<=5 and rating>=1),
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime,
+);
+GO
+
+-- Create a new table called 'story' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.story', 'U') IS NOT NULL
+DROP TABLE dbo.story
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.story
+(
+	story_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (story_id > 0),
+	mission_id bigint not null,
+	[user_id] bigint not null,
+	title VARCHAR(255),
+	[description] text,
+	story_status_id TINYINT not null DEFAULT 1,
+	--set default to draft
+	published_at DATETIME ,
+	created_at timestamp not null default CURRENT_TIMESTAMP,
+	updated_at datetime,
+	deleted_at datetime,
+);
+GO
+
+-- Create a new table called 'story_invite' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.story_invite', 'U') IS NOT NULL
+DROP TABLE dbo.story_invite
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.story_invite
+(
+	story_invite_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (story_invite_id > 0),
+	story_id bigint not null,
+	from_user_id bigint not NULL,
+	to_user_id bigint not NULL,
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime,
+);
+GO
+
+
+-- Create a new table called 'story_media' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.story_media', 'U') IS NOT NULL
+DROP TABLE dbo.story_media
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.story_media
+(
+	story_media_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (story_media_id > 0),
+	story_id bigint not null,
+	[type] VARCHAR(8) not NULL,
+	[path] text,
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime,
+
+);
+GO
+
+-- Create a new table called 'timesheet' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.timesheet', 'U') IS NOT NULL
+DROP TABLE dbo.timesheet
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.timesheet
+(
+	timesheet_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (timesheet_id > 0),
+	[user_id] bigint not NULL,
+	mission_id bigint not NULL,
+	[time] TIME,
+	[action] int,
+	date_volunteered DATETIME not null,
+	notes text,
+	approval_status_id TINYINT not null DEFAULT 1,
+	--timesheet_status_id -> default pending
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime,
+);
+GO
+
+
+-- Create a new table called 'comment' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.comment', 'U') IS NOT NULL
+DROP TABLE dbo.comment
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.comment
+(
+	comment_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (comment_id > 0),
+	[user_id] bigint not NULL,
+	mission_id bigint not NULL,
+	approval_status_id TINYINT not NULL DEFAULT 1,
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime
+);
+GO
+
+
+-- Create a new table called 'favourite_mission' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.favourite_mission', 'U') IS NOT NULL
+DROP TABLE dbo.favourite_mission
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.favourite_mission
+(
+	favourite_mission_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (favourite_mission_id > 0),
+	[user_id] bigint not NULL,
+	mission_id bigint not NULL,
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime
+);
+GO
+
+
+-- Create a new table called 'goal_mission' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.goal_mission', 'U') IS NOT NULL
+DROP TABLE dbo.goal_mission
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.goal_mission
+(
+	goal_mission_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (goal_mission_id > 0),
+	mission_id bigint not NULL,
+	goal_objective_text VARCHAR(255),
+	goal_value int not null,
+	created_at timestamp not null,
+	updated_at datetime,
+	deleted_at datetime
 );
 GO
