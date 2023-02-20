@@ -126,7 +126,7 @@ GO
 -- MAIN DATABASE TABLES
 -- #####################
 
-create table admin
+create table [admin]
 (
 	admin_id bigint primary key identity(1,1) check (admin_id>0),
 	first_name varchar(16),
