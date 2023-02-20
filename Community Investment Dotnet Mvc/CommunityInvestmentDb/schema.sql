@@ -134,8 +134,8 @@ create table admin
 	email varchar(128) not null unique,
 	password varchar(255) not null,
 	created_at timestamp not null,
-	updated_at datetime default null,
-	deleted_at datetime default null
+	updated_at datetime  ,
+	deleted_at datetime
 )
 go
 
@@ -152,8 +152,8 @@ CREATE TABLE dbo.banner
 	[text] TEXT,
 	sort_order int DEFAULT 0,
 	created_at timestamp not null,
-	updated_at datetime default null,
-	deleted_at datetime default null
+	updated_at datetime  ,
+	deleted_at datetime
 );
 GO
 
@@ -169,8 +169,8 @@ CREATE TABLE dbo.country
 	name VARCHAR(255) not null,
 	ISO VARCHAR(16) not NULL,
 	created_at timestamp not null,
-	updated_at datetime default null,
-	deleted_at datetime default null
+	updated_at datetime  ,
+	deleted_at datetime
 );
 GO
 
@@ -186,8 +186,9 @@ CREATE TABLE dbo.city
 	country_id bigint,
 	name VARCHAR(255) not null,
 	created_at timestamp not null,
-	updated_at datetime default null,
-	deleted_at datetime default null,
+	updated_at datetime  ,
+	deleted_at datetime
+	,
 );
 GO
 
@@ -205,8 +206,8 @@ CREATE TABLE dbo.cms_page
 	slug varchar(255) not null,
 	status BIT DEFAULT 1,
 	created_at timestamp not null,
-	updated_at datetime default null,
-	deleted_at datetime default null
+	updated_at datetime  ,
+	deleted_at datetime
 );
 GO
 
@@ -223,8 +224,8 @@ CREATE TABLE dbo.mission_theme
 	title VARCHAR(255) not null,
 	status TINYINT not NULL,
 	created_at timestamp not null,
-	updated_at datetime default null,
-	deleted_at datetime default null
+	updated_at datetime  ,
+	deleted_at datetime
 );
 GO
 
@@ -256,8 +257,8 @@ CREATE TABLE dbo.skill
 	skill_name VARCHAR(64),
 	status TINYINT not NULL DEFAULT 1,
 	created_at timestamp not null,
-	updated_at datetime default null,
-	deleted_at datetime default null
+	updated_at datetime  ,
+	deleted_at datetime
 );
 GO
 
@@ -473,7 +474,7 @@ CREATE TABLE dbo.story
 	story_status_id TINYINT not null DEFAULT 1,
 	--set default to draft
 	published_at DATETIME ,
-	created_at timestamp not null default CURRENT_TIMESTAMP,
+	created_at timestamp not null,
 	updated_at datetime,
 	deleted_at datetime,
 );
@@ -553,7 +554,7 @@ CREATE TABLE dbo.comment
 	[user_id] bigint not NULL,
 	mission_id bigint not NULL,
 	approval_status_id TINYINT not NULL DEFAULT 1,
-	created_at timestamp not null,
+	created_at timestamp,
 	updated_at datetime,
 	deleted_at datetime
 );
@@ -594,4 +595,31 @@ CREATE TABLE dbo.goal_mission
 	updated_at datetime,
 	deleted_at datetime
 );
+GO
+
+
+-- ##############
+-- Foregin Key
+-- ##############
+
+
+ALTER TABLE city
+ADD CONSTRAINT fk_country_countryId__countryId 
+FOREIGN KEY (country_id) REFERENCES country(country_id)
+GO
+
+
+ALTER TABLE comment
+ADD CONSTRAINT fk_user_userId__userId 
+FOREIGN KEY (user_id) REFERENCES [user](user_id)
+GO
+
+ALTER TABLE comment
+ADD CONSTRAINT fk_mission_missionId__missionId 
+FOREIGN KEY (mission_id) REFERENCES [mission](mission_id)
+GO
+
+ALTER TABLE comment
+ADD CONSTRAINT fk_approvalStatus_approvalStatusId__approvalStatusId 
+FOREIGN KEY (approval_status_id) REFERENCES [approval_status](approval_status_id)
 GO
