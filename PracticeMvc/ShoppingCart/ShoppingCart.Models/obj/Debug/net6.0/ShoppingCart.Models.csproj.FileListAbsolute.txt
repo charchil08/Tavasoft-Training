@@ -1,0 +1,12 @@
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.Models\bin\Debug\net6.0\ShoppingCart.Models.deps.json
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.Models\bin\Debug\net6.0\ShoppingCart.Models.dll
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.Models\bin\Debug\net6.0\ref\ShoppingCart.Models.dll
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.Models\bin\Debug\net6.0\ShoppingCart.Models.pdb
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.Models\obj\Debug\net6.0\ShoppingCart.Models.csproj.AssemblyReference.cache
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.Models\obj\Debug\net6.0\ShoppingCart.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.Models\obj\Debug\net6.0\ShoppingCart.Models.AssemblyInfoInputs.cache
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.Models\obj\Debug\net6.0\ShoppingCart.Models.AssemblyInfo.cs
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.Models\obj\Debug\net6.0\ShoppingCart.Models.csproj.CoreCompileInputs.cache
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.Models\obj\Debug\net6.0\ShoppingCart.Models.dll
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.Models\obj\Debug\net6.0\ref\ShoppingCart.Models.dll
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.Models\obj\Debug\net6.0\ShoppingCart.Models.pdb

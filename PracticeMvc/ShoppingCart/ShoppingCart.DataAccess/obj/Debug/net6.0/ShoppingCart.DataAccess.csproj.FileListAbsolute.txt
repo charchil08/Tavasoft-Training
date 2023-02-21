@@ -1,0 +1,17 @@
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.DataAccess.deps.json
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.DataAccess.runtimeconfig.json
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.DataAccess.dll
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.DataAccess\bin\Debug\net6.0\ref\ShoppingCart.DataAccess.dll
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.DataAccess.pdb
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.Models.dll
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.Models.pdb
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.csproj.AssemblyReference.cache
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.AssemblyInfoInputs.cache
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.AssemblyInfo.cs
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.csproj.CoreCompileInputs.cache
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.csproj.CopyComplete
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.dll
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.DataAccess\obj\Debug\net6.0\ref\ShoppingCart.DataAccess.dll
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.pdb
+D:\CHARCHIL\Tavasoft-Training\PracticeMvc\ShoppingCart\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.genruntimeconfig.cache
