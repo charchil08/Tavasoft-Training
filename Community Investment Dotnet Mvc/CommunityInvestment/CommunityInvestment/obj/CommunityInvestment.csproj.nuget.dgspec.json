@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CHARCHIL\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\CommunityInvestment.csproj": {}
+    "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\CommunityInvestment.csproj": {}
   },
   "projects": {
-    "D:\\CHARCHIL\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\CommunityInvestment.csproj": {
+    "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\CommunityInvestment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CHARCHIL\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\CommunityInvestment.csproj",
+        "projectUniqueName": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\CommunityInvestment.csproj",
         "projectName": "CommunityInvestment",
-        "projectPath": "D:\\CHARCHIL\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\CommunityInvestment.csproj",
+        "projectPath": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\CommunityInvestment.csproj",
         "packagesPath": "C:\\Users\\pci141\\.nuget\\packages\\",
-        "outputPath": "D:\\CHARCHIL\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\obj\\",
+        "outputPath": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

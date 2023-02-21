@@ -1,193 +1,234 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200&display=swap");
 
 :root {
-  --clr-orange: #f88634;
-  --clr-gray: #808080;
+    --clr-orange: #F88634;
+    --clr-gray: #808080;
 }
 
 * {
-  font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
-  display: none;
+    display: none;
 }
 
 input[type="text"]::-ms-clear {
-  display: none;
-  width: 0;
-  height: 0;
+    display: none;
+    width: 0;
+    height: 0;
 }
 
 input[type="text"]::-ms-reveal {
-  display: none;
-  width: 0;
-  height: 0;
+    display: none;
+    width: 0;
+    height: 0;
 }
 
 input[type="text"]::-ms-clear {
-  display: none;
-  width: 0;
-  height: 0;
+    display: none;
+    width: 0;
+    height: 0;
 }
 
 input[type="text"]::-ms-reveal {
-  display: none;
-  width: 0;
-  height: 0;
+    display: none;
+    width: 0;
+    height: 0;
 }
 
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
-  display: none;
+    display: none;
 }
 
 .carousel h1 {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .form-label {
-  color: #414141;
-  font-weight: bold;
+    color: #414141;
+    font-weight: bold;
 }
 
 .custom_btn {
-  font-weight: 600;
-  border-radius: 24px;
-  border: 1px solid var(--clr-orange);
-  color: var(--clr-orange);
-  transition: all 1s;
+    font-weight: 600;
+    border-radius: 24px;
+    border: 1px solid var(--clr-orange);
+    color: var(--clr-orange);
+    transition: all 1s;
 }
 
-.custom_btn:hover {
-  background-color: var(--clr-orange);
-}
+    .custom_btn:hover {
+        background-color: var(--clr-orange);
+    }
 
 .hide_dropdown_arrow.dropdown-toggle::after {
-  display: none;
+    display: none;
 }
 
 .bg-gray {
-  background-color: var(--clr-gray);
+    background-color: var(--clr-gray);
 }
 
 .status {
-  width: 12px;
-  height: 12px;
-  border: none;
-  border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
 }
 
 .status-online {
-  background-color: #ff6a00;
+    background-color: #ff6a00;
 }
 
 .status-offline {
-  background-color: var(--clr-gray);
+    background-color: var(--clr-gray);
 }
 
 header .header_profile .profile_img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
 }
 
 .hide_border_select {
-  outline: none;
-  border: none;
+    outline: none;
+    border: none;
 }
 
-.hide_border_select:focus,
-.hide_border_select:focus,
-.hide_border_select:focus-within,
-.hide_border_select:hover {
-  border: none;
-  outline: none;
-  border-radius: 0;
-}
+    .hide_border_select:focus,
+    .hide_border_select:focus,
+    .hide_border_select:focus-within,
+    .hide_border_select:hover {
+        border: none;
+        outline: none;
+        border-radius: 0;
+    }
 
 .scroll_dropdown {
-  max-height: 170px;
-  overflow-y: auto;
-  min-width: max-content !important;
-  background-attachment: local, local, scroll, scroll;
+    max-height: 170px;
+    overflow-y: auto;
+    min-width: max-content !important;
+    background-attachment: local, local, scroll, scroll;
 }
 
-.scroll_dropdown .dropdown-item {
-  white-space: normal;
-}
+    .scroll_dropdown .dropdown-item {
+        white-space: normal;
+    }
 
 .filter_container,
 .filter_container .form-control {
-  border: 0;
-  outline: 0;
-  border-radius: 0;
+    border: 0;
+    outline: 0;
+    border-radius: 0;
 }
 
 .filter_item {
-  border-radius: 0;
-  margin: 0;
-  border: 0;
-  border-right: 1px solid var(--clr-gray);
+    border-radius: 0;
+    margin: 0;
+    border: 0;
+    border-right: 1px solid var(--clr-gray);
 }
 
-.filter_item:first-child {
-  border-left: 1px solid var(--clr-gray);
-}
+    .filter_item:first-child {
+        border-left: 1px solid var(--clr-gray);
+    }
 
 @media only screen and (max-width: 991px) {
-  .filter_item {
-    border: 0;
-  }
+    .filter_item {
+        border: 0;
+    }
 
-  .filter_item:first-child {
-    border-left: 0;
-  }
+        .filter_item:first-child {
+            border-left: 0;
+        }
 }
 
 .fs_6 {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 .fs_7 {
-  font-size: 28px;
+    font-size: 28px;
 }
 
 .mission_cards .sort_by {
-  max-width: 170px;
-  max-height: 38px;
+    max-width: 170px;
+    max-height: 38px;
 }
 
 .mission_cards .pin1 {
-  width: max-content;
+    width: max-content;
 }
 
 .mission_cards .bi-heart-fill:hover,
 .mission_cards .bi-heart-fill:focus,
 .mission_cards .bi-heart-fill:active,
 .mission_cards .bi-heart-fill::selection {
-  fill: #b01e28;
+    fill: #b01e28;
 }
 
-mission_cards .bi-person-fill-add:hover,
+.mission_cards .bi-person-fill-add:hover,
 .mission_cards .bi-person-fill-add:focus,
 .mission_cards .bi-person-fill-add:active,
-.mission_cards .bi-person-fill-add::selection {
-  fill: #0b5ed7;
+.mission_cards .bi-person-fill-add::selection,
+.mission_details .bi-person-fill-add:hover,
+.mission_details .bi-person-fill-add:focus,
+.mission_details .bi-person-fill-add:active,
+.mission_details .bi-person-fill-add::selection {
+    fill: #0b5ed7;
+}
+
+.mission_cards .card_theme {
+    outline: none;
+    width: fit-content;
+    margin-top: -32px;
+    margin-bottom: 0px;
+}
+
+.mission_cards .time_goal_section {
+    margin-top: -12px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.h_fit_content {
+    height: fit-content;
+}
+
+.mission_cards .btn_apply {
+    width: 133px;
+    height: 48px;
+}
+
+.mission_details .time_goal_section {
+    margin-top: -20px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.mission_details .bg_progressbar {
+    background-color: var(--clr-orange);
+}
+
+.mission_details .mission_row_1_small_cards {
+    width: 153px;
+    min-height: 130px;
 }
 
 @media only screen and (max-width: 567px) {
-  /* .fs_6 {
+    /* .fs_6 {
     font-size: 12px;
   }
   .fs_7 {

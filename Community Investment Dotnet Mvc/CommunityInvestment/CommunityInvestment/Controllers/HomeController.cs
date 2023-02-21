@@ -16,6 +16,11 @@ namespace CommunityInvestment.Controllers
             return View();
         }
 
+        public IActionResult MissionDetail()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
