@@ -5,27 +5,27 @@
     ViewData["Title"] = "Mission Details";
 }
 
-<div class="container-container-fluid container-lg mission_details">
-    <div class="row">
-        <div class="container_wrapper col-lg-6">
+<div class="container-fluid container-lg mission_details">
+    <div class="row mb-4">
+        <div class="container_wrapper col-lg-6 border border-2">
         </div>
         <ul class="list-group list-group-flush mission_header col-lg-6">
             <li class="list-group-item">
-                <h1>CSR initiative stands for Coffee & Farmer Equity</h1>
-                <p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <h1 class="title">CSR initiative stands for Coffee & Farmer Equity</h1>
+                <p class="card-text my-4 short_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </li>
-            <li class="list-group-item text-center border-bottom-0">
-                <p class="border-opacity-50 rounded-pill border-1 bg-white mx-auto border border-secondary px-2 time_goal_section">
+            <li class="list-group-item text-center border-bottom-0 py-0">
+                <p class="border-opacity-50 rounded-pill border-1 bg-white mx-auto border border-secondary px-2 time_goal_section mb-0">
                     Plant 10,000 Trees
                 </p>
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item container">
                 <div class="row py-0">
                     <div class="d-flex flex-row col-6 justify-content-center">
                         <img src="~/assets/Seats-left.png" class="h_fit_content me-1" alt="volunteered" />
                         <div class="">
-                            <p class="py-0 my-0">10</p>
-                            <p class="py-0 my-0 text-muted">seats left</p>
+                            <p class="py-0 my-0 fw-bold">10</p>
+                            <p class="py-0 my-0 text-muted" style="font-size:16px;">seats left</p>
                         </div>
                     </div>
                     <div class="d-flex flex-row col-6">
@@ -34,67 +34,209 @@
                             <div class="progress" style="height:12px;">
                                 <div class="progress-bar bg_progressbar" role="progressbar" aria-label="Warning example" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <p class="py-0 my-0 text-muted">8000 achieved</p>
+                            <p class="py-0 my-0 text-">8000 achieved</p>
                         </div>
                     </div>
                 </div>
             </li>
             <li class="list-group-item container-fluid">
                 <div class="row my-4 g-2 g-md-0 gx-md-2 align-middle">
-                    <div class="col-md-6 text-center">
+                    <div class="col-sm-6 text-center">
                         <button type="submit" class="btn btn-light rounded-pill w-100  bg-transparent" style="border-color:#757575;">
-                            <img src="~/assets/heart1.png" />
-                            <span>Add to Favourite</span>
+                            <img src="/assets/heart1.png">
+                            <span class="btn_share_apply">Add to Favourite</span>
                         </button>
                     </div>
-                    <div class="col-md-6 text-center">
+                    <div class="col-sm-6 text-center">
                         <button type="submit" class="btn btn-light  rounded-pill w-100 bg-transparent" style="border-color:#757575;">
-                            <img src="~/assets/add1.png" alt="." />
-                            <span class="" >Recommand to a Co-worker</span> 
+                            <img src="/assets/add1.png" alt=".">
+                            <span class="d-lg-none d-xxl-inline btn_share_apply fw-bold ">Recommand to a Co-worker</span>
+                            <span class="d-none d-lg-inline d-xxl-none btn_share_apply">Share to Colleague</span>
                         </button>
                     </div>
                 </div>
             </li>
             <li class="list-group-item text-center border-bottom-0">
-                <div class="border-0 bg-white mx-auto px-2 time_goal_section" style="margin-top:-24px;" >
+                <div class="border-0 bg-white mx-auto px-2 time_goal_section" style="margin-top:-24px;">
                     @for (var i = 1; i <= 5; i++)
                     {
                         <img src="~/assets/star-empty.png" />
                     }
                 </div>
             </li>
-            <li class="list-group-item container">
-                <div class="row" >
-                    <div class="col-sm-6 col-md-3 mission_row_1_small_cards border border-2 ">
-                        <img src="/assets/pin1.png" class="" alt="location" style="width: fit-content;">
-                        <div>
-                            <p class="my-0 text-muted">City</p>
-                            <p class="my-0 text-dark fw-bold">London</p>
+            <li class="list-group-item border-0">
+                <div class="d-flex justify-content-between flex-row flex-wrap flex-sm-nowrap">
+                    <div class="border border-1 w-50 w-sm-25 mx-sm-2  filter_box d-flex justify-content-between flex-column">
+                        <img class="mt-1 ps-1" style="width:fit-content;" src="~/assets/pin1.png" alt="location">
+                        <div class="me-1 ps-1">
+                            <p class="mb-0">City</p>
+                            <p class="mb-0 fw-bold ">London</p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3  mission_row_1_small_cards border border-2 ">
-                        <img src="/assets/web.png" class="" alt="location" style="width: fit-content;">
-                        <div>
-                            <p class="my-0 text-muted">Theme</p>
-                            <p class="my-0 text-dark fw-bold">Environment</p>
+                    <div class="border border-1 w-50 w-sm-25 mx-sm-2 filter_box d-flex justify-content-between flex-column">
+                        <img class="mt-1 ps-1" style="width:fit-content;" src="~/assets/web.png" alt="location">
+                        <div class="me-1 ps-1">
+                            <p class="mb-0">Theme</p>
+                            <p class="mb-0 fw-bold ">Environment</p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3 mission_row_1_small_cards border border-2 ">
-                        <img src="/assets/calender.png" class="" alt="location" style="width: fit-content;">
-                        <div>
-                            <p class="my-0 text-muted">Date</p>
-                            <p class="my-0 text-dark fw-bold">Ongoing Oppertunity</p>
+                    <div class="border border-1 w-50 w-sm-25 mx-sm-2 filter_box d-flex justify-content-between flex-column">
+                        <img class="mt-1 ps-1" style="width:fit-content;" src="~/assets/calender.png" alt="location">
+                        <div class="me-1 ps-1">
+                            <p class="mb-0">Date</p>
+                            <p class="mb-0 fw-bold ">Ongoing oppertunity</p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3 mission_row_1_small_cards border border-2 ">
-                        <img src="/assets/organization.png" class="" alt="location" style="width: fit-content;">
-                        <div>
-                            <p class="my-0 text-muted">Organization</p>
-                            <p class="my-0 text-dark fw-bold">CSE Network</p>
+                    <div class="border border-1 w-50 w-sm-25 mx-sm-2 filter_box d-flex justify-content-between flex-column">
+                        <img class="mt-1 ps-1" style="width:fit-content;" src="~/assets/organization.png" alt="location">
+                        <div class="me-1 ps-1">
+                            <p class="mb-0">Organization</p>
+                            <p class="mb-0 fw-bold ">CSE Network</p>
                         </div>
                     </div>
                 </div>
             </li>
+            <li class="list-group-item border-0">
+            <li class="list-group-item border-0 mx-auto mt-2">
+                <button type="submit" class="btn btn-outline-warning custom_btn d-flex flex-row justify-content-center align-items-center btn_apply">
+                    <span class="px-4">Apply Now</span>
+                    <i class="bi bi-arrow-right px-2"></i>
+                </button>
+            </li>
         </ul>
     </div>
+    <div class="row d-flex justify-content-between my-4">
+        <div class="col-lg-7">
+            <nav class="">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#nav-mission" type="button" role="tab" aria-controls="nav-mission" aria-selected="true">Mission</button>
+                    <button class="nav-link" id="nav-organization-tab" data-bs-toggle="tab" data-bs-target="#nav-organization" type="button" role="tab" aria-controls="nav-organization" aria-selected="false">Organization</button>
+                    <button class="nav-link" id="nav-comments-tab" data-bs-toggle="tab" data-bs-target="#nav-comments" type="button" role="tab" aria-controls="nav-comments" aria-selected="false">Comments</button>
+                </div>
+            </nav>
+            <div class="tab-content " id="nav-tabContent">
+                <div class="tab-pane fade show active resolve_outline" id="nav-mission" role="tabpanel" aria-labelledby="nav-mission-tab" tabindex="0">
+                    <div class="mission_introduction my-4">
+                        <h5 class="fw-bold">Introduction</h5>
+                        <p class="mission_details_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+
+                    <div class="mission_challenge my-4">
+                        <h5 class="fw-bold">Challenge</h5>
+                        <p class="mission_details_para">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="mission_documents my-4">
+                        <h5 class="fw-bold">Documents</h5>
+                        <div class="d-flex flex-row flex-wrap ms-0">
+                            <a href="~/assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png" target="_blank" class="border rounded-pill mb-2 mb-sm-0 me-4 px-2 py-1">
+                                <img src="~/assets/pdf.png" alt="pdf" />
+                                <span class="doc_name"> lorem-ipsum.pdf</span>
+                            </a>
+                            <a href="~/assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png" target="_blank" class="border rounded-pill mb-2 mb-sm-0 me-4 px-2 py-1">
+                                <img src="~/assets/doc.png" alt="png" />
+                                <span class="doc_name"> at_vero_eos_accusamus.doc</span>
+                            </a>
+                            <a href="~/assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png" target="_blank" class="border rounded-pill mb-2 mb-sm-0 me-4 px-2 py-1">
+                                <img src="~/assets/xlsx.png" alt="xlsx" />
+                                <span class="doc_name"> important_doc.xls</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-organization" role="tabpanel" aria-labelledby="nav-organization-tab" tabindex="0">
+                </div>
+                <div class="tab-pane fade" id="nav-comments" role="tabpanel" aria-labelledby="nav-comments-tab" tabindex="0">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 mb-4">
+            <ul class="container list-group list-group-flush border border-2 px-2 mission_information">
+                <li class="list-group-item mb-0 position-relative">
+                    <h5 class="mission_details_info_heading">
+                        Information
+                        @*<div class="mission_details_info_heading position-absolute start-0 top-100" ></div>*@
+                    </h5>
+                </li>
+                <li class="list-group-item d-flex my-1">
+                    <p class="col-2 col-xxl-3 mb-0">Skills</p>
+                    <p class="col-10 col-xxl-9 mb-0 d-flex justify-content-end justify-content-sm-start">
+                        <span>Cool,</span>
+                        <span>Easy going,</span>
+                        <span>Math,</span>
+                        <span>Computer</span>
+                    </p>
+                </li>
+                <li class="list-group-item d-flex my-1">
+                    <p class="col-2 col-xxl-3 mb-0">Days</p>
+                    <p class="col-10 col-xxl-9 mb-0 d-flex justify-content-end justify-content-sm-start">Weekend only</p>
+                </li>
+                <li class="list-group-item d-flex my-1">
+                    <p class="col-2 col-xxl-3 mb-0">Rating</p>
+                    <p class="col-10 col-xxl-9 mb-0 d-flex justify-content-end justify-content-sm-start">
+                        <img src="~/assets/selected-star.png" alt="rating">
+                        <img src="~/assets/selected-star.png" alt="rating">
+                        <img src="~/assets/selected-star.png" alt="rating">
+                        <img src="~/assets/selected-star.png" alt="rating">
+                        <img src="~/assets/selected-star.png" alt="rating">
+                        <span>(by 125 users)</span>
+                    </p>
+                </li>
+            </ul>
+            <div class="my-4">
+                <ul class="list-group list-group-flush container border border-2 px-2">
+                    <li class="list-group-item">
+                        <h5 class="mission_details_info_heading">Recent Volunteeres</h5>
+                    </li>
+                    <li class="list-group-item container mt-4 ">
+                        <div class="row">
+                            @for (var i = 1; i <= 9; i++)
+                            {
+
+                                @if (i % 3 == 0)
+                                {
+                                    <div class="col-6 col-sm-4 d-flex flex-column align-items-center justify-content-center my-lg-2 py-lg-2">
+                                        <img src="~/assets/volunteer3.png" width="70px" height="70px" class="rounded-circle" alt="v1" />
+                                        <p>Andrew Johnson</p>
+                                    </div>
+                                }
+                                @if (i % 3 == 1)
+                                {
+                                    <div class="col-6 col-sm-4 d-flex flex-column align-items-center my-lg-2 py-lg-2">
+                                        <img src="~/assets/volunteer2.png" width="70px" height="70px" class="rounded-circle" alt="v1" />
+                                        <p>Andrew Johnson</p>
+                                    </div>
+                                }
+                                @if (i % 3 == 2)
+                                {
+                                    <div class="col-6 col-sm-4 d-flex flex-column align-items-center my-lg-2 py-lg-2">
+                                        <img src="~/assets/volunteer1.png" width="70px" height="70px" class="rounded-circle" alt="v1" />
+                                        <p>Andrew Johnson</p>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </li>
+                    <li class="list-group-item container-fluid">
+                        <div class="row">
+                            <div class="col-2 prev_volunteer">
+                                <a href="#" class="text-dark"><i class="bi bi-chevron-compact-left"></i></a>
+                            </div>
+                            <div class="total_volunteer col-8 text-center">
+                                <span class="d-none d-sm-inline-block">1-9 of recent 25 volunteeres</span>
+                                <span class="d-sm-none">recent volunteeres</span>
+                            </div>
+                            <div class="next_volunteer col-2 text-end">
+                                <a href="#" class="text-dark"><i class="bi bi-chevron-compact-right"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
+
+

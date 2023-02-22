@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tYhhYhyu6NJzig7NOlWvmK0kHkVXdHPyPQqZzBlHoOM=",
+  "Hash": "h71m9mFIIG0boW9cgS61EbckemCluAKpgRTkNXPm8X4=",
   "Source": "CommunityInvestment",
   "BasePath": "_content/CommunityInvestment",
   "Mode": "Default",
@@ -1887,6 +1887,23 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\css\\slider.css",
+      "SourceId": "CommunityInvestment",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "BasePath": "_content/CommunityInvestment",
+      "RelativePath": "css/slider.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\slider.css"
+    },
+    {
       "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\favicon.ico",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
@@ -1902,6 +1919,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\js\\missionDetails.js",
+      "SourceId": "CommunityInvestment",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "BasePath": "_content/CommunityInvestment",
+      "RelativePath": "js/missionDetails.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\missionDetails.js"
     },
     {
       "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\js\\site.js",

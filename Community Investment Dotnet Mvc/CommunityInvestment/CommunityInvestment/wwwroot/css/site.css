@@ -51,6 +51,10 @@ input[type="search"]::-webkit-search-results-decoration {
     display: none;
 }
 
+.resolve_outline:focus {
+    outline: none;
+}
+
 .carousel h1 {
     font-weight: bold;
 }
@@ -216,17 +220,73 @@ header .header_profile .profile_img {
     margin-top: -20px;
     width: fit-content;
     cursor: pointer;
+    font-size: 17.58px;
+    color: #414141;
 }
 
 .mission_details .bg_progressbar {
     background-color: var(--clr-orange);
 }
 
-.mission_details .mission_row_1_small_cards {
-    width: 153px;
-    min-height: 130px;
+.mission_details .filter_box {
+    height: 130px;
 }
 
+    .mission_details .filter_box p {
+        font-size: 16px;
+    }
+
+.mission_details .title {
+    font-size: 38px;
+    color: #414141;
+}
+
+.mission_details .short_desc {
+    font-size: 17px;
+    color: #414141;
+}
+
+.mission_details .btn_share_apply {
+    font-size: 17px;
+    color: #757575;
+}
+
+.mission_details .btn_apply {
+    font-size: 20px;
+}
+
+.mission_details .mission_details_para,
+.mission_details .doc_name {
+    color: #414141;
+    font-size: 15px;
+}
+
+.mission_details .mission_introduction > h5,
+.mission_details .mission_organization > h5,
+.mission_details .mission_challenge > h5 {
+    font-size: 25px;
+    color: #414141;
+}
+
+.mission_details .mission_information * {
+    font-size: 15px;
+    color: #414141;
+}
+
+.mission_details .mission_details_info_heading {
+    font-size: 22px;
+    font-weight: bold;
+}
+/*.mission_details .prev_volunteer {
+    width: 15%;
+    border-right: 1px solid #414141;
+}
+
+.mission_details .next_volunteer {
+    border-left: 1px solid #414141;
+    width: 15%;
+}
+*/
 @media only screen and (max-width: 567px) {
     /* .fs_6 {
     font-size: 12px;
@@ -235,3 +295,7 @@ header .header_profile .profile_img {
     font-size: 14px;
   } */
 }
+
+/*.mission_details * {
+    border: 1px solid blue;
+}*/
