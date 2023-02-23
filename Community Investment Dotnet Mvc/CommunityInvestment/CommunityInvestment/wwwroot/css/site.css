@@ -159,6 +159,11 @@ header .header_profile .profile_img {
         }
 }
 
+.text_orange {
+    color: var(--clr-orange);
+    font-weight: bold;
+}
+
 .fs_6 {
     font-size: 24px;
 }
@@ -276,7 +281,76 @@ header .header_profile .profile_img {
 .mission_details .mission_details_info_heading {
     font-size: 22px;
     font-weight: bold;
+    padding-bottom: 16px;
+    border-bottom: 2px solid black;
 }
+
+.mission_details .nav.nav-tabs .nav-link.active {
+    border: none;
+    border-bottom: 2px solid #757575;
+    font-weight: bold;
+    transition: border-bottom 1s;
+    transition-timing-function: ease-in-out;
+}
+
+    .mission_details .nav.nav-tabs .nav-link.active:hover {
+        color: black;
+    }
+
+.mission_details .nav.nav-tabs .nav-link {
+    border: none;
+    outline: none;
+    color: #757575;
+}
+
+.mission_details .nav_comment_input {
+    /*min-height: 100px;*/
+}
+
+.mission_details #nav-comments:focus {
+    outline: none;
+}
+
+.mission_details .comment_box.nested_border {
+    margin-left: 24px !important;
+    border-top: 1px solid var(--clr-orange);
+}
+
+.main-slider {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 70%;
+    height: 500px;
+    box-shadow: 0 0 3px grey;
+    position: relative;
+}
+
+.sliderNav {
+    position: absolute;
+    height: 120px;
+    width: 96.5%;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+
+    .sliderNav button {
+        z-index: 50;
+        position: absolute;
+        height: 100px;
+        opacity: 0.6;
+        background: black;
+        color: white;
+    }
+
+.slide {
+    position: absolute;
+    height: 100px;
+    width: 24%;
+    transition: 1s;
+}
+
 /*.mission_details .prev_volunteer {
     width: 15%;
     border-right: 1px solid #414141;

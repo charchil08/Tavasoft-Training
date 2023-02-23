@@ -8,6 +8,7 @@
 <div class="container-fluid container-lg mission_details">
     <div class="row mb-4">
         <div class="container_wrapper col-lg-6 border border-2">
+
         </div>
         <ul class="list-group list-group-flush mission_header col-lg-6">
             <li class="list-group-item">
@@ -44,14 +45,14 @@
                     <div class="col-sm-6 text-center">
                         <button type="submit" class="btn btn-light rounded-pill w-100  bg-transparent" style="border-color:#757575;">
                             <img src="/assets/heart1.png">
-                            <span class="btn_share_apply">Add to Favourite</span>
+                            <span class="btn_share_apply fw-bold">Add to Favourite</span>
                         </button>
                     </div>
                     <div class="col-sm-6 text-center">
                         <button type="submit" class="btn btn-light  rounded-pill w-100 bg-transparent" style="border-color:#757575;">
                             <img src="/assets/add1.png" alt=".">
                             <span class="d-lg-none d-xxl-inline btn_share_apply fw-bold ">Recommand to a Co-worker</span>
-                            <span class="d-none d-lg-inline d-xxl-none btn_share_apply">Share to Colleague</span>
+                            <span class="d-none d-lg-inline d-xxl-none btn_share_apply fw-bold">Share to Colleague</span>
                         </button>
                     </div>
                 </div>
@@ -108,14 +109,23 @@
     <div class="row d-flex justify-content-between my-4">
         <div class="col-lg-7">
             <nav class="">
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#nav-mission" type="button" role="tab" aria-controls="nav-mission" aria-selected="true">Mission</button>
-                    <button class="nav-link" id="nav-organization-tab" data-bs-toggle="tab" data-bs-target="#nav-organization" type="button" role="tab" aria-controls="nav-organization" aria-selected="false">Organization</button>
-                    <button class="nav-link" id="nav-comments-tab" data-bs-toggle="tab" data-bs-target="#nav-comments" type="button" role="tab" aria-controls="nav-comments" aria-selected="false">Comments</button>
+                <div class="nav nav-tabs" id="myTab" role="tablist">
+                    <button class="nav-link active" id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#nav-mission" type="button" role="tab" aria-controls="nav-mission" aria-selected="true">
+                        <span class="d-none d-sm-inline-block">Mission </span>
+                        <span class="d-sm-none"><img src="~/assets/mission.png" alt="mission" width="18px" /></span>
+                    </button>
+                    <button class="nav-link" id="nav-organization-tab" data-bs-toggle="tab" data-bs-target="#nav-organization" type="button" role="tab" aria-controls="nav-organization" aria-selected="false">
+                        <span class="d-none d-sm-inline-block">Organization </span>
+                        <span class="d-sm-none"><i class="bi bi-building"></i></span>
+                    </button>
+                    <button class="nav-link" id="nav-comments-tab" data-bs-toggle="tab" data-bs-target="#nav-comments" type="button" role="tab" aria-controls="nav-comments" aria-selected="false">
+                        <span class="d-none d-sm-inline-block">Comments </span>
+                        <span class="d-sm-none"><i class="bi bi-chat-dots"></i></span>
+                    </button>
                 </div>
             </nav>
             <div class="tab-content " id="nav-tabContent">
-                <div class="tab-pane fade show active resolve_outline" id="nav-mission" role="tabpanel" aria-labelledby="nav-mission-tab" tabindex="0">
+                <div class="tab-pane fade show active resolve_outline" style="" id="nav-mission" role="tabpanel" aria-labelledby="nav-mission-tab" tabindex="0">
                     <div class="mission_introduction my-4">
                         <h5 class="fw-bold">Introduction</h5>
                         <p class="mission_details_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -147,18 +157,158 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="nav-organization" role="tabpanel" aria-labelledby="nav-organization-tab" tabindex="0">
+                    <div class="org_header my-4">
+                        <div class="d-flex flex-column flex-sm-row justify-content-around align-items-center">
+                            <img src="/assets/CSE NEtwork.png" alt="logo" width="100px" class="rounded rounded-pill">
+                            <div class="my-2 my-sm-0">
+                                <h5>CSE Indeustrial Solution Network</h5>
+                                <p>
+                                    <i class="bi bi-person"></i> &nbsp;
+                                    <span> Charchil Kajaliya, Managing Director </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org_desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <a href="#" target="_blank" class="text_orange">See more...</a>
+                    </div>
+                    <div class="org_address my-4">
+
+                        <p class="d-flex">
+                            <i class="bi bi-geo-alt"></i>
+                            <span class="ps-4">4456, Gen X building, Opera Sky, New York</span>
+                        </p>
+                        <p class="">
+                            <i class="bi bi-telephone"></i>
+                            <span class="ps-4">+1 503-242-7810</span>
+                        </p>
+                        <p class="">
+                            <i class="bi bi-envelope"></i>
+                            <span class="ps-4">inquiry@cse.com</span>
+                        </p>
+                        <p class="">
+                            <i class="bi bi-link"></i>
+                            <span class="ps-4">www.csenetwork.com</span>
+                        </p>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="nav-comments" role="tabpanel" aria-labelledby="nav-comments-tab" tabindex="0">
+                <div class="tab-pane fade my-4" id="nav-comments" role="tabpanel" aria-labelledby="nav-comments-tab" tabindex="0">
+                    <form method="post" class="my-4 nav_comment_form">
+                        <div class="d-flex flex-column my-3 ">
+                            <label for="comments" class="py-2 fw-bold">Comments</label>
+                            <textarea name="comment" class="nav_comment_input py-1 px-2 border border-1" placeholder="Enter your comments ..." maxlength="600"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-warning custom_btn d-flex flex-row justify-content-center align-items-center "> Post Comment </button>
+                    </form>
+                    <div class="container p-2 bg-light" style="max-height:500px;overflow-y:auto;scroll-behavior:smooth;">
+                        <div class="comment_box rounded-2 p-2 my-3 mx-2 bg-white">
+                            <div class="comment_header mb-1">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/volunteer3.png" alt="profile-pic" class="rounded-circle" width="50px">
+                                    <div class="ms-2 comment_info">
+                                        <p class="mb-0">Arnold Hubler</p>
+                                        <p class="mb-0 text-muted">Thursday, Feb 2023, 10:30 AM</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment_text">
+                                <p class="mb-0">
+                                    The fog was as thick as pea soup. This was a problem. Gary was driving but couldn't see a thing in front of him. He knew he should stop, but the road was narrow so if he did.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="comment_box rounded-2 p-2 my-3 mx-2 bg-white">
+                            <div class="comment_header mb-1">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/volunteer3.png" alt="profile-pic" class="rounded-circle" width="50px">
+                                    <div class="ms-2 comment_info">
+                                        <p class="mb-0">Arnold Hubler</p>
+                                        <p class="mb-0 text-muted">Thursday, Feb 2023, 10:30 AM</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment_text">
+                                <p class="mb-0">
+                                    The fog was as thick as pea soup. This was a problem. Gary was driving but couldn't see a thing in front of him. He knew he should stop, but the road was narrow so if he did.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="comment_box rounded-2 p-2 my-3 mx-2 bg-white">
+                            <div class="comment_header mb-1">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/volunteer3.png" alt="profile-pic" class="rounded-circle" width="50px">
+                                    <div class="ms-2 comment_info">
+                                        <p class="mb-0">Arnold Hubler</p>
+                                        <p class="mb-0 text-muted">Thursday, Feb 2023, 10:30 AM</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment_text">
+                                <p class="mb-0">
+                                    The fog was as thick as pea soup. This was a problem. Gary was driving but couldn't see a thing in front of him. He knew he should stop, but the road was narrow so if he did.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="comment_box rounded-2 p-2 my-3 mx-2 bg-white">
+                            <div class="comment_header mb-1">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/volunteer3.png" alt="profile-pic" class="rounded-circle" width="50px">
+                                    <div class="ms-2 comment_info">
+                                        <p class="mb-0">Arnold Hubler</p>
+                                        <p class="mb-0 text-muted">Thursday, Feb 2023, 10:30 AM</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment_text">
+                                <p class="mb-0">
+                                    The fog was as thick as pea soup. This was a problem. Gary was driving but couldn't see a thing in front of him. He knew he should stop, but the road was narrow so if he did.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="comment_box rounded-2 p-2 my-3 mx-2 bg-white">
+                            <div class="comment_header mb-1">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/volunteer3.png" alt="profile-pic" class="rounded-circle" width="50px">
+                                    <div class="ms-2 comment_info">
+                                        <p class="mb-0">Arnold Hubler</p>
+                                        <p class="mb-0 text-muted">Thursday, Feb 2023, 10:30 AM</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment_text">
+                                <p class="mb-0">
+                                    The fog was as thick as pea soup. This was a problem. Gary was driving but couldn't see a thing in front of him. He knew he should stop, but the road was narrow so if he did.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="comment_box rounded-2 p-2 my-3 mx-2 bg-white nested_border">
+                            <div class="comment_header mb-1">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/volunteer3.png" alt="profile-pic" class="rounded-circle" width="50px">
+                                    <div class="ms-2 comment_info">
+                                        <p class="mb-0">Arnold Hubler</p>
+                                        <p class="mb-0 text-muted">Thursday, Feb 2023, 10:30 AM</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment_text">
+                                <p class="mb-0">
+                                    The fog was as thick as pea soup. This was a problem. Gary was driving but couldn't see a thing in front of him. He knew he should stop, but the road was narrow so if he did.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-lg-5 mb-4">
             <ul class="container list-group list-group-flush border border-2 px-2 mission_information">
-                <li class="list-group-item mb-0 position-relative">
-                    <h5 class="mission_details_info_heading">
+                <li class=" mb-0 position-relative" style="list-style:none;">
+                    <span class="mission_details_info_heading">
                         Information
-                        @*<div class="mission_details_info_heading position-absolute start-0 top-100" ></div>*@
-                    </h5>
+                    </span>
+                    <hr style="margin-top: 16px;margin-bottom: 0px;">
                 </li>
                 <li class="list-group-item d-flex my-1">
                     <p class="col-2 col-xxl-3 mb-0">Skills</p>
@@ -187,8 +337,11 @@
             </ul>
             <div class="my-4">
                 <ul class="list-group list-group-flush container border border-2 px-2">
-                    <li class="list-group-item">
-                        <h5 class="mission_details_info_heading">Recent Volunteeres</h5>
+                    <li class=" mb-0 position-relative" style="list-style:none;">
+                        <span class="mission_details_info_heading">
+                            Recent volunteeres
+                        </span>
+                        <hr style="margin-top: 16px;margin-bottom: 0px;">
                     </li>
                     <li class="list-group-item container mt-4 ">
                         <div class="row">
@@ -237,6 +390,5 @@
             </div>
         </div>
     </div>
+
 </div>
-
-
