@@ -1,43 +1,47 @@
-﻿function ThumbnailPlugin(main) {
-    return (slider) => {
-        function removeActive() {
-            slider.slides.forEach((slide) => {
-                slide.classList.remove("active")
-            })
-        }
-        function addActive(idx) {
-            slider.slides[idx].classList.add("active")
-        }
+﻿//Dropdown slider script
+$(document).ready(function () {
+    const slides = document.querySelectorAll(".slide")
+    const vid = document.querySelectorAll("video.slide")
+    let totalImgInSlider = 4;
+    const totalImg = 6;
+    var counter = 0;
 
-        function addClickEvents() {
-            slider.slides.forEach((slide, idx) => {
-                slide.addEventListener("click", () => {
-                    main.moveToIdx(idx)
-                })
-            })
-        }
-
-        slider.on("created", () => {
-            addActive(slider.track.details.rel)
-            addClickEvents()
-            main.on("animationStarted", (main) => {
-                removeActive()
-                const next = main.animator.targetIdx || 0
-                addActive(main.track.absToRel(next))
-                slider.moveToIdx(Math.min(slider.track.details.maxIdx, next))
-            })
+    const leftChanges = () => {
+        slides.forEach((slider, index) => {
+            slider.style.left = `${index * 100 / totalImgInSlider}%`
         })
     }
-}
-var slider = new KeenSlider("#my-keen-slider")
-var thumbnails = new KeenSlider(
-    "#thumbnails",
-    {
-        initial: 0,
-        slides: {
-            perView: 4,
-            spacing: 10,
-        },
-    },
-    [ThumbnailPlugin(this.slider)]
-)
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth < 576) {
+            totalImgInSlider = 1;
+        } else {
+            totalImgInSlider = 4;
+        }
+        leftChanges();
+    }, true);
+
+    leftChanges();
+
+    slideImg = () => {
+        slides.forEach((slider) => {
+            slider.style.transform = `translateX(-${counter * 100}%)`
+        })
+    }
+
+    goPrev = () => {
+        if (counter != 0)
+            counter--;
+        slideImg();
+    }
+
+    goNext = () => {
+        if (counter < totalImg - totalImgInSlider)
+            counter++;
+        slideImg();
+    }
+
+    setImage = () => {
+        document.getElementById("demo").src = document.querySelector(".slide.active").src;
+    }
+});

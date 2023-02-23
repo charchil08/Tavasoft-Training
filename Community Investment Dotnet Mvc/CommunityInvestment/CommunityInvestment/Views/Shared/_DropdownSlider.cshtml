@@ -1,0 +1,138 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<script src="~/lib/jquery/dist/jquery.min.js" ></script>
+<script src="~/js/missionDetails.js" ></script>
+
+<display>
+    <img style="height: 520px; width: 100%;object-fit: cover;" id="demo" src="/assets/Nourish-the-Children-in--African-country.png" alt="">
+</display>
+<div class="sliderNav">
+
+
+    <div><img class="slide " src="/assets/Grow-Trees-On-the-path-to-environment-sustainability-1.png" alt="can't rendor"></div>
+    <div><img class="slide " src="/assets/Nourish-the-Children-in--African-country.png" alt="can't rendor"></div>
+    <div><img class="slide" src="/assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-6.png" alt="can't rendor"></div>
+    <div><img class="slide" src="/assets/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" alt="can't rendor"></div>
+    <div><img class="slide" src="/assets/Grow-Trees-On-the-path-to-environment-sustainability-4.png" alt="can't rendor"></div>
+    <div><img class="slide" src="/assets/Animal-welfare-&-save-birds-campaign-1.png" alt="can't rendor"></div>
+
+    <button onclick="goPrev()" style="left:0" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+        </svg>
+    </button>
+    <button onclick="goNext()" style="right:0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+        </svg>
+    </button>
+    <script>
+
+        $("img.slide").on('click', function (event) {
+        $('.slide.active').removeClass('active');
+        $(this).addClass("active");
+        setImage();
+        });
+    </script>
+</div>
+
+@*<div class="main_img">
+    <img src="~/assets/Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png" alt="Education-Supplies-for-Every--Pair-of-Shoes-Sold" id="s_img" style="width:100%;" />
+    </div>
+    <div class="nav_slider">
+
+    <img class="slider active" src="~/assets/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" />
+
+
+    <img class="slider" src="~/assets/img33.png" />
+
+
+    <img class="slider" src="~/assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-6.png" />
+
+
+    <img class="slider" src="~/assets/img3.png" />
+
+
+    <img class="slider" src="~/assets/Animal-welfare-&-save-birds-campaign.png" />
+
+
+    <img class="slider" src="~/assets/Plantation-and-Afforestation-programme-1.png" />
+
+
+    <img class="slider" src="~/assets/Grow-Trees-On-the-path-to-environment-sustainability-5.png" />
+
+
+    <img class="slider" src="~/assets/image1.png" />
+
+
+    <img class="slider" src="~/assets/image2.png" />
+
+
+    <img class="slider" src="~/assets/image22.png" />
+
+
+    <button class="prev_btn">
+    <i class="bi bi-chevron-compact-left"></i>
+    </button>
+
+    <button class="next_btn" style="right:0;">
+    <i class="bi bi-chevron-compact-right"></i>
+    </button>
+
+    </div>*@
+
+
+
+@*<script>
+
+    const SliderImages = document.querySelectorAll(".slider");
+    let totalImages = SliderImages.length;
+    let noOfImgSlider = 4;
+    let current = 0;
+
+    SliderImages.forEach((slide, index) => {
+    slide.style.left = `${index * 100 / noOfImgSlider}%`;
+    slide.style.width = `${100 / noOfImgSlider}%`;
+    });
+
+    const slideImg = () => {
+    SliderImages.forEach((slide, index) => {
+    slide.style.transform = `translateX(-${current * 100})`;
+    })
+    };
+
+    const goPrevious = () => {
+    if(current != 0) {
+    current--;
+    }
+    slideImg();
+    }
+
+    const goNext = () => {
+    if(current < totalImages - noOfImgSlider) {
+    current++;
+    }
+    slideImg();
+    }
+
+    const setImg = () => {
+    document.getElementById('#s_img').src = document.querySelector(".slider.active").src;
+    }
+
+    document.querySelector(".prev_btn").addEventListener("click", goPrevious);
+    document.querySelector(".next_btn").addEventListener("click", goNext);
+
+    document.querySelector('img.slider').addEventListener("click",(e)=> {
+    document.querySelector('.slider.active').classList.remove('active');
+    const targetImg = e.target;
+    console.log(targetImg);
+    targetImg.setAttribute('class','slider active');
+    console.log(targetImg);
+
+    });
+
+    </script>*@

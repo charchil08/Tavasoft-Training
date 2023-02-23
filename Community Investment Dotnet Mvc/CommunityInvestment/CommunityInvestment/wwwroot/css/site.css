@@ -316,41 +316,6 @@ header .header_profile .profile_img {
     border-top: 1px solid var(--clr-orange);
 }
 
-.main-slider {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 70%;
-    height: 500px;
-    box-shadow: 0 0 3px grey;
-    position: relative;
-}
-
-.sliderNav {
-    position: absolute;
-    height: 120px;
-    width: 96.5%;
-    overflow: hidden;
-    background: rgb(255, 255, 255);
-    padding: 10px 0;
-}
-
-    .sliderNav button {
-        z-index: 50;
-        position: absolute;
-        height: 100px;
-        opacity: 0.6;
-        background: black;
-        color: white;
-    }
-
-.slide {
-    position: absolute;
-    height: 100px;
-    width: 24%;
-    transition: 1s;
-}
-
 /*.mission_details .prev_volunteer {
     width: 15%;
     border-right: 1px solid #414141;
@@ -361,15 +326,81 @@ header .header_profile .profile_img {
     width: 15%;
 }
 */
-@media only screen and (max-width: 567px) {
-    /* .fs_6 {
-    font-size: 12px;
-  }
-  .fs_7 {
-    font-size: 14px;
-  } */
-}
-
 /*.mission_details * {
     border: 1px solid blue;
 }*/
+
+.mission_details .slider_wrapper {
+    box-sizing: border-box;
+    height: 620px;
+    position: relative;
+}
+
+.mission_details .main_img > img {
+    height: 500px;
+    width: 100%;
+}
+
+.mission_details .nav_slider {
+    height: 120px;
+    overflow: hidden;
+}
+
+    .mission_details .nav_slider .slide {
+        height: 120px;
+    }
+
+.mission_details .main-slider {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 70%;
+    height: 500px;
+    box-shadow: 0 0 3px grey;
+    position: relative;
+}
+
+.mission_details .sliderNav {
+    position: relative;
+    height: 120px;
+    width: 100%;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    padding: 4px;
+}
+
+    .mission_details .sliderNav button {
+        z-index: 50;
+        position: absolute;
+        height: 100px;
+        opacity: 0.6;
+        background: black;
+        color: white;
+    }
+
+.mission_details .slide {
+    position: absolute;
+    height: 100px;
+    width: 24%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:576px) {
+    .mission_details display {
+        display: none;
+    }
+
+    .mission_details .sliderNav {
+        height: 620px;
+    }
+
+    .mission_details .slide {
+        width: 100%;
+        height: 620px;
+    }
+
+    .mission_details .sliderNav button {
+        top: 50%;
+    }
+}
