@@ -408,3 +408,44 @@ header .header_profile .profile_img {
         top: 50%;
     }
 }
+
+.story_list_page .story_banner {
+    background: url(.././assets/Grow-Trees-On-the-path-to-environment-sustainability-login.png);
+    width: 100%;
+    height: 400px;
+    background-position-y: -300px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+    .story_list_page .story_banner p {
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .story_list_page .story_banner > button:hover {
+        transform: scale(1.2);
+        transition: all .5s;
+    }
+
+.story_banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    opacity: .35;
+}
+
+.story_list_page .story_banner > * {
+    z-index: 2;
+}
+
+.story_list_page .story_theme {
+    margin-top: -28px;
+    width: fit-content;
+}
+
+.story_list_page .nested_card:hover .card-img-overlay {
+    display: flex !important;
+}
