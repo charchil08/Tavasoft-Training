@@ -99,6 +99,21 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: var(--clr-gray);
 }
 
+.active > .page-link, .page-link.active {
+    background-color: var(--clr-orange);
+    border-color: var(--clr-orange);
+    color: white !important;
+}
+
+.disable_link {
+    pointer-events: none;
+    background-color: #808080;
+}
+
+    .disable_link span > i {
+        color: white;
+    }
+
 header .header_profile .profile_img {
     width: 40px;
     height: 40px;

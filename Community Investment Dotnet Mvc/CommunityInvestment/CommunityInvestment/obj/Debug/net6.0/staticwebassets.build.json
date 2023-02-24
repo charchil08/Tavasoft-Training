@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vBpCkJZdiSzuNXjf2g8b3xWAR+8jyjqO8FIY0eQMv08=",
+  "Hash": "5Vk0EsRX2AWAcHmDwrbMtMA+fW6iFw/KIKVnKigYoGU=",
   "Source": "CommunityInvestment",
   "BasePath": "_content/CommunityInvestment",
   "Mode": "Default",
@@ -1970,6 +1970,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\js\\storyList.js",
+      "SourceId": "CommunityInvestment",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "BasePath": "_content/CommunityInvestment",
+      "RelativePath": "js/storyList.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\storyList.js"
     },
     {
       "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
