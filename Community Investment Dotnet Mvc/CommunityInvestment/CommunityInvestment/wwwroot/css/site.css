@@ -386,6 +386,10 @@ header .header_profile .profile_img {
     cursor: pointer;
 }
 
+.mission_details .recent_volunteers_wrapper {
+    transition: all .5s;
+}
+
 @media only screen and (max-width:576px) {
     .mission_details display {
         display: none;
