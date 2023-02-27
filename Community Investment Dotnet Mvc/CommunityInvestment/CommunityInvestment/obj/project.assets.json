@@ -3184,6 +3184,20 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "CommunityInvestment.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.3",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.3"
+        },
+        "compile": {
+          "bin/placeholder/CommunityInvestment.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommunityInvestment.Model.dll": {}
+        }
       }
     }
   },
@@ -9727,10 +9741,16 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "CommunityInvestment.Model/1.0.0": {
+      "type": "project",
+      "path": "../CommunityInvestment.Model/CommunityInvestment.Model.csproj",
+      "msbuildProject": "../CommunityInvestment.Model/CommunityInvestment.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CommunityInvestment.Model >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.3",
@@ -9772,7 +9792,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment.Model\\CommunityInvestment.Model.csproj": {
+              "projectPath": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment.Model\\CommunityInvestment.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

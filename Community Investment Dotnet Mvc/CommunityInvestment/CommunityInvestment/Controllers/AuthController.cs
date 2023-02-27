@@ -51,17 +51,17 @@ namespace CommunityInvestment.Controllers
         public IActionResult LostPassword(User user)
         {
             if (user.Email == null) { return NotFound(); }
-            //var obj = _context.Users.FirstOrDefault(y => y.Email == user.Email);
-            //if (obj == null)
-            //{
-            //    return NotFound("User not found");
-            //}
+            var obj = _context.Users.FirstOrDefault(y => y.Email == user.Email);
+            if (obj == null)
+            {
+                return NotFound("User not found");
+            }
 
             var mailMessage = new MailMessage
             {
                 Subject = "Reset your password",
                 Body = "<h1>Reset your password with given link ...</h1>",
-                IsBodyHtml = true,
+                IsBodyHtml = false,
             };
             mailMessage.To.Add(user.Email);
 
@@ -71,7 +71,7 @@ namespace CommunityInvestment.Controllers
                 Credentials = new NetworkCredential("collectordesk123@gmail.com", "slqrgnuxeuwylhil"),
                 EnableSsl = true
             };
-            smtpClient.Send("collectordesk123@gmail.com",user.Email,mailMessage.Subject,mailMessage.Body);
+            smtpClient.Send("collectordesk123@gmail.com", user.Email, mailMessage.Subject, mailMessage.Body);
 
             return RedirectToAction("Index", "Home");
         }

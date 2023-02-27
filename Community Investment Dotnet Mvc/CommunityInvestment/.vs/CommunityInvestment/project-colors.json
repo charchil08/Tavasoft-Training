@@ -15,7 +15,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "577599ea-1535-47f9-ab3c-b24cbd0f6aa2": {
+      "ProjectGuid": "577599ea-1535-47f9-ab3c-b24cbd0f6aa2",
+      "DisplayName": "CommunityInvestment.Model",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }

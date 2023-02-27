@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunityInvestment", "CommunityInvestment\CommunityInvestment.csproj", "{8714EADB-138C-4E48-8A09-02226DDB2FAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityInvestment.Model", "CommunityInvestment.Model\CommunityInvestment.Model.csproj", "{577599EA-1535-47F9-AB3C-B24CBD0F6AA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8714EADB-138C-4E48-8A09-02226DDB2FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8714EADB-138C-4E48-8A09-02226DDB2FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8714EADB-138C-4E48-8A09-02226DDB2FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{577599EA-1535-47F9-AB3C-B24CBD0F6AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{577599EA-1535-47F9-AB3C-B24CBD0F6AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{577599EA-1535-47F9-AB3C-B24CBD0F6AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{577599EA-1535-47F9-AB3C-B24CBD0F6AA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
