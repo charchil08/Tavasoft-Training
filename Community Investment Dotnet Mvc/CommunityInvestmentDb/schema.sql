@@ -604,22 +604,203 @@ GO
 
 
 ALTER TABLE city
-ADD CONSTRAINT fk_country_countryId__countryId 
+ADD CONSTRAINT fk_country_countryId__city__countryId 
 FOREIGN KEY (country_id) REFERENCES country(country_id)
 GO
 
 
 ALTER TABLE comment
-ADD CONSTRAINT fk_user_userId__userId 
+ADD CONSTRAINT fk_user_userId__comment__userId 
 FOREIGN KEY (user_id) REFERENCES [user](user_id)
 GO
 
+
 ALTER TABLE comment
-ADD CONSTRAINT fk_mission_missionId__missionId 
+ADD CONSTRAINT fk_mission_missionId__comment__missionId 
 FOREIGN KEY (mission_id) REFERENCES [mission](mission_id)
 GO
 
 ALTER TABLE comment
-ADD CONSTRAINT fk_approvalStatus_approvalStatusId__approvalStatusId 
+ADD CONSTRAINT fk_approvalStatus_approvalStatusId__comment__approvalStatusId 
 FOREIGN KEY (approval_status_id) REFERENCES [approval_status](approval_status_id)
+GO
+
+ALTER TABLE favourite_mission
+ADD CONSTRAINT fk_user_userId__favouriteMission__userId 
+FOREIGN KEY (user_id) REFERENCES [user](user_id)
+GO
+
+ALTER TABLE favourite_mission
+ADD CONSTRAINT fk_mission_missionId__favouriteMission__missionId 
+FOREIGN KEY (mission_id) REFERENCES [mission](mission_id)
+GO
+
+
+ALTER TABLE goal_mission
+ADD CONSTRAINT fk_mission_missionId__goalMission__missionId 
+FOREIGN KEY (mission_id) REFERENCES [mission](mission_id)
+GO
+
+ALTER TABLE mission
+ADD CONSTRAINT fk_missionTheme_missionThemeId__mission__missionThemeId 
+FOREIGN KEY (mission_theme_id) REFERENCES [mission_theme](mission_theme_id)
+GO
+
+ALTER TABLE mission
+ADD CONSTRAINT fk_city_cityId__mission__cityId 
+FOREIGN KEY (city_id) REFERENCES [city](city_id)
+GO
+
+ALTER TABLE mission
+ADD CONSTRAINT fk_country_countryId__mission__countryId 
+FOREIGN KEY (country_id) REFERENCES [country](country_id)
+GO
+
+ALTER TABLE mission
+ADD CONSTRAINT fk_missionType_missionTypeId__mission__missionTypeId 
+FOREIGN KEY (mission_type_id) REFERENCES [mission_type](mission_type_id)
+GO
+
+ALTER TABLE mission
+ADD CONSTRAINT fk_availability_availabilittyId__mission__availabilittyId 
+FOREIGN KEY (availability_id) REFERENCES [availability](availability_id)
+GO
+
+-- Changes in fk
+
+ALTER TABLE mission_application
+ADD CONSTRAINT fk_user_userId__missionApplication__userId 
+FOREIGN KEY (user_id) REFERENCES [user](user_id)
+GO
+
+ALTER TABLE mission_application
+ADD CONSTRAINT fk_mission_missionId__missionApplication_missionId 
+FOREIGN KEY (mission_id) REFERENCES [mission](mission_id)
+GO
+
+
+ALTER TABLE mission_application
+ADD CONSTRAINT fk_approvalStatus_approvalStatusId__missionApplication__approvalStatusId 
+FOREIGN KEY (approval_status_id) REFERENCES [approval_status](approval_status_id)
+GO
+
+
+ALTER TABLE mission_document
+ADD CONSTRAINT fk_mission_missionId__missionDocument__missionId 
+FOREIGN KEY (mission_id) REFERENCES [mission](mission_id)
+GO
+
+
+ALTER TABLE mission_invite
+ADD CONSTRAINT fk_mission_missionId__missionInvite__missionId 
+FOREIGN KEY (mission_id) REFERENCES [mission](mission_id)
+GO
+
+ALTER TABLE mission_invite
+ADD CONSTRAINT fk_user_userId__missionInvite__fromUserId 
+FOREIGN KEY (from_user_id) REFERENCES [user](user_id)
+GO
+
+ALTER TABLE mission_invite
+ADD CONSTRAINT fk_user_userId__missionInvite__toUserId 
+FOREIGN KEY (to_user_id) REFERENCES [user](user_id)
+GO
+
+
+ALTER TABLE mission_media
+ADD CONSTRAINT fk_mission_missionId__missionMedia__missionId 
+FOREIGN KEY (mission_id) REFERENCES [mission](mission_id)
+GO
+
+ALTER TABLE mission_rating
+ADD CONSTRAINT fk_mission_missionId__missionRating__missionId 
+FOREIGN KEY (mission_id) REFERENCES [mission](mission_id)
+GO
+
+ALTER TABLE mission_rating
+ADD CONSTRAINT fk_user_userId__missionRating__userId 
+FOREIGN KEY (user_id) REFERENCES [user](user_id)
+GO
+
+ALTER TABLE mission_skill
+ADD CONSTRAINT fk_mission_missionId__missionSkill__missionId 
+FOREIGN KEY (mission_id) REFERENCES [mission](mission_id)
+GO
+
+
+ALTER TABLE mission_skill
+ADD CONSTRAINT fk_skill_skillId__missionSkill__skillId 
+FOREIGN KEY (skill_id) REFERENCES [skill](skill_id)
+GO
+
+
+ALTER TABLE story
+ADD CONSTRAINT fk_mission_missionId__story__missionId 
+FOREIGN KEY (mission_id) REFERENCES [mission](mission_id)
+GO
+
+ALTER TABLE story
+ADD CONSTRAINT fk_user_userId__story__userId 
+FOREIGN KEY (user_id) REFERENCES [user](user_id)
+GO
+
+ALTER TABLE story
+ADD CONSTRAINT fk_storyStatus_storyStatusId__story__storyStatusId 
+FOREIGN KEY (story_status_id) REFERENCES [story_status](story_status_id)
+GO
+
+ALTER TABLE story_invite
+ADD CONSTRAINT fk_story_storyId__storyInvite__storyId 
+FOREIGN KEY (story_id) REFERENCES [story](story_id)
+GO
+
+ALTER TABLE story_invite
+ADD CONSTRAINT fk_user_userId__storyInvite__fromUserId 
+FOREIGN KEY (from_user_id) REFERENCES [user](user_id)
+GO
+
+ALTER TABLE story_invite
+ADD CONSTRAINT fk_user_userId__storyInvite__toUserId 
+FOREIGN KEY (to_user_id) REFERENCES [user](user_id)
+GO
+
+ALTER TABLE story_media
+ADD CONSTRAINT fk_story_storyId__storyMedia__storyId 
+FOREIGN KEY (story_id) REFERENCES [story](story_id)
+GO
+
+ALTER TABLE timesheet
+ADD CONSTRAINT fk_mission_missionId__timesheet__missionId 
+FOREIGN KEY (mission_id) REFERENCES [mission](mission_id)
+GO
+
+ALTER TABLE timesheet
+ADD CONSTRAINT fk_user_userId__timesheet__userId 
+FOREIGN KEY (user_id) REFERENCES [user](user_id)
+GO
+
+
+ALTER TABLE timesheet
+ADD CONSTRAINT fk_approvalStatus_approvalStatusId__timesheet__approvalStatusId 
+FOREIGN KEY (approval_status_id) REFERENCES [approval_status](approval_status_id)
+GO
+
+ALTER TABLE [user]
+ADD CONSTRAINT fk_city_cityId__user__cityId 
+FOREIGN KEY (city_id) REFERENCES [city](city_id)
+GO
+
+ALTER TABLE [user]
+ADD CONSTRAINT fk_country_countryId__user__countryId 
+FOREIGN KEY (country_id) REFERENCES [country](country_id)
+GO
+
+ALTER TABLE user_skill
+ADD CONSTRAINT fk_user_userId__userSkill__userId 
+FOREIGN KEY (user_id) REFERENCES [user](user_id)
+GO
+
+ALTER TABLE user_skill
+ADD CONSTRAINT fk_skill_skillId__userSkill__skillId 
+FOREIGN KEY (skill_id) REFERENCES [skill](skill_id)
 GO
