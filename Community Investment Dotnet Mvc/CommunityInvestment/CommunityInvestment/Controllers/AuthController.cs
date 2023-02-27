@@ -1,7 +1,10 @@
 ﻿using CommunityInvestment.Data;
 using CommunityInvestment.Models;
+using CommunityInvestment.Utility;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Net;
+using System.Net.Mail;
 using System.Web.Helpers;
 
 namespace CommunityInvestment.Controllers
@@ -42,6 +45,35 @@ namespace CommunityInvestment.Controllers
         public IActionResult LostPassword()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult LostPassword(User user)
+        {
+            if (user.Email == null) { return NotFound(); }
+            //var obj = _context.Users.FirstOrDefault(y => y.Email == user.Email);
+            //if (obj == null)
+            //{
+            //    return NotFound("User not found");
+            //}
+
+            var mailMessage = new MailMessage
+            {
+                Subject = "Reset your password",
+                Body = "<h1>Reset your password with given link ...</h1>",
+                IsBodyHtml = true,
+            };
+            mailMessage.To.Add(user.Email);
+
+            var smtpClient = new SmtpClient("smtp.gmail.com")
+            {
+                Port = 587,
+                Credentials = new NetworkCredential("collectordesk123@gmail.com", "slqrgnuxeuwylhil"),
+                EnableSsl = true
+            };
+            smtpClient.Send("collectordesk123@gmail.com",user.Email,mailMessage.Subject,mailMessage.Body);
+
+            return RedirectToAction("Index", "Home");
         }
 
         public IActionResult ResetPassword()
