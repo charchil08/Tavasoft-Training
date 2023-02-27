@@ -1,4 +1,4 @@
-namespace CommunityInvestment.Models
+﻿namespace CommunityInvestment.Models
 {
     public class ErrorViewModel
     {

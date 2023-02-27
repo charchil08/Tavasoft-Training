@@ -1,6 +1,8 @@
-﻿@{
+﻿@model User;
+@{
   ViewData["Title"] = "Home Page";
 }
+
 
 <div class="container-fluid custom_container">
       <div class="row d-flex align-items-center content_wrapper">
@@ -9,7 +11,7 @@
         <div
           class="form_container col-xl-4 d-flex flex-column justify-content-center align-items-center mt-4"
         >
-          <form class="w-75 m-auto">
+          <form class="w-75 m-auto" method="post" asp-action="Index" >
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label"
                 >Email address</label
@@ -20,6 +22,8 @@
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
                 placeholder="evan.donohue@gmail.com"
+                asp-for="Email"
+               
               />
             </div>
             <div class="mb-3">
@@ -31,6 +35,7 @@
                 class="form-control custom_input"
                 id="exampleInputPassword1"
                 placeholder="********"
+                asp-for="Password"
               />
             </div>
 

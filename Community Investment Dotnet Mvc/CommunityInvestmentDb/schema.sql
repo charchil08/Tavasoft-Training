@@ -184,14 +184,14 @@ CREATE TABLE dbo.city
 (
 	city_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (city_id > 0),
 	country_id bigint,
-	name VARCHAR(255) not null,
+	name VARCHAR(255) not null UNIQUE,
 	created_at timestamp not null,
 	updated_at datetime  ,
 	deleted_at datetime
 	,
 );
 GO
-
+	
 -- Create a new table called 'cms_page' in schema 'dbo'
 -- Drop the table if it already exists
 IF OBJECT_ID('dbo.cms_page', 'U') IS NOT NULL
@@ -276,7 +276,7 @@ CREATE TABLE dbo.[user]
 	last_name VARCHAR(16),
 	email VARCHAR(128) not null,
 	[password] VARCHAR(255) NOT NULL,
-	phone_number int not NULL,
+	phone_number varchar(20) not NULL,
 	avatar VARCHAR(2048),
 	why_i_volunteer text,
 	employee_id VARCHAR(16),
@@ -804,3 +804,5 @@ ALTER TABLE user_skill
 ADD CONSTRAINT fk_skill_skillId__userSkill__skillId 
 FOREIGN KEY (skill_id) REFERENCES [skill](skill_id)
 GO
+
+
