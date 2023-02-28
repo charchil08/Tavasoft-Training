@@ -1,6 +1,7 @@
-﻿using CommunityInvestment.Data;
+﻿using CommunityInvestment.Common;
+using CommunityInvestment.Entities.Data;
+using CommunityInvestment.Entities.DataModels;
 using CommunityInvestment.Models;
-using CommunityInvestment.Utility;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Net;
@@ -50,28 +51,30 @@ namespace CommunityInvestment.Controllers
         [HttpPost]
         public IActionResult LostPassword(User user)
         {
-            if (user.Email == null) { return NotFound(); }
-            var obj = _context.Users.FirstOrDefault(y => y.Email == user.Email);
-            if (obj == null)
-            {
-                return NotFound("User not found");
-            }
-
+            //if (user.Email == null) { return NotFound(); }
+            //var obj = _context.Users.FirstOrDefault(y => y.Email == user.Email);
+            //if (obj == null)
+            //{
+            //    return NotFound("User not found");
+            //}
+            string token = Functionality.GenerateSixCharToken();
             var mailMessage = new MailMessage
             {
                 Subject = "Reset your password",
-                Body = "<h1>Reset your password with given link ...</h1>",
-                IsBodyHtml = false,
+                Body = "<h1>Reset your password with given link ...</h1>"+token,
+                IsBodyHtml = true
             };
+            
             mailMessage.To.Add(user.Email);
 
             var smtpClient = new SmtpClient("smtp.gmail.com")
             {
                 Port = 587,
-                Credentials = new NetworkCredential("collectordesk123@gmail.com", "slqrgnuxeuwylhil"),
-                EnableSsl = true
+                UseDefaultCredentials = false,
+                EnableSsl = true,
+                Credentials = new NetworkCredential("charchil.community@gmail.com", "hlxjrtuyfztfxmii"),
             };
-            smtpClient.Send("collectordesk123@gmail.com", user.Email, mailMessage.Subject, mailMessage.Body);
+            smtpClient.Send("charchil.community@gmail.com", user.Email, mailMessage.Subject, mailMessage.Body);
 
             return RedirectToAction("Index", "Home");
         }

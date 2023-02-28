@@ -90,10 +90,3 @@ go
 insert into dbo.[user] (first_name, last_name,email, password, phone_number, city_id, country_id, status)
 values
 ('Charchil','Kajaliya','1@ci.com','12345678',9825012324,11,1,0); 
-
-select * from dbo.[user];
-
-
-alter table country
-add constraint uk_countryName UNIQUE([name])
-go

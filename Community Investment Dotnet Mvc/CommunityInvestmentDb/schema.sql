@@ -126,7 +126,7 @@ GO
 -- MAIN DATABASE TABLES
 -- #####################
 
-create table [admin]
+create table dbo.[admin]
 (
 	admin_id bigint primary key identity(1,1) check (admin_id>0),
 	first_name varchar(16),
@@ -166,7 +166,7 @@ GO
 CREATE TABLE dbo.country
 (
 	country_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (country_id > 0),
-	name VARCHAR(255) not null,
+	name VARCHAR(255) not null unique,
 	ISO VARCHAR(16) not NULL,
 	created_at timestamp not null,
 	updated_at datetime  ,

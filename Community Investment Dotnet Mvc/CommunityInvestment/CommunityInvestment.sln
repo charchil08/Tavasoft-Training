@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunityInvestment", "CommunityInvestment\CommunityInvestment.csproj", "{8714EADB-138C-4E48-8A09-02226DDB2FAE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityInvestment", "CommunityInvestment\CommunityInvestment.csproj", "{0CED6826-44B0-47CF-B29D-7240D6D168F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityInvestment.Model", "CommunityInvestment.Model\CommunityInvestment.Model.csproj", "{577599EA-1535-47F9-AB3C-B24CBD0F6AA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityInvestment.Entities", "CommunityInvestment.Entities\CommunityInvestment.Entities.csproj", "{2E29EC42-AEB0-4D30-9BEA-59888DD2B233}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityInvestment.Repository", "CommunityInvestment.Repository\CommunityInvestment.Repository.csproj", "{193086C7-A53C-434D-9137-5BCB7F713086}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityInvestment.Common", "CommunityInvestment.Common\CommunityInvestment.Common.csproj", "{C3163A39-2963-4720-A7C9-F2D35093CC5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +17,27 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8714EADB-138C-4E48-8A09-02226DDB2FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8714EADB-138C-4E48-8A09-02226DDB2FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8714EADB-138C-4E48-8A09-02226DDB2FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8714EADB-138C-4E48-8A09-02226DDB2FAE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{577599EA-1535-47F9-AB3C-B24CBD0F6AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{577599EA-1535-47F9-AB3C-B24CBD0F6AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{577599EA-1535-47F9-AB3C-B24CBD0F6AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{577599EA-1535-47F9-AB3C-B24CBD0F6AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CED6826-44B0-47CF-B29D-7240D6D168F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CED6826-44B0-47CF-B29D-7240D6D168F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CED6826-44B0-47CF-B29D-7240D6D168F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CED6826-44B0-47CF-B29D-7240D6D168F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E29EC42-AEB0-4D30-9BEA-59888DD2B233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E29EC42-AEB0-4D30-9BEA-59888DD2B233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E29EC42-AEB0-4D30-9BEA-59888DD2B233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E29EC42-AEB0-4D30-9BEA-59888DD2B233}.Release|Any CPU.Build.0 = Release|Any CPU
+		{193086C7-A53C-434D-9137-5BCB7F713086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{193086C7-A53C-434D-9137-5BCB7F713086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{193086C7-A53C-434D-9137-5BCB7F713086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{193086C7-A53C-434D-9137-5BCB7F713086}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3163A39-2963-4720-A7C9-F2D35093CC5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3163A39-2963-4720-A7C9-F2D35093CC5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3163A39-2963-4720-A7C9-F2D35093CC5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3163A39-2963-4720-A7C9-F2D35093CC5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EC9D0319-0F37-41E4-82A9-DA97EC8B74CB}
+		SolutionGuid = {05953435-781C-4469-AD36-B94B61205E92}
 	EndGlobalSection
 EndGlobal
