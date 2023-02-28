@@ -90,3 +90,16 @@ go
 insert into dbo.[user] (first_name, last_name,email, password, phone_number, city_id, country_id, status)
 values
 ('Charchil','Kajaliya','1@ci.com','12345678',9825012324,11,1,0); 
+
+alter table dbo.password_reset
+add constraint pk_password_reset
+primary key (email)
+go
+
+sp_help password_reset
+go
+
+select * from password_reset
+go
+
+truncate table password_reset;

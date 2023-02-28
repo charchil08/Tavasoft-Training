@@ -51,38 +51,65 @@ namespace CommunityInvestment.Controllers
         [HttpPost]
         public IActionResult LostPassword(User user)
         {
-            //if (user.Email == null) { return NotFound(); }
-            //var obj = _context.Users.FirstOrDefault(y => y.Email == user.Email);
-            //if (obj == null)
-            //{
-            //    return NotFound("User not found");
-            //}
+            if (user.Email == null) { return NotFound(); }
+            var obj = _context.Users.FirstOrDefault(y => y.Email == user.Email);
+            if (obj == null)
+            {
+                TempData["error"] = "User not exist";
+                return NotFound("User not found");
+            }
             string token = Functionality.GenerateSixCharToken();
-            var mailMessage = new MailMessage
+            try
             {
-                Subject = "Reset your password",
-                Body = "<h1>Reset your password with given link ...</h1>"+token,
-                IsBodyHtml = true
-            };
-            
-            mailMessage.To.Add(user.Email);
+                var mailMessage = new MailMessage
+                {
+                    Subject = "Reset your password",
+                    Body = "Go to link -  https://localhost:7012/Auth/ResetPassword?token=" + token + "\n link Valid for 10 minutes only \n you are redirected to otp page directly ...",
+                    IsBodyHtml = true
+                };
 
-            var smtpClient = new SmtpClient("smtp.gmail.com")
+                mailMessage.To.Add(user.Email);
+
+                var smtpClient = new SmtpClient("smtp.gmail.com")
+                {
+                    Port = 587,
+                    UseDefaultCredentials = false,
+                    EnableSsl = true,
+                    Credentials = new NetworkCredential("charchil.community@gmail.com", ""),
+                };
+                smtpClient.Send("charchil.community@gmail.com", user.Email, mailMessage.Subject, mailMessage.Body);
+
+                //TODO: generate * string based on mail id
+
+
+                PasswordReset passwordReset = new PasswordReset();
+                passwordReset.Email = user.Email;
+                passwordReset.Token = token;
+                _context.PasswordResets.Add(passwordReset);
+                _context.SaveChanges();
+
+                TempData["success"] = "OTP sent on " + user.Email.ElementAt(0) + user.Email.ElementAt(1) + "******.***";
+                return View("Index","Auth");
+            }
+            catch (Exception ex)
             {
-                Port = 587,
-                UseDefaultCredentials = false,
-                EnableSsl = true,
-                Credentials = new NetworkCredential("charchil.community@gmail.com", "hlxjrtuyfztfxmii"),
-            };
-            smtpClient.Send("charchil.community@gmail.com", user.Email, mailMessage.Subject, mailMessage.Body);
+                var msg = ex.Message;
+                return NotFound(msg);
+            }
 
-            return RedirectToAction("Index", "Home");
         }
 
-        public IActionResult ResetPassword()
+
+        public IActionResult ResetPassword([FromQuery]string token)
         {
-            return View();
+            var email = _context.PasswordResets.FirstOrDefault(x => x.Token == token)?.Email;
+            if (email == null) return NotFound("User not found");
+            User user = _context.Users.FirstOrDefault(x => x.Email == email);
+            if (user == null) return NotFound("user not found");
+            return View("Index","Home");
         }
+
+        
 
         public IActionResult Register()
         {

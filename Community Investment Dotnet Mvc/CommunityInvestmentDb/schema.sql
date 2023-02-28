@@ -238,7 +238,7 @@ GO
 -- Create the table in the specified schema
 CREATE TABLE dbo.password_reset
 (
-	email varchar(191) not NULL,
+	email varchar(191) not NULL primary key,
 	token varchar(191) not NULL,
 	created_at timestamp not null,
 );

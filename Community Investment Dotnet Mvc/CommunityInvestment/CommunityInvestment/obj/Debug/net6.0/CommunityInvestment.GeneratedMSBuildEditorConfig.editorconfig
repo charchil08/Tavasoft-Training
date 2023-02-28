@@ -35,6 +35,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/CHARCHIL/Tavasoft-Training/Community Investment Dotnet Mvc/CommunityInvestment/CommunityInvestment/Views/Auth/VerifyToken.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxWZXJpZnlUb2tlbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/CHARCHIL/Tavasoft-Training/Community Investment Dotnet Mvc/CommunityInvestment/CommunityInvestment/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -57,6 +61,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/CHARCHIL/Tavasoft-Training/Community Investment Dotnet Mvc/CommunityInvestment/CommunityInvestment/Views/Shared/_MissionCards.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NaXNzaW9uQ2FyZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CHARCHIL/Tavasoft-Training/Community Investment Dotnet Mvc/CommunityInvestment/CommunityInvestment/Views/Shared/_Notification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/CHARCHIL/Tavasoft-Training/Community Investment Dotnet Mvc/CommunityInvestment/CommunityInvestment/Views/Shared/_Pagination.cshtml]

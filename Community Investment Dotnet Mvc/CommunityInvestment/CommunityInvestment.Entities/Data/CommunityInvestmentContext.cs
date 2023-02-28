@@ -824,19 +824,20 @@ namespace CommunityInvestment.Entities.Data
 
             modelBuilder.Entity<PasswordReset>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => e.Email)
+                    .HasName("pk_password_reset");
 
                 entity.ToTable("password_reset");
-
-                entity.Property(e => e.CreatedAt)
-                    .IsRowVersion()
-                    .IsConcurrencyToken()
-                    .HasColumnName("created_at");
 
                 entity.Property(e => e.Email)
                     .HasMaxLength(191)
                     .IsUnicode(false)
                     .HasColumnName("email");
+
+                entity.Property(e => e.CreatedAt)
+                    .IsRowVersion()
+                    .IsConcurrencyToken()
+                    .HasColumnName("created_at");
 
                 entity.Property(e => e.Token)
                     .HasMaxLength(191)
