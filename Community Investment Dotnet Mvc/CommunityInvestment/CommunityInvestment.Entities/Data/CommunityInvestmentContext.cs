@@ -1106,6 +1106,9 @@ namespace CommunityInvestment.Entities.Data
             {
                 entity.ToTable("user");
 
+                entity.HasIndex(e => e.Email, "uk_email")
+                    .IsUnique();
+
                 entity.Property(e => e.UserId).HasColumnName("user_id");
 
                 entity.Property(e => e.Avatar)

@@ -274,7 +274,7 @@ CREATE TABLE dbo.[user]
 	[user_id] bigint PRIMARY KEY IDENTITY(1,1) CHECK (user_id > 0),
 	first_name VARCHAR(16),
 	last_name VARCHAR(16),
-	email VARCHAR(128) not null,
+	email VARCHAR(128) not null unique,
 	[password] VARCHAR(255) NOT NULL,
 	phone_number varchar(20) not NULL,
 	avatar VARCHAR(2048),

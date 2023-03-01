@@ -22,6 +22,7 @@ namespace CommunityInvestment.Controllers
             _configuration = configuration;
         }
 
+
         public IActionResult Index()
         {
             return View();
@@ -83,7 +84,7 @@ namespace CommunityInvestment.Controllers
                     Port = 587,
                     UseDefaultCredentials = false,
                     EnableSsl = true,
-                    Credentials = new NetworkCredential("charchil.community@gmail.com", "hlxjrtuyfztfxmii"),
+                    Credentials = new NetworkCredential("charchil.community@gmail.com", ""),
                 };
                 smtpClient.Send("charchil.community@gmail.com", user.Email, mailMessage.Subject, mailMessage.Body);
 
