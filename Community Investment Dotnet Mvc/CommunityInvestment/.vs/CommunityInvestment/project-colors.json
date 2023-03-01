@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2e29ec42-aeb0-4d30-9bea-59888dd2b233": {
+      "ProjectGuid": "2e29ec42-aeb0-4d30-9bea-59888dd2b233",
+      "DisplayName": "CommunityInvestment.Entities",
+      "ColorIndex": 0
+    },
+    "193086c7-a53c-434d-9137-5bcb7f713086": {
+      "ProjectGuid": "193086c7-a53c-434d-9137-5bcb7f713086",
+      "DisplayName": "CommunityInvestment.Repository",
+      "ColorIndex": 1
+    },
+    "0ced6826-44b0-47cf-b29d-7240d6d168f8": {
+      "ProjectGuid": "0ced6826-44b0-47cf-b29d-7240d6d168f8",
+      "DisplayName": "CommunityInvestment",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "c3163a39-2963-4720-a7c9-f2d35093cc5b": {
+      "ProjectGuid": "c3163a39-2963-4720-a7c9-f2d35093cc5b",
+      "DisplayName": "CommunityInvestment.Common",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
