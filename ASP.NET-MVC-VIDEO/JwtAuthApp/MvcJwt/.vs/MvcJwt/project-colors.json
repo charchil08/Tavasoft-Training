@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3d513475-0fdf-4dcb-81f5-037e7a5bd2cb": {
+      "ProjectGuid": "3d513475-0fdf-4dcb-81f5-037e7a5bd2cb",
+      "DisplayName": "MvcJwt",
+      "ColorIndex": 0
+    },
+    "0b618ece-b846-442c-9794-f62af2e04b7f": {
+      "ProjectGuid": "0b618ece-b846-442c-9794-f62af2e04b7f",
+      "DisplayName": "MvcJwt.WebApiJwt",
+      "ColorIndex": 1
+    },
+    "db7f89e9-8ba9-4a82-af69-338622ce28fd": {
+      "ProjectGuid": "db7f89e9-8ba9-4a82-af69-338622ce28fd",
+      "DisplayName": "MvcJwt.WebMvc",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

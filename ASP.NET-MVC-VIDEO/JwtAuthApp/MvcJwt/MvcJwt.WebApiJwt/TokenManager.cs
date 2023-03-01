@@ -7,11 +7,11 @@ namespace MvcJwt.WebApiJwt
     public class TokenManager
     {
         //use in appconfig.json
-        private static readonly string secret = "officejwttoken";
+        private static string Secret = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789==";
 
         public static string GenerateToken(string UserName)
         {
-            byte[] Key = Convert.FromBase64String(secret);
+            byte[] Key = Convert.FromBase64String(Secret);
             SymmetricSecurityKey securityKey = new SymmetricSecurityKey(Key);
             SecurityTokenDescriptor securityTokenDescriptor = new SecurityTokenDescriptor
             {
@@ -25,5 +25,58 @@ namespace MvcJwt.WebApiJwt
 
             return jwtSecurityTokenHandler.WriteToken(token);
         }
+
+        public static ClaimsPrincipal? GetPrincipal(string token)
+        {
+            try
+            {
+
+                JwtSecurityTokenHandler handler = new JwtSecurityTokenHandler();
+                JwtSecurityToken JwtToken = (JwtSecurityToken)handler.ReadToken(token);
+                if (JwtToken == null) return null;
+                byte[] Key = Convert.FromBase64String(TokenManager.Secret);
+
+                TokenValidationParameters validationParameters = new TokenValidationParameters()
+                {
+                    RequireExpirationTime = true,
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    IssuerSigningKey = new SymmetricSecurityKey(Key),
+                };
+
+                SecurityToken securityToken;
+                ClaimsPrincipal principal = handler.ValidateToken(token, validationParameters, out securityToken);
+
+                return principal;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public static string? ValidateToken(string token)
+        {
+            string UserName;
+            ClaimsPrincipal claimsPrincipal = GetPrincipal(token);
+            if(claimsPrincipal == null) return null;
+
+            ClaimsIdentity identity = null;
+
+            try
+            {
+                identity = (ClaimsIdentity)claimsPrincipal.Identity;
+            }
+            catch (NullReferenceException)
+            {
+                return null;
+            }
+
+            Claim UserNameClaim = identity.FindFirst(ClaimTypes.Name);
+            UserName = UserNameClaim.Value;
+            return UserName;
+        }
     }
+
+    
 }

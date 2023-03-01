@@ -19,15 +19,17 @@ namespace MvcJwt.WebApiJwt.Controllers
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
+        //[HttpGet(Name = "GetToken")]
+        public string Get(string UserName, string Password)
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            if (UserName == "admin" && Password == "admin")
             {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+                string token = TokenManager.GenerateToken(UserName);
+                return token;
+            }
+            return "not ok";
         }
+
+
     }
 }
