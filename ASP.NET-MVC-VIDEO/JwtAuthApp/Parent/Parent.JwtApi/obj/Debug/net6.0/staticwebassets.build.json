@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "a+7aipvWOehkWJc2q7EptCwbZ+VjoX80bjzcHzcZGxE=",
+  "Source": "Parent.JwtApi",
+  "BasePath": "_content/Parent.JwtApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

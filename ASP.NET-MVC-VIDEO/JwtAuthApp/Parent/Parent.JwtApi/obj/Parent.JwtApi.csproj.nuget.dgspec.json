@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\CHARCHIL\\Tavasoft-Training\\ASP.NET-MVC-VIDEO\\JwtAuthApp\\Parent\\Parent.JwtApi\\Parent.JwtApi.csproj": {}
+  },
+  "projects": {
+    "D:\\CHARCHIL\\Tavasoft-Training\\ASP.NET-MVC-VIDEO\\JwtAuthApp\\Parent\\Parent.JwtApi\\Parent.JwtApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CHARCHIL\\Tavasoft-Training\\ASP.NET-MVC-VIDEO\\JwtAuthApp\\Parent\\Parent.JwtApi\\Parent.JwtApi.csproj",
+        "projectName": "Parent.JwtApi",
+        "projectPath": "D:\\CHARCHIL\\Tavasoft-Training\\ASP.NET-MVC-VIDEO\\JwtAuthApp\\Parent\\Parent.JwtApi\\Parent.JwtApi.csproj",
+        "packagesPath": "C:\\Users\\pci141\\.nuget\\packages\\",
+        "outputPath": "D:\\CHARCHIL\\Tavasoft-Training\\ASP.NET-MVC-VIDEO\\JwtAuthApp\\Parent\\Parent.JwtApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pci141\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.27.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
