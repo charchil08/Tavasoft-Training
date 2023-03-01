@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "79753636-9060-47f8-88dd-65c681db1c59": {
+      "ProjectGuid": "79753636-9060-47f8-88dd-65c681db1c59",
+      "DisplayName": "Parent",
+      "ColorIndex": 0
+    },
+    "e4ddf2a3-cfe4-4ba5-9282-e04ee4b9b2fe": {
+      "ProjectGuid": "e4ddf2a3-cfe4-4ba5-9282-e04ee4b9b2fe",
+      "DisplayName": "Parent.JwtApi",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
