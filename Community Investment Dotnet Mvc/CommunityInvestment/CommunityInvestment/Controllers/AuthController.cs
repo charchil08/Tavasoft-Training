@@ -2,6 +2,7 @@
 using CommunityInvestment.Entities.Data;
 using CommunityInvestment.Entities.DataModels;
 using CommunityInvestment.Models;
+using CommunityInvestment.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Net;
@@ -13,10 +14,12 @@ namespace CommunityInvestment.Controllers
     public class AuthController : Controller
     {
         private readonly CommunityInvestmentContext _context;
+        private readonly IConfiguration _configuration;
 
-        public AuthController(CommunityInvestmentContext context)
+        public AuthController(CommunityInvestmentContext context, IConfiguration configuration)
         {
             _context = context;
+            _configuration = configuration;
         }
 
         public IActionResult Index()
@@ -27,20 +30,23 @@ namespace CommunityInvestment.Controllers
         [HttpPost]
         public IActionResult Index(User user)
         {
-            if (user == null)
+            if (user.Email == null || user.Password == null)
             {
-                return NotFound("User not found");
+                TempData["error"] = "Email or password incorrect";
             }
             var obj = _context.Users.FirstOrDefault(x => x.Email == user.Email);
             if (obj == null)
             {
-                return NotFound();
+                TempData["error"] = "Email or password incorrect";
+                return View();
             }
             if (!Crypto.VerifyHashedPassword(obj.Password, user.Password))
             {
-                return NotFound("User not found");
+                TempData["error"] = "Email or password incorrect";
+                return View();
             }
-            return RedirectToAction("Index", "Home");
+            TempData["success"] = obj.Email + " is in...";
+            return RedirectToAction("Index", "Story");
         }
 
         public IActionResult LostPassword()
@@ -51,7 +57,9 @@ namespace CommunityInvestment.Controllers
         [HttpPost]
         public IActionResult LostPassword(User user)
         {
-            if (user.Email == null) { return NotFound(); }
+            if (user.Email == null) {
+                return View(); 
+            }
             var obj = _context.Users.FirstOrDefault(y => y.Email == user.Email);
             if (obj == null)
             {
@@ -75,7 +83,7 @@ namespace CommunityInvestment.Controllers
                     Port = 587,
                     UseDefaultCredentials = false,
                     EnableSsl = true,
-                    Credentials = new NetworkCredential("charchil.community@gmail.com", ""),
+                    Credentials = new NetworkCredential("charchil.community@gmail.com", "hlxjrtuyfztfxmii"),
                 };
                 smtpClient.Send("charchil.community@gmail.com", user.Email, mailMessage.Subject, mailMessage.Body);
 
@@ -88,13 +96,14 @@ namespace CommunityInvestment.Controllers
                 _context.PasswordResets.Add(passwordReset);
                 _context.SaveChanges();
 
-                TempData["success"] = "OTP sent on " + user.Email.ElementAt(0) + user.Email.ElementAt(1) + "******.***";
-                return View("Index","Auth");
+                TempData["success"] = "Mail sent on " + user.Email.ElementAt(0) + user.Email.ElementAt(1) + "******.***";
+                return View();
             }
             catch (Exception ex)
             {
                 var msg = ex.Message;
-                return NotFound(msg);
+                TempData["error"] = msg;
+                return View();
             }
 
         }
@@ -103,12 +112,54 @@ namespace CommunityInvestment.Controllers
         public IActionResult ResetPassword([FromQuery]string token)
         {
             var email = _context.PasswordResets.FirstOrDefault(x => x.Token == token)?.Email;
-            if (email == null) return NotFound("User not found");
+            if (email == null)
+            {
+                TempData["error"] = "User not exist";
+                return View("LostPassword");
+            }
             User user = _context.Users.FirstOrDefault(x => x.Email == email);
-            if (user == null) return NotFound("user not found");
-            return View("Index","Home");
+            if (user == null)
+            {
+                TempData["error"] = "User not exist";
+                return View("LostPassword");
+            }
+
+            ResetPasswordModel resetPassword = new ResetPasswordModel()
+            {
+                Token = token
+            };
+
+            return View(resetPassword);
         }
 
+        [HttpPost]
+        public IActionResult ResetPassword(ResetPasswordModel obj)
+        {
+            var email = _context.PasswordResets.FirstOrDefault(x => x.Token == obj.Token)?.Email;
+            if (email == null)
+            {
+                TempData["error"] = "User not exist";
+                return View("LostPassword");
+            }
+
+            User? user = _context.Users.FirstOrDefault(x => x.Email == email);
+            if (user == null)
+            {
+                TempData["error"] = "User not exist";
+                return View("LostPassword");
+            }
+
+            if (obj.Password == null || obj.Password.Trim() == "") {
+                TempData["error"] = "Empty password not allowed";
+                return RedirectToAction();
+            }
+            user.Password = Crypto.HashPassword(obj.Password);
+            _context.Users.Update(user);
+            _context.SaveChanges();
+
+            TempData["success"] = "Password changed successfully";
+            return View("Index");
+        }
         
 
         public IActionResult Register()
@@ -127,7 +178,8 @@ namespace CommunityInvestment.Controllers
             _context.Users.Add(user);
             _context.SaveChanges();
 
-            return RedirectToAction("Index");
+            TempData["success"] = "Account created ...";
+            return RedirectToAction("Index", "Story");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
