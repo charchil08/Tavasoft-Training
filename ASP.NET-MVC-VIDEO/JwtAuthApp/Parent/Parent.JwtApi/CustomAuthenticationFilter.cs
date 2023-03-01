@@ -44,7 +44,7 @@ namespace MvcJwt.WebApiJwt
             {
                 result.Headers.WwwAuthenticate.Add(new AuthenticationHeaderValue("Basic","realm=localhost"));
             }
-            //context.Result = 
+            //context.Result =  
         }
     }
 
