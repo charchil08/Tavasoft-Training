@@ -1,65 +1,60 @@
-﻿@using CommunityInvestment.Entities.DataModels
-@model User;
+﻿@using CommunityInvestment.Models.ViewModels
+@model LoginModel;
 @{
-  ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home Page";
 }
 
 <partial name="_Notification" />
 <div class="container-fluid custom_container">
-      <div class="row d-flex align-items-center content_wrapper">
-                <partial name="_Slider" />
+    <div class="row d-flex align-items-center content_wrapper">
+        <partial name="_Slider" />
 
-        <div
-          class="form_container col-xl-4 d-flex flex-column justify-content-center align-items-center mt-4"
-        >
-          <form class="w-75 m-auto" method="post" asp-action="Index" >
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"
-                >Email address</label
-              >
-              <input
-                type="email"
-                class="form-control custom_input"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="evan.donohue@gmail.com"
-                asp-for="Email"
-               
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
-                >Password</label
-              >
-              <input
-                type="password"
-                class="form-control custom_input"
-                id="exampleInputPassword1"
-                placeholder="********"
-                asp-for="Password"
-              />
-            </div>
+        <div class="form_container col-xl-4 d-flex flex-column justify-content-center align-items-center mt-4">
+            <form class="w-75 m-auto" method="post" asp-action="Index">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email"
+                           class="form-control custom_input"
+                           id="exampleInputEmail1"
+                           aria-describedby="emailHelp"
+                           placeholder="evan.donohue@gmail.com"
+                           asp-for="Email" />
+                    <span class="text-danger" asp-validation-for="Email"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password"
+                           class="form-control custom_input"
+                           id="exampleInputPassword1"
+                           placeholder="********"
+                           asp-for="Password" />
+                    <span class="text-danger" asp-validation-for="Password"></span>
+                </div>
 
-            <button
-              type="submit"
-              class="btn btn-outline-warning w-100 custom_btn"
-            >
-              Login
-            </button>
-          </form>
-          <div class="add_opt mt-lg-2 text-center">
-            <p>
-              <a asp-controller="Auth" asp-action="LostPassword" class="text-dark">
-                Lost your password?</a>
-            </p>
-            <p>
-              Don't have an Account?
-              <a asp-controller="Auth" asp-action="Register">Create an Account</a>
-            </p>
-          </div>
-          <div class="privacy mt-lg-4 text-center">
-            <a asp-controller="Auth" asp-action="Privacy" class="text-dark" >Privacy Policy</a>
-          </div>
+                <button type="submit"
+                        class="btn btn-outline-warning w-100 custom_btn">
+                    Login
+                </button>
+            </form>
+            <div class="add_opt mt-lg-2 text-center">
+                <p>
+                    <a asp-controller="Auth" asp-action="LostPassword" class="text-dark">
+                        Lost your password?
+                    </a>
+                </p>
+                <p>
+                    Don't have an Account?
+                    <a asp-controller="Auth" asp-action="Register">Create an Account</a>
+                </p>
+            </div>
+            <div class="privacy mt-lg-4 text-center">
+                <a asp-controller="Auth" asp-action="Privacy" class="text-dark">Privacy Policy</a>
+            </div>
         </div>
-      </div>
     </div>
+</div>
+
+
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+}

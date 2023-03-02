@@ -29,25 +29,35 @@ namespace CommunityInvestment.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(User user)
+        public IActionResult Index(LoginModel user)
         {
-            if (user.Email == null || user.Password == null)
-            {
-                TempData["error"] = "Email or password incorrect";
-            }
-            var obj = _context.Users.FirstOrDefault(x => x.Email == user.Email);
-            if (obj == null)
+            if (!ModelState.IsValid)
             {
                 TempData["error"] = "Email or password incorrect";
                 return View();
             }
-            if (!Crypto.VerifyHashedPassword(obj.Password, user.Password))
+           try
             {
-                TempData["error"] = "Email or password incorrect";
+                var obj = _context.Users.FirstOrDefault(x => x.Email == user.Email);
+                if (obj == null)
+                {
+                    TempData["error"] = "Email or password incorrect";
+                    return View();
+                }
+                if (!Crypto.VerifyHashedPassword(obj.Password, user.Password))
+                {
+                    TempData["error"] = "Email or password incorrect";
+                    return View();
+                }
+                TempData["success"] = obj.FirstName + " is in...";
+                return RedirectToAction("Index", "Story");
+            }
+            catch(Exception ae)
+            {
+                TempData["error"] = ae.Message;
                 return View();
             }
-            TempData["success"] = obj.Email + " is in...";
-            return RedirectToAction("Index", "Story");
+            
         }
 
         public IActionResult LostPassword()
@@ -56,18 +66,24 @@ namespace CommunityInvestment.Controllers
         }
 
         [HttpPost]
-        public IActionResult LostPassword(User user)
+        public IActionResult LostPassword(LostPasswordModel obj)
         {
-            if (user.Email == null) {
-                return View(); 
+
+            if(!ModelState.IsValid)
+            {
+                TempData["error"] = "Try again ...";
+                return View();
             }
-            var obj = _context.Users.FirstOrDefault(y => y.Email == user.Email);
-            if (obj == null)
+
+           
+            if (_context.Users.FirstOrDefault(y => y.Email == obj.Email) == null)
             {
                 TempData["error"] = "User not exist";
-                return NotFound("User not found");
+                return View();
             }
+           
             string token = Functionality.GenerateSixCharToken();
+            
             try
             {
                 var mailMessage = new MailMessage
@@ -77,27 +93,26 @@ namespace CommunityInvestment.Controllers
                     IsBodyHtml = true
                 };
 
-                mailMessage.To.Add(user.Email);
+                mailMessage.To.Add(obj.Email);
 
                 var smtpClient = new SmtpClient("smtp.gmail.com")
                 {
                     Port = 587,
                     UseDefaultCredentials = false,
                     EnableSsl = true,
-                    Credentials = new NetworkCredential("charchil.community@gmail.com", "hlxjrtuyfztfxmii"),
+                    Credentials = new NetworkCredential("charchil.community@gmail.com", "abqsbcnhgebzmrgs"),
                 };
-                smtpClient.Send("charchil.community@gmail.com", user.Email, mailMessage.Subject, mailMessage.Body);
+                smtpClient.Send("charchil.community@gmail.com", obj.Email, mailMessage.Subject, mailMessage.Body);
 
                 //TODO: generate * string based on mail id
 
-
-                PasswordReset passwordReset = new PasswordReset();
-                passwordReset.Email = user.Email;
+                PasswordReset passwordReset = new ();
+                passwordReset.Email = obj.Email;
                 passwordReset.Token = token;
                 _context.PasswordResets.Add(passwordReset);
                 _context.SaveChanges();
 
-                TempData["success"] = "Mail sent on " + user.Email.ElementAt(0) + user.Email.ElementAt(1) + "******.***";
+                TempData["success"] = "Mail sent on " + obj.Email.ElementAt(0) + obj.Email.ElementAt(1) + "******.***";
                 return View();
             }
             catch (Exception ex)

@@ -10,12 +10,10 @@
         <hr class="m-auto" />
         <partial name="_SearchFilterHeader" />  
        
-         @if (false)
-        {
-            <partial name="_MissionCards" />
-        }  
+        
+            <partial name="_MissionCards" />  
         @*if No mssion found*@
-        else
+        if(false)
        {
            <div class="container-fluid container-lg d-flex flex-column justify-content-center align-items-center my-4">
                <h3 class="fw-bolder" >No mission found</h3>
