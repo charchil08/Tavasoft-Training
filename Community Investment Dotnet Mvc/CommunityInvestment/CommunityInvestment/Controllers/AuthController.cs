@@ -100,7 +100,7 @@ namespace CommunityInvestment.Controllers
                     Port = 587,
                     UseDefaultCredentials = false,
                     EnableSsl = true,
-                    Credentials = new NetworkCredential("ciplatform.tatvasoft@gmail.com", "zuqxsopjefcellwu"),
+                    Credentials = new NetworkCredential("", ""),
                 };
                 smtpClient.Send("charchil.community@gmail.com", obj.Email, mailMessage.Subject, mailMessage.Body);
 

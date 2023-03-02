@@ -1,6 +1,9 @@
-﻿@{
+﻿@using CommunityInvestment.Models.ViewModels
+@model SearchFilterHeaderModel;
+@{
     ViewData["Title"] = "Home";
 }
+
 
 <div class="container-fluid custom_container">
 
@@ -8,21 +11,81 @@
 
         <partial name="_TopHeader" />
         <hr class="m-auto" />
-        <partial name="_SearchFilterHeader" />
+        @*<partial name="_SearchFilterHeader" />*@
+        @Html.Partial("_SearchFilterHeader",Model)
 
 
         @*if No mssion found*@
         @*if(false)
-        {
-        <div class="container-fluid container-lg d-flex flex-column justify-content-center align-items-center my-4">
+            {
+            <div class="container-fluid container-lg d-flex flex-column justify-content-center align-items-center my-4">
             <h3 class="fw-bolder">No mission found</h3>
             <button class="btn btn-outline-warning custom_btn mt-4">
-                <span class="">submit new mission </span>
-                &nbsp; &nbsp;
-                <img src="~/assets/right-arrow.png" alt="." />
+            <span class="">submit new mission </span>
+            &nbsp; &nbsp;
+            <img src="~/assets/right-arrow.png" alt="." />
             </button>
-        </div>
-        }*@
+            </div>
+            }*@
     </header>
-
 </div>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+<script type="text/javascript">
+
+        $(document).ready(function() {
+
+        console.log("Hello")
+
+        document.getElementById("selectCountryFilter").addEventListener('change',(e) => {
+            e.preventDefault();
+            console.log(e.target.value)
+            debugger;
+            fetchcityBasedOnCountry(e.target.value);
+        });
+
+        function fetchcityBasedOnCountry(countryId) {
+            axios.get(`Home/FetchCityBasedOnCountry/?countryId=${countryId}`)
+            .then(resp => {
+            debugger;
+                for(let data of resp.data) {
+                    document.getElementById("cityListFilter").innerHTML = `
+                    <li>
+                        <div class="form-check dropdown-item px-4">
+                            <input class="form-check-input mx-auto"
+                                   type="checkbox"
+                                   value=${data.cityId}
+                                   checked
+                                   id="flexCheckDefault" />
+                            <label class="form-check-label ps-2" for=${data.Name}>
+                                ${data.Name}
+                            </label>
+                        </div>
+                  </li>
+                `;
+                }
+
+            })
+            .catch(err=>console.log(err));
+        }
+
+        //function fetchcityBasedOnCountry(countryId) {
+        //    $.ajax({
+        //        url:"Home/FetchCityBasedOnCountry",
+        //        type:"GET",
+        //        data: {
+        //            "countryId": countryId
+        //        },
+        //        dataType:'json',
+        //        success:function(data) {
+        //            alert(data);
+        //        },
+        //        error : function(request,error){
+        //            alert("Request: "+JSON.stringify(request));
+        //        }
+        //    });
+        //}
+    });
+</script>

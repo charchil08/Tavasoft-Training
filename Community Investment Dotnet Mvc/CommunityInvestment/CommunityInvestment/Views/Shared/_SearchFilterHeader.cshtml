@@ -1,425 +1,311 @@
 ﻿@* For more information on enabling MVC for empty projects, visit
-https://go.microsoft.com/fwlink/?LinkID=397860 *@ @{ }
+    https://go.microsoft.com/fwlink/?LinkID=397860 *@ @{ }
 <div class="container-fluid container-lg">
-  <div class="row border-bottom" style="min-height:78px">
-    <div
-      class="col-lg-6 col-11 d-flex align-items-center py-sm-2 py-lg-0"
-    >
-      <img
-        src="~/assets/search.png"
-        class="align-content-center my-auto"
-        width="21px"
-        height="21px"
-      />
-      <input
-        type="search"
-        name=""
-        placeholder="Search mission ..."
-        id=""
-        class="px-4 w-50"
-        style="border: none; outline: none"
-      />
-    </div>
-    <button
-      data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasResponsive"
-      aria-controls="offcanvasResponsive"
-      class="d-lg-none col-1 d-flex justify-content-end align-items-center btn-primary btn-light bg-transparent border-0"
-    >
-      <img src="~/assets/filter.png" alt="filter" />
-    </button>
-
-    <div
-      class="offcanvas-lg offcanvas-end col-lg-6 resolve_outline"
-      tabindex="-1"
-      id="offcanvasResponsive"
-      aria-labelledby="offcanvasResponsiveLabel"
-    >
-      <div class="offcanvas-header">
-        <button
-          class="btn-primary bg-transparent border-0 outline-0"
-          type="button"
-          data-bs-dismiss="offcanvas"
-          data-bs-target="#offcanvasResponsive"
-          aria-label="Close"
-        >
-          <img src="~/assets/left.png" alt="close" />
-        </button>
-        <a href="#" class="text-dark">clear all</a>
-      </div>
-      <div class="offcanvas-body filter_container h-100">
-        <div class="d-lg-flex row d-flex align-items-center g-lg-0 g-2 w-100">
-          <div class="col-lg-3 h-100 filter_item" >
-            <select
-              class="form-select hide_border_select h-100"
-              aria-label="country"
-              asp-items="ViewBag.CountryList"
-            >
-              <option disabled selected>-- Country --</option>
-              
-            </select>
-          </div>
-          <div class="col-lg-3 outline-0 h-100 filter_item" >
-            @*City*@
-            <div class="dropdown h-100">
-              <div
-                class="form-select d-flex align-items-center dropdown-toggle hide_dropdown_arrow hide_border_select h-100"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                City
-              </div>
-              <ul
-                class="dropdown-menu w-100 scroll_dropdown"
-                aria-labelledby="dropdownMenuButton1"
-              >
-                <li>
-                  <div class="form-check dropdown-item px-4">
-                    <input
-                      class="form-check-input mx-auto"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                      checked
-                    />
-                    <label class="form-check-label ps-2" for="education">
-                      Tirana
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check dropdown-item px-4">
-                    <input
-                      class="form-check-input mx-auto"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                      checked
-                    />
-                    <label class="form-check-label ps-2" for="Health">
-                      Durres
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check dropdown-item px-4">
-                    <input
-                      class="form-check-input mx-auto"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label ps-2" for="Children">
-                      Villore
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check dropdown-item px-4">
-                    <input
-                      class="form-check-input mx-auto"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label ps-2" for="Children">
-                      Ebasans
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check dropdown-item px-4">
-                    <input
-                      class="form-check-input mx-auto"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label ps-2" for="Children">
-                      Skhiodar
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check dropdown-item px-4">
-                    <input
-                      class="form-check-input mx-auto"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label ps-2" for="Children">
-                      Fier
-                    </label>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 outline-0 h-100 filter_item" >
-            @*Theme*@
-            <div class="dropdown h-100">
-              <div
-                class="form-select d-flex align-items-center dropdown-toggle hide_dropdown_arrow hide_border_select h-100"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Theme
-              </div>
-              <ul
-                class="dropdown-menu w-100 scroll_dropdown"
-                aria-labelledby="dropdownMenuButton1"
-              >
-                <li>
-                  <div class="form-check dropdown-item px-4">
-                    <input
-                      class="form-check-input mx-auto"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label ps-2" for="education">
-                      Education
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check dropdown-item px-4">
-                    <input
-                      class="form-check-input mx-auto"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label ps-2" for="Health">
-                      Health
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check dropdown-item px-4">
-                    <input
-                      class="form-check-input mx-auto"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label ps-2" for="Children">
-                      Children
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check dropdown-item px-4">
-                    <input
-                      class="form-check-input mx-auto"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label ps-2" for="Children">
-                      Environment
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check dropdown-item px-4">
-                    <input
-                      class="form-check-input mx-auto"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label ps-2" for="Children">
-                      Animal
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check dropdown-item px-4">
-                    <input
-                      class="form-check-input mx-auto"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label ps-2" for="Children">
-                      Nutrition
-                    </label>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 outline-0 h-100 filter_item" >
-            @*Skill*@
-            <div class="dropdown h-100">
-              <div
-                class="form-select d-flex align-items-center dropdown-toggle hide_dropdown_arrow hide_border_select h-100"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Skill
-              </div>
-              <ul
-                class="dropdown-menu w-100 scroll_dropdown"
-                aria-labelledby="dropdownMenuButton1"
-              >
-                <li>
-                  <div class="form-check dropdown-item px-4">
-                    <input
-                      class="form-check-input mx-auto"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label ps-2" for="education">
-                      Astronomy
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check dropdown-item px-4">
-                    <input
-                      class="form-check-input mx-auto"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label ps-2" for="Health">
-                      Histroy
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check dropdown-item px-4">
-                    <input
-                      class="form-check-input mx-auto"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label ps-2" for="Children">
-                      Research
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check dropdown-item px-4">
-                    <input
-                      class="form-check-input mx-auto"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label ps-2" for="Children">
-                      Computer S.
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check dropdown-item px-4">
-                    <input
-                      class="form-check-input mx-auto"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label ps-2" for="Children">
-                      Archeolgy
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check dropdown-item px-4">
-                    <input
-                      class="form-check-input mx-auto"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label ps-2" for="Children">
-                      Nutrition
-                    </label>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+    <div class="row border-bottom" style="min-height:78px">
+        <div class="col-lg-6 col-11 d-flex align-items-center py-sm-2 py-lg-0">
+            <img src="~/assets/search.png"
+                 class="align-content-center my-auto"
+                 width="21px"
+                 height="21px" />
+            <input type="search"
+                   name=""
+                   placeholder="Search mission ..."
+                   id=""
+                   class="px-4 w-50"
+                   style="border: none; outline: none" />
         </div>
-      </div>
+        <button data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasResponsive"
+                aria-controls="offcanvasResponsive"
+                class="d-lg-none col-1 d-flex justify-content-end align-items-center btn-primary btn-light bg-transparent border-0">
+            <img src="~/assets/filter.png" alt="filter" />
+        </button>
+
+        <div class="offcanvas-lg offcanvas-end col-lg-6 resolve_outline"
+             tabindex="-1"
+             id="offcanvasResponsive"
+             aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header">
+                <button class="btn-primary bg-transparent border-0 outline-0"
+                        type="button"
+                        data-bs-dismiss="offcanvas"
+                        data-bs-target="#offcanvasResponsive"
+                        aria-label="Close">
+                    <img src="~/assets/left.png" alt="close" />
+                </button>
+                <a href="#" class="text-dark">clear all</a>
+            </div>
+            <div class="offcanvas-body filter_container h-100">
+                <div class="d-lg-flex row d-flex align-items-center g-lg-0 g-2 w-100">
+                    <div class="col-lg-3 h-100 filter_item">
+                        <select class="form-select hide_border_select h-100"
+                                aria-label="country"
+                                asp-items="@Model.CountryList"
+                                id="selectCountryFilter">
+                            <option disabled selected>-- Country --</option>
+
+                        </select>
+                    </div>
+                    <div class="col-lg-3 outline-0 h-100 filter_item">
+                        @*City*@
+                        <div class="dropdown h-100">
+                            <div class="form-select d-flex align-items-center dropdown-toggle hide_dropdown_arrow hide_border_select h-100"
+                                 type="button"
+                                 id="dropdownMenuButton1"
+                                 data-bs-toggle="dropdown"
+                                 aria-expanded="false">
+                                City
+                            </div>
+                            <ul class="dropdown-menu w-100 scroll_dropdown"
+                                aria-labelledby="dropdownMenuButton1">
+                                
+                                <li>
+                                    <div class="form-check dropdown-item px-4">
+                                        <input class="form-check-input mx-auto"
+                                               type="checkbox"
+                                               value=""
+                                               id="flexCheckDefault"
+                                               checked />
+                                        <label class="form-check-label ps-2" for="education">
+                                            Tirana
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 outline-0 h-100 filter_item">
+                        @*Theme*@
+                        <div class="dropdown h-100">
+                            <div class="form-select d-flex align-items-center dropdown-toggle hide_dropdown_arrow hide_border_select h-100"
+                                 type="button"
+                                 id="dropdownMenuButton1"
+                                 data-bs-toggle="dropdown"
+                                 aria-expanded="false">
+                                Theme
+                            </div>
+                            <ul class="dropdown-menu w-100 scroll_dropdown"
+                                aria-labelledby="dropdownMenuButton1">
+                                <li>
+                                    <div class="form-check dropdown-item px-4">
+                                        <input class="form-check-input mx-auto"
+                                               type="checkbox"
+                                               value=""
+                                               id="flexCheckDefault" />
+                                        <label class="form-check-label ps-2" for="education">
+                                            Education
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check dropdown-item px-4">
+                                        <input class="form-check-input mx-auto"
+                                               type="checkbox"
+                                               value=""
+                                               id="flexCheckDefault" />
+                                        <label class="form-check-label ps-2" for="Health">
+                                            Health
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check dropdown-item px-4">
+                                        <input class="form-check-input mx-auto"
+                                               type="checkbox"
+                                               value=""
+                                               id="flexCheckDefault" />
+                                        <label class="form-check-label ps-2" for="Children">
+                                            Children
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check dropdown-item px-4">
+                                        <input class="form-check-input mx-auto"
+                                               type="checkbox"
+                                               value=""
+                                               id="flexCheckDefault" />
+                                        <label class="form-check-label ps-2" for="Children">
+                                            Environment
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check dropdown-item px-4">
+                                        <input class="form-check-input mx-auto"
+                                               type="checkbox"
+                                               value=""
+                                               id="flexCheckDefault" />
+                                        <label class="form-check-label ps-2" for="Children">
+                                            Animal
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check dropdown-item px-4">
+                                        <input class="form-check-input mx-auto"
+                                               type="checkbox"
+                                               value=""
+                                               id="flexCheckDefault" />
+                                        <label class="form-check-label ps-2" for="Children">
+                                            Nutrition
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 outline-0 h-100 filter_item">
+                        @*Skill*@
+                        <div class="dropdown h-100">
+                            <div class="form-select d-flex align-items-center dropdown-toggle hide_dropdown_arrow hide_border_select h-100"
+                                 type="button"
+                                 id="dropdownMenuButton1"
+                                 data-bs-toggle="dropdown"
+                                 aria-expanded="false">
+                                Skill
+                            </div>
+                            <ul class="dropdown-menu w-100 scroll_dropdown"
+                                id="cityListFilter"
+                                aria-labelledby="dropdownMenuButton1">
+                                <li>
+                                    <div class="form-check dropdown-item px-4">
+                                        <input class="form-check-input mx-auto"
+                                               type="checkbox"
+                                               value=""
+                                               id="flexCheckDefault" />
+                                        <label class="form-check-label ps-2" for="education">
+                                            Astronomy
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check dropdown-item px-4">
+                                        <input class="form-check-input mx-auto"
+                                               type="checkbox"
+                                               value=""
+                                               id="flexCheckDefault" />
+                                        <label class="form-check-label ps-2" for="Health">
+                                            Histroy
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check dropdown-item px-4">
+                                        <input class="form-check-input mx-auto"
+                                               type="checkbox"
+                                               value=""
+                                               id="flexCheckDefault" />
+                                        <label class="form-check-label ps-2" for="Children">
+                                            Research
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check dropdown-item px-4">
+                                        <input class="form-check-input mx-auto"
+                                               type="checkbox"
+                                               value=""
+                                               id="flexCheckDefault" />
+                                        <label class="form-check-label ps-2" for="Children">
+                                            Computer S.
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check dropdown-item px-4">
+                                        <input class="form-check-input mx-auto"
+                                               type="checkbox"
+                                               value=""
+                                               id="flexCheckDefault" />
+                                        <label class="form-check-label ps-2" for="Children">
+                                            Archeolgy
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check dropdown-item px-4">
+                                        <input class="form-check-input mx-auto"
+                                               type="checkbox"
+                                               value=""
+                                               id="flexCheckDefault" />
+                                        <label class="form-check-label ps-2" for="Children">
+                                            Nutrition
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="d-flex flex-row flex-wrap container-lg container-fluid my-3" >
-      <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2" >
-          <a href="#"><span class="px-1 text-dark fw-bolder" >Grow trees</span></a>
-          <a href="#"><img src="~/assets/cancel.png" /></a>
-      </div>
-       <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2" >
-          <a href="#"><span class="px-1 text-dark fw-bolder " >Grow trees</span></a>
-          <a href="#"><img src="~/assets/cancel.png" /></a>
-      </div>
-       <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2" >
-          <a href="#"><span class="px-1 text-dark fw-bolder " >Grow trees</span></a>
-          <a href="#"><img src="~/assets/cancel.png" /></a>
-      </div>
-       <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2" >
-          <a href="#"><span class="px-1 text-dark fw-bolder " >Grow trees</span></a>
-          <a href="#"><img src="~/assets/cancel.png" /></a>
-      </div>
-       <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2" >
-          <a href="#"><span class="px-1 text-dark fw-bolder " >Grow trees</span></a>
-          <a href="#"><img src="~/assets/cancel.png" /></a>
-      </div>
-       <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2" >
-          <a href="#"><span class="px-1 text-dark fw-bolder " >Grow trees</span></a>
-          <a href="#"><img src="~/assets/cancel.png" /></a>
-      </div>
-       <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2" >
-          <a href="#"><span class="px-1 text-dark fw-bolder " >Grow trees</span></a>
-          <a href="#"><img src="~/assets/cancel.png" /></a>
-      </div>
-      <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2" >
-          <a href="#"><span class="px-1 text-dark fw-bolder " >Grow trees</span></a>
-          <a href="#"><img src="~/assets/cancel.png" /></a>
-      </div>
-      <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2" >
-          <a href="#"><span class="px-1 text-dark fw-bolder " >Grow trees</span></a>
-          <a href="#"><img src="~/assets/cancel.png" /></a>
-      </div>
-      <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2" >
-          <a href="#"><span class="px-1 text-dark fw-bolder " >Grow trees</span></a>
-          <a href="#"><img src="~/assets/cancel.png" /></a>
-      </div>
-      <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2" >
-          <a href="#"><span class="px-1 text-dark fw-bolder " >Grow trees</span></a>
-          <a href="#"><img src="~/assets/cancel.png" /></a>
-      </div>
-      <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2" >
-          <a href="#"><span class="px-1 text-dark fw-bolder " >Grow trees</span></a>
-          <a href="#"><img src="~/assets/cancel.png" /></a>
-      </div>
-      <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2" >
-          <a href="#"><span class="px-1 text-dark fw-bolder " >Grow trees</span></a>
-          <a href="#"><img src="~/assets/cancel.png" /></a>
-      </div>
-      <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2" >
-          <a href="#"><span class="px-1 text-dark fw-bolder " >Grow trees</span></a>
-          <a href="#"><img src="~/assets/cancel.png" /></a>
-      </div>
-      <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2" >
-          <a href="#"><span class="px-1 text-dark fw-bolder " >Grow trees</span></a>
-          <a href="#"><img src="~/assets/cancel.png" /></a>
-      </div>
-      <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 px-2">
-          <a href="#" class="text-dark px-1 fw-bold" >Clear all</a>
-      </div>
-  </div>
+    <div class="d-flex flex-row flex-wrap container-lg container-fluid my-3">
+        <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2">
+            <a href="#"><span class="px-1 text-dark fw-bolder">Grow trees</span></a>
+            <a href="#"><img src="~/assets/cancel.png" /></a>
+        </div>
+        <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2">
+            <a href="#"><span class="px-1 text-dark fw-bolder ">Grow trees</span></a>
+            <a href="#"><img src="~/assets/cancel.png" /></a>
+        </div>
+        <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2">
+            <a href="#"><span class="px-1 text-dark fw-bolder ">Grow trees</span></a>
+            <a href="#"><img src="~/assets/cancel.png" /></a>
+        </div>
+        <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2">
+            <a href="#"><span class="px-1 text-dark fw-bolder ">Grow trees</span></a>
+            <a href="#"><img src="~/assets/cancel.png" /></a>
+        </div>
+        <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2">
+            <a href="#"><span class="px-1 text-dark fw-bolder ">Grow trees</span></a>
+            <a href="#"><img src="~/assets/cancel.png" /></a>
+        </div>
+        <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2">
+            <a href="#"><span class="px-1 text-dark fw-bolder ">Grow trees</span></a>
+            <a href="#"><img src="~/assets/cancel.png" /></a>
+        </div>
+        <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2">
+            <a href="#"><span class="px-1 text-dark fw-bolder ">Grow trees</span></a>
+            <a href="#"><img src="~/assets/cancel.png" /></a>
+        </div>
+        <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2">
+            <a href="#"><span class="px-1 text-dark fw-bolder ">Grow trees</span></a>
+            <a href="#"><img src="~/assets/cancel.png" /></a>
+        </div>
+        <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2">
+            <a href="#"><span class="px-1 text-dark fw-bolder ">Grow trees</span></a>
+            <a href="#"><img src="~/assets/cancel.png" /></a>
+        </div>
+        <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2">
+            <a href="#"><span class="px-1 text-dark fw-bolder ">Grow trees</span></a>
+            <a href="#"><img src="~/assets/cancel.png" /></a>
+        </div>
+        <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2">
+            <a href="#"><span class="px-1 text-dark fw-bolder ">Grow trees</span></a>
+            <a href="#"><img src="~/assets/cancel.png" /></a>
+        </div>
+        <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2">
+            <a href="#"><span class="px-1 text-dark fw-bolder ">Grow trees</span></a>
+            <a href="#"><img src="~/assets/cancel.png" /></a>
+        </div>
+        <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2">
+            <a href="#"><span class="px-1 text-dark fw-bolder ">Grow trees</span></a>
+            <a href="#"><img src="~/assets/cancel.png" /></a>
+        </div>
+        <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2">
+            <a href="#"><span class="px-1 text-dark fw-bolder ">Grow trees</span></a>
+            <a href="#"><img src="~/assets/cancel.png" /></a>
+        </div>
+        <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2">
+            <a href="#"><span class="px-1 text-dark fw-bolder ">Grow trees</span></a>
+            <a href="#"><img src="~/assets/cancel.png" /></a>
+        </div>
+        <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 px-2">
+            <a href="#" class="text-dark px-1 fw-bold">Clear all</a>
+        </div>
+    </div>
 </div>
+
 

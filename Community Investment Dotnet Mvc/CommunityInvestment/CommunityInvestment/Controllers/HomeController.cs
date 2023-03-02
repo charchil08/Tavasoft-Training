@@ -1,4 +1,6 @@
 ﻿using CommunityInvestment.Entities.Data;
+using CommunityInvestment.Entities.DataModels;
+using CommunityInvestment.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -24,8 +26,9 @@ namespace CommunityInvestment.Controllers
                         Value = u.CountryId.ToString()
                     }
                 );
-            ViewBag.CountryList = CountryList; 
-            return View("_SearchFilterHeader");
+            SearchFilterHeaderModel sfm = new();
+            sfm.CountryList = CountryList;
+            return View(sfm);
         }
 
         public IActionResult MissionDetail()
@@ -36,6 +39,12 @@ namespace CommunityInvestment.Controllers
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        public JsonResult FetchCityBasedOnCountry([FromQuery]string countryId)
+        {
+            List<City> cities = _context.Cities.Where(c => c.CountryId == (long)Convert.ToDouble(countryId)).ToList();
+            return Json(cities);
         }
     }
 }
