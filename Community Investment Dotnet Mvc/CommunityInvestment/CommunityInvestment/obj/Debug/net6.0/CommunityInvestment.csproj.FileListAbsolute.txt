@@ -267,3 +267,5 @@ D:\CHARCHIL\Tavasoft-Training\Community Investment Dotnet Mvc\CommunityInvestmen
 D:\CHARCHIL\Tavasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\bin\Debug\net6.0\System.Web.Helpers.Crypto.dll
 D:\CHARCHIL\Tavasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\bin\Debug\net6.0\CommunityInvestment.Common.dll
 D:\CHARCHIL\Tavasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\bin\Debug\net6.0\CommunityInvestment.Common.pdb
+D:\CHARCHIL\Tavasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\CHARCHIL\Tavasoft-Training\Community Investment Dotnet Mvc\CommunityInvestment\CommunityInvestment\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll

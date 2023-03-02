@@ -20,7 +20,7 @@ builder.Services.AddDbContext<CommunityInvestmentContext>(options => options.Use
 //Add scoped
 
 //JWT
-var tokenKey = builder.Configuration.GetConnectionString("TokenKey");
+var tokenKey = builder.Configuration.GetSection("TokenKey").Value;
 var key = Encoding.ASCII.GetBytes(tokenKey);
 var context = new CommunityInvestmentContext();
 

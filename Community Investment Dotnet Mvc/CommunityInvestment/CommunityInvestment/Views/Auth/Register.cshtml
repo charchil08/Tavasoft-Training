@@ -1,5 +1,5 @@
-﻿@using CommunityInvestment.Entities.DataModels
-@model User;
+﻿@using CommunityInvestment.Models.ViewModels
+@model RegisterModel;
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
@@ -7,102 +7,91 @@
     ViewData["Title"] = "Register Here";
 }
 <div class="container-fluid custom_container">
-      <div class="row d-flex align-items-center content_wrapper">
+    <div class="row d-flex align-items-center content_wrapper">
         <partial name="_Slider" />
-        <div
-          class="form_container col-xl-4 d-flex flex-column justify-content-center align-items-center mt-4"
-        >
-          <form class="w-75 m-auto" method="post" asp-action="Register" asp-controller="Auth" >
-            <div class="mb-3">
-              <label for="exampleInputText" class="form-label"
-                >First Name</label
-              >
-              <input
-                type="text"
-                class="form-control custom_input"
-                id="exampleInputText"
-                placeholder="evan"
-                aria-describedby="NameHelp"
-                asp-for="FirstName"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputText" class="form-label">Last Name</label>
-              <input
-                type="text"
-                class="form-control custom_input"
-                id="exampleInputText"
-                placeholder="donohue"
-                aria-describedby="NameHelp"
-                asp-for="LastName"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputText" class="form-label"
-                >Phone Number</label
-              >
-              <input
-                type="text"
-                class="form-control custom_input"
-                id="exampleInputText"
-                placeholder="8923454615"
-                aria-describedby="NameHelp"
-                asp-for="PhoneNumber"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"
-                >Email address</label
-              >
-              <input
-                type="email"
-                class="form-control custom_input"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="evan.donohue@gmail.com"
-                asp-for="Email"
-                />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
-                >Password</label
-              >
-              <input
-                type="password"
-                class="form-control custom_input"
-                id="exampleInputPassword1"
-                placeholder="********"
-                asp-for="Password"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
-                >Confirm Password</label
-              >
-              <input
-                type="password"
-                class="form-control custom_input"
-                id="exampleInputPassword1"
-                placeholder="********"
-              />
-            </div>
+        <div class="form_container col-xl-4 d-flex flex-column justify-content-center align-items-center mt-4">
+            <form class="w-75 m-auto" method="post" asp-action="Register" asp-controller="Auth">
+                <div class="mb-3">
+                    <label for="exampleInputText" class="form-label">First Name</label>
+                    <input type="text"
+                           class="form-control custom_input"
+                           id="exampleInputText"
+                           placeholder="evan"
+                           aria-describedby="NameHelp"
+                           asp-for="FirstName" />
+                    <span class="text-danger" asp-validation-for="FirstName"></span>
 
-            <button
-              type="submit"
-              class="btn btn-outline-warning w-100 custom_btn"
-            >
-              Register
-            </button>
-          </form>
-          <div class="add_opt mt-lg-2 text-center">
-            <p><a asp-controller="Auth" asp-action="LostPassword" class="text-dark"> Lost your password?</a></p>
-            <p>
-              Already Registered? <a asp-controller="Auth" asp-action="Index">Login Now</a>
-            </p>
-          </div>
-          <div class="privacy mt-lg-4 text-center">
-            <a asp-controller="Home" asp-action="Privacy" class="text-dark" >Privacy Policy</a>
-          </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputText" class="form-label">Last Name</label>
+                    <input type="text"
+                           class="form-control custom_input"
+                           id="exampleInputText"
+                           placeholder="donohue"
+                           aria-describedby="NameHelp"
+                           asp-for="LastName" />
+                    <span class="text-danger" asp-validation-for="LastName"></span>
+
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputText" class="form-label">Phone Number</label>
+                    <input type="text"
+                           class="form-control custom_input"
+                           id="exampleInputText"
+                           placeholder="8923454615"
+                           aria-describedby="NameHelp"
+                           asp-for="PhoneNumber" />
+                    <span class="text-danger" asp-validation-for="PhoneNumber"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email"
+                           class="form-control custom_input"
+                           id="exampleInputEmail1"
+                           aria-describedby="emailHelp"
+                           placeholder="evan.donohue@gmail.com"
+                           asp-for="Email" />
+                    <span class="text-danger" asp-validation-for="Email"></span>
+
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password"
+                           class="form-control custom_input"
+                           id="exampleInputPassword1"
+                           placeholder="********"
+                           asp-for="Password" />
+                    <span class="text-danger" asp-validation-for="Password"></span>
+
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                    <input type="password"
+                           class="form-control custom_input"
+                           id="exampleInputPassword1"
+                           placeholder="********"
+                           asp-for="ConfirmPassword" />
+                    <span class="text-danger" asp-validation-for="ConfirmPassword"></span>
+                </div>
+
+                <button type="submit"
+                        class="btn btn-outline-warning w-100 custom_btn">
+                    Register
+                </button>
+            </form>
+            <div class="add_opt mt-lg-2 text-center">
+                <p><a asp-controller="Auth" asp-action="LostPassword" class="text-dark"> Lost your password?</a></p>
+                <p>
+                    Already Registered? <a asp-controller="Auth" asp-action="Index">Login Now</a>
+                </p>
+            </div>
+            <div class="privacy mt-lg-4 text-center">
+                <a asp-controller="Home" asp-action="Privacy" class="text-dark">Privacy Policy</a>
+            </div>
         </div>
-      </div>
     </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

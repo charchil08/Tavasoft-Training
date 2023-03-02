@@ -84,7 +84,7 @@ namespace CommunityInvestment.Controllers
                     Port = 587,
                     UseDefaultCredentials = false,
                     EnableSsl = true,
-                    Credentials = new NetworkCredential("charchil.community@gmail.com", ""),
+                    Credentials = new NetworkCredential("charchil.community@gmail.com", "hlxjrtuyfztfxmii"),
                 };
                 smtpClient.Send("charchil.community@gmail.com", user.Email, mailMessage.Subject, mailMessage.Body);
 
@@ -169,19 +169,47 @@ namespace CommunityInvestment.Controllers
         }
 
         [HttpPost]
-        public IActionResult Register(User user)
+        public IActionResult Register(RegisterModel user)
         {
-            if (user == null) return View("Error");
-            user.CityId = 11;
-            user.CountryId = 1;
+            if(!ModelState.IsValid)
+            {
+                TempData["error"] = "Try again ...";
+                return View();
+            }
 
-            user.Password = Crypto.HashPassword(user.Password);
-            _context.Users.Add(user);
-            _context.SaveChanges();
+            try
+            {
 
-            TempData["success"] = "Account created ...";
-            return RedirectToAction("Index", "Story");
-        }
+                if(_context.Users.FirstOrDefault(u => u.Email.Equals(user.Email)) != null)
+                {
+                    throw new Exception("User already registered");
+                }
+
+                User obj = new()
+                {
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
+                    Email = user.Email,
+                    PhoneNumber = user.PhoneNumber,
+                    Password = Crypto.HashPassword(user.Password),
+
+                    //TODO:Dynamicly
+                    CityId = 11,
+                    CountryId = 1
+                };
+
+                _context.Users.Add(obj);
+                _context.SaveChanges();
+
+                TempData["success"] = "Account created ...";
+                return RedirectToAction("Index","Story");
+            }
+            catch(Exception ae)
+            {
+                TempData["error"] = ae.Message;
+                return View();
+            }
+          }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
