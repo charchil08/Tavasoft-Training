@@ -1,19 +1,31 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CommunityInvestment.Entities.Data;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace CommunityInvestment.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly CommunityInvestmentContext _context;
+        private readonly IConfiguration _configuration;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(CommunityInvestmentContext context, IConfiguration configuration)
         {
-            _logger = logger;
+            _context = context;
+            _configuration = configuration;
         }
 
         public IActionResult Index()
         {
-            return View();
+            IEnumerable<SelectListItem> CountryList = _context.Countries.ToList().Select(
+                    u => new SelectListItem
+                    {
+                        Text = u.Name,
+                        Value = u.CountryId.ToString()
+                    }
+                );
+            ViewBag.CountryList = CountryList; 
+            return View("_SearchFilterHeader");
         }
 
         public IActionResult MissionDetail()

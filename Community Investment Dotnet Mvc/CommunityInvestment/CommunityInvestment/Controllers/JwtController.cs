@@ -19,6 +19,7 @@ namespace CommunityInvestment.Controllers
         }
 
         //Auth model -> JWT token
+        
         public string? Authenticate(string email)
         {
             if (!_context.Users.Any(u => u.Email == email))

@@ -53,11 +53,10 @@ https://go.microsoft.com/fwlink/?LinkID=397860 *@ @{ }
             <select
               class="form-select hide_border_select h-100"
               aria-label="country"
+              asp-items="ViewBag.CountryList"
             >
-              <option selected>Country</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option disabled selected>-- Country --</option>
+              
             </select>
           </div>
           <div class="col-lg-3 outline-0 h-100 filter_item" >
