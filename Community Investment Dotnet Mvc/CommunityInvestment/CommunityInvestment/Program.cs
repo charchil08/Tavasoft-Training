@@ -14,34 +14,34 @@ builder.Services.AddControllersWithViews();
 
 // Add connection string
 builder.Services.AddDbContext<CommunityInvestmentContext>(options => options.UseSqlServer(
-    builder.Configuration.GetConnectionString("CiConnection")
+    builder.Configuration.GetConnectionString("LapConnection")
     ));
 
 //Add scoped
 
 //JWT
-var tokenKey = builder.Configuration.GetSection("TokenKey").Value;
-var key = Encoding.ASCII.GetBytes(tokenKey);
-var context = new CommunityInvestmentContext();
+//var tokenKey = builder.Configuration.GetSection("TokenKey").Value;
+//var key = Encoding.ASCII.GetBytes(tokenKey);
+//var context = new CommunityInvestmentContext();
 
-builder.Services.AddAuthentication(x =>
-{
-    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-})
-.AddJwtBearer(x =>
-{
-    x.RequireHttpsMetadata = false;
-    x.SaveToken = true;
-    x.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(key),
-        ValidateIssuer = false,
-        ValidateAudience = false
-    };
-});
-builder.Services.AddSingleton(new JwtController(tokenKey,context));
+//builder.Services.AddAuthentication(x =>
+//{
+//    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+//    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+//})
+//.AddJwtBearer(x =>
+//{
+//    x.RequireHttpsMetadata = false;
+//    x.SaveToken = true;
+//    x.TokenValidationParameters = new TokenValidationParameters
+//    {
+//        ValidateIssuerSigningKey = true,
+//        IssuerSigningKey = new SymmetricSecurityKey(key),
+//        ValidateIssuer = false,
+//        ValidateAudience = false
+//    };
+//});
+//builder.Services.AddSingleton(new JwtController(tokenKey,context));
 
 var app = builder.Build();
 

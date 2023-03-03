@@ -10080,26 +10080,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pci141\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\ercha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\CommunityInvestment.csproj",
+      "projectUniqueName": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\CommunityInvestment.csproj",
       "projectName": "CommunityInvestment",
-      "projectPath": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\CommunityInvestment.csproj",
-      "packagesPath": "C:\\Users\\pci141\\.nuget\\packages\\",
-      "outputPath": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\obj\\",
+      "projectPath": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\CommunityInvestment.csproj",
+      "packagesPath": "C:\\Users\\ercha\\.nuget\\packages\\",
+      "outputPath": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\pci141\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ercha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10113,14 +10106,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment.Common\\CommunityInvestment.Common.csproj": {
-              "projectPath": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment.Common\\CommunityInvestment.Common.csproj"
+            "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment.Common\\CommunityInvestment.Common.csproj": {
+              "projectPath": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment.Common\\CommunityInvestment.Common.csproj"
             },
-            "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment.Entities\\CommunityInvestment.Entities.csproj": {
-              "projectPath": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment.Entities\\CommunityInvestment.Entities.csproj"
+            "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment.Entities\\CommunityInvestment.Entities.csproj": {
+              "projectPath": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment.Entities\\CommunityInvestment.Entities.csproj"
             },
-            "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment.Repository\\CommunityInvestment.Repository.csproj": {
-              "projectPath": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment.Repository\\CommunityInvestment.Repository.csproj"
+            "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment.Repository\\CommunityInvestment.Repository.csproj": {
+              "projectPath": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment.Repository\\CommunityInvestment.Repository.csproj"
             }
           }
         }
@@ -10188,7 +10181,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   },

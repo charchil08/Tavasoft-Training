@@ -77,7 +77,7 @@
                                 aria-labelledby="dropdownMenuButton1">
                                 @foreach (var theme in @Model.MissionThemesList)
                                 {
-                                    var checkBoxId = theme.MissionThemeId;
+                                    var checkBoxId = "themeFilter" + theme.MissionThemeId;
                                     var liId = "li" + theme.Title;
                                     <li id="@liId">
                                         <div class="form-check dropdown-item px-4">
@@ -108,11 +108,11 @@
                                 aria-labelledby="dropdownMenuButton1">
                                 @foreach (var skill in @Model.SkillsList)
                                 {
-                                    var checkBoxId = skill.SkillId;
+                                    var checkBoxId = "skillFilter" + skill.SkillId;
                                     var liId = "li" + skill.SkillName;
                                     <li id="@liId">
                                         <div class="form-check dropdown-item px-4">
-                                            <input class="form-check-input mx-auto skillListClass skill-@checkBoxId"
+                                            <input class="form-check-input mx-auto skillListClass"
                                                type="checkbox"
                                                id="@checkBoxId" />
                                             <label class="form-check-label ps-2" for="@skill.SkillName">
@@ -130,6 +130,7 @@
         </div>
     </div>
     <div class="d-flex flex-row flex-wrap container-lg container-fluid my-3" id="badgeWrapper" >
+        <button type="submit" class="btn border-0 outline-0 text-info d-none" id="clearAllFilter" onclick="clearAllFilterByBtn()" >Clear all</button>
     </div>
 </div>
 

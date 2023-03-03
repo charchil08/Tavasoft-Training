@@ -40,8 +40,7 @@
 		(2, 'Multan'),
 		(2, 'Gujranwala'),
 		(2, 'Quetta'),
-		(2, 'Peshawar'),
-		(2, 'Hyderabad');
+		(2, 'Peshawar')
 
 	INSERT INTO dbo.city
 		(country_Id, name)
@@ -108,3 +107,6 @@
 	  ('Computer S.', 1),
 	  ('Diversity', 1),
 	  ('Planning', 1);
+
+
+select * from city;
