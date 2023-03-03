@@ -32,44 +32,44 @@
 
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
 <script type="text/javascript">
+        let badges = {
+            themes : [],
+            skills : []
+        };
+        
+        function removeFilterBadge(badgeId) {
+            debugger;
+            console.log(badgeId);
+            
+            if(badgeId.id.startsWith("badgeTheme")) {
+                let uncheckCheckbox = document.getElementById(badgeId.id.replace("badgeTheme",""));
+                uncheckCheckbox.checked = false;
+                badges.themes.filter(theme => theme.id !== badgeId.id)
+            }
+            else {
+                let checkboxId = badgeId.id.replace("badgeSkill","skill-");
+                let uncheckCheckbox = document.getElementsByClassName(checkboxId)[0];
+
+                uncheckCheckbox.checked = false;
+                badges.skills.filter(skill => skill.id !== badgeId.id)
+            }
+            
+            badgeId.remove();
+
+        }
 
         $(document).ready(function() {
 
         console.log("Hello")
 
+        
         document.getElementById("selectCountryFilter").addEventListener('change',(e) => {
             e.preventDefault();
             console.log(e.target.value)
             debugger;
             fetchcityBasedOnCountry(e.target.value);
         });
-
-        //function fetchcityBasedOnCountry(countryId) {
-        //    axios.get(`Home/FetchCityBasedOnCountry/?countryId=${countryId}`)
-        //    .then(resp => {
-        //    debugger;
-        //        for(let data of resp.data) {
-        //            document.getElementById("cityListFilter").innerHTML = `
-        //            <li>
-        //                <div class="form-check dropdown-item px-4">
-        //                    <input class="form-check-input mx-auto"
-        //                           type="checkbox"
-        //                           value=${data.cityId}
-        //                           checked
-        //                           id="flexCheckDefault" />
-        //                    <label class="form-check-label ps-2" for=${data.Name}>
-        //                        ${data.Name}
-        //                    </label>
-        //                </div>
-        //          </li>
-        //        `;
-        //        }
-
-        //    })
-        //    .catch(err=>console.log(err));
-        //}
 
         function fetchcityBasedOnCountry(countryId) {
             $.ajax({
@@ -88,5 +88,88 @@
                 }
             });
         }
-    });
+
+
+        let themeList = [... document.querySelectorAll(".themeListClass")];
+        console.log("Theme list : ", themeList);
+
+        let skillList = [... document.querySelectorAll(".skillListClass")];
+        console.log("Skill list : ", skillList);
+
+        let removeFilterBtns=[];
+
+        //Appending Skills and themes for badges
+
+        themeList.forEach(function(theme, ind) {
+            theme.addEventListener("change", function() {
+                debugger;
+                
+                let indexOfCurrentBadge = -1;
+                let thisId = this.id;
+
+                badges.themes.forEach(function(t,i) {
+                    if(t.id.localeCompare("badgeTheme"+thisId)==0) {
+                        indexOfCurrentBadge = i;
+                    }
+                })
+
+                if(!this.checked && indexOfCurrentBadge!=-1) {
+                    badges.themes.splice(indexOfCurrentBadge,1);
+                    document.getElementById("badgeTheme"+thisId).remove();
+                }
+
+                console.log("line 88 : " + badges);
+
+                if(this.checked && indexOfCurrentBadge==-1) {
+                    let badgeId = `badgeTheme` + thisId;
+                    let removeFilterId = "remove" + badgeId;
+                    badges.themes.push({id:badgeId, value:this.nextElementSibling.innerText.trim()});
+                    $("#badgeWrapper").prepend(`
+                        <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2" id="${badgeId}" >
+                            <span class="px-1 text-dark fw-bolder">${this.nextElementSibling.innerText}</span>
+                            <span class="btn m-0 p-0 removeFilterX" id="${removeFilterId}" onclick=removeFilterBadge(${badgeId})  ><i class="bi bi-x"></i></span>
+                       </div>
+                    `);
+                }
+            });
+        });
+
+     
+
+        skillList.forEach(function(skill, ind) {
+            skill.addEventListener("change", function() {
+                debugger;
+                
+                let indexOfCurrentBadge = -1;
+                let thisId = this.id;
+
+                badges.skills.forEach(function(s,i) {
+                    if(s.id.localeCompare("badgeSkill"+thisId)==0) {
+                        indexOfCurrentBadge = i;
+                    }
+                })
+
+                if(!this.checked && indexOfCurrentBadge!=-1) {
+                    badges.skills.splice(indexOfCurrentBadge,1);
+                    document.getElementById("badgeSkill"+thisId).remove();
+                }
+
+
+                if(this.checked && indexOfCurrentBadge==-1) {
+                    let badgeId = `badgeSkill` + thisId;
+                    let removeFilterId = "remove" + badgeId
+                    badges.skills.push({id:badgeId, value:this.nextElementSibling.innerText.trim()});
+                    $("#badgeWrapper").prepend(`
+                        <div class="mx-2 my-1 d-flex-column flex-row align-items-center py-1 border rounded-pill px-2" id="${badgeId}" >
+                            <span class="px-1 text-dark fw-bolder">${this.nextElementSibling.innerText}</span>
+                            <span class="btn m-0 p-0 removeFilterX" id="${removeFilterId}" onclick=removeFilterBadge(${badgeId})  ><i class="bi bi-x"></i></span>
+                       </div>
+                    `);
+                }
+            });
+        }); 
+        
+        
+
+      });
 </script>

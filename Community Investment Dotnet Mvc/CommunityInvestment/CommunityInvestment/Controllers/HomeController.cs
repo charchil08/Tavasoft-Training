@@ -51,7 +51,7 @@ namespace CommunityInvestment.Controllers
         {
             IEnumerable<City> cities = _context.Cities.Where(c => c.CountryId == (long)Convert.ToDouble(countryId)).ToList();
             SearchFilterHeaderModel searchFilterHeaderModel = new();
-            searchFilterHeaderModel.countryId = (long)Convert.ToDouble(countryId);
+            searchFilterHeaderModel.CountryId = (long)Convert.ToDouble(countryId);
             searchFilterHeaderModel.CityList = cities;
 
             ViewBag.SelectedCityList = cities.Select(c => new SelectListItem

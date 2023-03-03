@@ -7,7 +7,7 @@ namespace CommunityInvestment.Models.ViewModels
     {
         public IEnumerable<SelectListItem> CountryList { get; set; } = null!;
 
-        public long? countryId { get; set; }
+        public long? CountryId { get; set; }
 
         public IEnumerable<City>? CityList { get; set; }
 
