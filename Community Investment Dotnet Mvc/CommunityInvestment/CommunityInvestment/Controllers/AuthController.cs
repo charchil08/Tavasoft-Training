@@ -100,7 +100,7 @@ namespace CommunityInvestment.Controllers
                     Port = 587,
                     UseDefaultCredentials = false,
                     EnableSsl = true,
-                    Credentials = new NetworkCredential("", ""),
+                    Credentials = new NetworkCredential("charchil.community@gmail.com", "abqsbcnhgebzmrgs"),
                 };
                 smtpClient.Send("charchil.community@gmail.com", obj.Email, mailMessage.Subject, mailMessage.Body);
 

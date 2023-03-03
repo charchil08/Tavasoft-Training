@@ -5,9 +5,15 @@ namespace CommunityInvestment.Models.ViewModels
 {
     public class SearchFilterHeaderModel
     {
-        public IEnumerable<SelectListItem> CountryList { get; set; }
+        public IEnumerable<SelectListItem> CountryList { get; set; } = null!;
+
+        public long? countryId { get; set; }
 
         public IEnumerable<City>? CityList { get; set; }
+
+        public IEnumerable<MissionTheme> MissionThemesList { get; set; } = null!;
+
+        public IEnumerable<Skill> SkillsList { get; set; } = null!;
 
     }
 }

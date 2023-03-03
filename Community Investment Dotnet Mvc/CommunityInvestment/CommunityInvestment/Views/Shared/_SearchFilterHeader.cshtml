@@ -57,23 +57,12 @@
                                 City
                             </div>
                             <ul class="dropdown-menu w-100 scroll_dropdown"
-                                aria-labelledby="dropdownMenuButton1">
-                                
-                                <li>
-                                    <div class="form-check dropdown-item px-4">
-                                        <input class="form-check-input mx-auto"
-                                               type="checkbox"
-                                               value=""
-                                               id="flexCheckDefault"
-                                               checked />
-                                        <label class="form-check-label ps-2" for="education">
-                                            Tirana
-                                        </label>
-                                    </div>
-                                </li>
+                                aria-labelledby="dropdownMenuButton1"
+                                id="filteredCityList">
                             </ul>
                         </div>
                     </div>
+
                     <div class="col-lg-3 outline-0 h-100 filter_item">
                         @*Theme*@
                         <div class="dropdown h-100">
@@ -85,73 +74,23 @@
                                 Theme
                             </div>
                             <ul class="dropdown-menu w-100 scroll_dropdown"
+                            id="themeListFilter"
                                 aria-labelledby="dropdownMenuButton1">
-                                <li>
-                                    <div class="form-check dropdown-item px-4">
-                                        <input class="form-check-input mx-auto"
+                                @foreach (var theme in @Model.MissionThemesList)
+                                {
+                                    var checkBoxId = theme.MissionThemeId;
+                                    var liId = "li" + theme.Title;
+                                    <li id="@liId">
+                                        <div class="form-check dropdown-item px-4">
+                                            <input class="form-check-input mx-auto"
                                                type="checkbox"
-                                               value=""
-                                               id="flexCheckDefault" />
-                                        <label class="form-check-label ps-2" for="education">
-                                            Education
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check dropdown-item px-4">
-                                        <input class="form-check-input mx-auto"
-                                               type="checkbox"
-                                               value=""
-                                               id="flexCheckDefault" />
-                                        <label class="form-check-label ps-2" for="Health">
-                                            Health
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check dropdown-item px-4">
-                                        <input class="form-check-input mx-auto"
-                                               type="checkbox"
-                                               value=""
-                                               id="flexCheckDefault" />
-                                        <label class="form-check-label ps-2" for="Children">
-                                            Children
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check dropdown-item px-4">
-                                        <input class="form-check-input mx-auto"
-                                               type="checkbox"
-                                               value=""
-                                               id="flexCheckDefault" />
-                                        <label class="form-check-label ps-2" for="Children">
-                                            Environment
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check dropdown-item px-4">
-                                        <input class="form-check-input mx-auto"
-                                               type="checkbox"
-                                               value=""
-                                               id="flexCheckDefault" />
-                                        <label class="form-check-label ps-2" for="Children">
-                                            Animal
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check dropdown-item px-4">
-                                        <input class="form-check-input mx-auto"
-                                               type="checkbox"
-                                               value=""
-                                               id="flexCheckDefault" />
-                                        <label class="form-check-label ps-2" for="Children">
-                                            Nutrition
-                                        </label>
-                                    </div>
-                                </li>
+                                               id="@checkBoxId" />
+                                            <label class="form-check-label ps-2" for="@theme.Title">
+                                                @theme.Title
+                                            </label>
+                                        </div>
+                                    </li>
+                                }
                             </ul>
                         </div>
                     </div>
@@ -166,74 +105,24 @@
                                 Skill
                             </div>
                             <ul class="dropdown-menu w-100 scroll_dropdown"
-                                id="cityListFilter"
+                                id="skillListFilter"
                                 aria-labelledby="dropdownMenuButton1">
-                                <li>
-                                    <div class="form-check dropdown-item px-4">
-                                        <input class="form-check-input mx-auto"
+                                @foreach (var skill in @Model.SkillsList)
+                                {
+                                    var checkBoxId = skill.SkillId;
+                                    var liId = "li" + skill.SkillName;
+                                    <li id="@liId">
+                                        <div class="form-check dropdown-item px-4">
+                                            <input class="form-check-input mx-auto"
                                                type="checkbox"
-                                               value=""
-                                               id="flexCheckDefault" />
-                                        <label class="form-check-label ps-2" for="education">
-                                            Astronomy
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check dropdown-item px-4">
-                                        <input class="form-check-input mx-auto"
-                                               type="checkbox"
-                                               value=""
-                                               id="flexCheckDefault" />
-                                        <label class="form-check-label ps-2" for="Health">
-                                            Histroy
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check dropdown-item px-4">
-                                        <input class="form-check-input mx-auto"
-                                               type="checkbox"
-                                               value=""
-                                               id="flexCheckDefault" />
-                                        <label class="form-check-label ps-2" for="Children">
-                                            Research
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check dropdown-item px-4">
-                                        <input class="form-check-input mx-auto"
-                                               type="checkbox"
-                                               value=""
-                                               id="flexCheckDefault" />
-                                        <label class="form-check-label ps-2" for="Children">
-                                            Computer S.
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check dropdown-item px-4">
-                                        <input class="form-check-input mx-auto"
-                                               type="checkbox"
-                                               value=""
-                                               id="flexCheckDefault" />
-                                        <label class="form-check-label ps-2" for="Children">
-                                            Archeolgy
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check dropdown-item px-4">
-                                        <input class="form-check-input mx-auto"
-                                               type="checkbox"
-                                               value=""
-                                               id="flexCheckDefault" />
-                                        <label class="form-check-label ps-2" for="Children">
-                                            Nutrition
-                                        </label>
-                                    </div>
-                                </li>
+                                               id="@checkBoxId" />
+                                            <label class="form-check-label ps-2" for="@skill.SkillName">
+                                                @skill.SkillName
+                                            </label>
+                                        </div>
+                                    </li>
+                                }
+
                             </ul>
                         </div>
                     </div>

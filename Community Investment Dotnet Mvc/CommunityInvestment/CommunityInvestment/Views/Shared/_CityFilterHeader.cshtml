@@ -1,0 +1,48 @@
+﻿@using CommunityInvestment.Models.ViewModels
+@model SearchFilterHeaderModel;
+@{
+}
+
+@*City*@
+
+
+
+    @foreach (var city in @Model.CityList)
+    {
+        var checkBoxId = city.CityId;
+        var liId = "li" + city.Name;
+        <li id="@liId">
+            <div class="form-check dropdown-item px-4">
+                <input class="form-check-input mx-auto"
+                   type="checkbox"
+                   value=""
+                   id="@checkBoxId"
+                    />
+                <label class="form-check-label ps-2" for="@city.Name">
+                    @city.Name
+                </label>
+            </div>
+        </li>
+    }
+
+
+
+
+
+@*<div id="divstudentlist" style="height: 110px; overflow: auto;border:solid; width:150px;">
+    @foreach (var names in @Model.StudentNames)
+    {
+    var checkBoxId = "chk" + names.Value;
+    var tdId = "td" + names.Value;
+    <table width="100%">
+    <tr>
+    <td width="20px">
+    <input type="checkbox" id="@checkBoxId" class="chkclass" value="@names.Value" />
+    </td>
+    <td id="@tdId" width="100px">
+    @names.Text
+    </td>
+    </tr>
+    </table>
+    }
+    </div>*@  

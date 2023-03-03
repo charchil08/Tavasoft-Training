@@ -46,46 +46,47 @@
             fetchcityBasedOnCountry(e.target.value);
         });
 
-        function fetchcityBasedOnCountry(countryId) {
-            axios.get(`Home/FetchCityBasedOnCountry/?countryId=${countryId}`)
-            .then(resp => {
-            debugger;
-                for(let data of resp.data) {
-                    document.getElementById("cityListFilter").innerHTML = `
-                    <li>
-                        <div class="form-check dropdown-item px-4">
-                            <input class="form-check-input mx-auto"
-                                   type="checkbox"
-                                   value=${data.cityId}
-                                   checked
-                                   id="flexCheckDefault" />
-                            <label class="form-check-label ps-2" for=${data.Name}>
-                                ${data.Name}
-                            </label>
-                        </div>
-                  </li>
-                `;
-                }
-
-            })
-            .catch(err=>console.log(err));
-        }
-
         //function fetchcityBasedOnCountry(countryId) {
-        //    $.ajax({
-        //        url:"Home/FetchCityBasedOnCountry",
-        //        type:"GET",
-        //        data: {
-        //            "countryId": countryId
-        //        },
-        //        dataType:'json',
-        //        success:function(data) {
-        //            alert(data);
-        //        },
-        //        error : function(request,error){
-        //            alert("Request: "+JSON.stringify(request));
+        //    axios.get(`Home/FetchCityBasedOnCountry/?countryId=${countryId}`)
+        //    .then(resp => {
+        //    debugger;
+        //        for(let data of resp.data) {
+        //            document.getElementById("cityListFilter").innerHTML = `
+        //            <li>
+        //                <div class="form-check dropdown-item px-4">
+        //                    <input class="form-check-input mx-auto"
+        //                           type="checkbox"
+        //                           value=${data.cityId}
+        //                           checked
+        //                           id="flexCheckDefault" />
+        //                    <label class="form-check-label ps-2" for=${data.Name}>
+        //                        ${data.Name}
+        //                    </label>
+        //                </div>
+        //          </li>
+        //        `;
         //        }
-        //    });
+
+        //    })
+        //    .catch(err=>console.log(err));
         //}
+
+        function fetchcityBasedOnCountry(countryId) {
+            $.ajax({
+                url:"Home/FetchCityBasedOnCountry",
+                type:"GET",
+                data: {
+                    "countryId": countryId
+                },
+                dataType:'html',
+                success:function(data) {
+                    debugger;
+                   $("#filteredCityList").html(data);
+                },
+                error : function(request,error){
+                    alert("Request: "+JSON.stringify(request));
+                }
+            });
+        }
     });
 </script>
