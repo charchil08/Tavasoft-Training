@@ -91,15 +91,20 @@ insert into dbo.[user] (first_name, last_name,email, password, phone_number, cit
 values
 ('Charchil','Kajaliya','1@ci.com','12345678',9825012324,11,1,0); 
 
-alter table dbo.password_reset
-add constraint pk_password_reset
-primary key (email)
+insert into dbo.mission_theme (title, [status])
+values ('Education',1),
+('Health',1),
+('Children',1),
+('Environment',1),
+('Animal',1),
+('Nutrition',1)
 go
 
-sp_help password_reset
-go
 
-select * from password_reset
-go
-
-truncate table password_reset;
+INSERT INTO skill (skill_name, status)
+VALUES 
+  ('Performance', 1),
+  ('Employee relations', 1),
+  ('Computer S.', 1),
+  ('Diversity', 1),
+  ('Planning', 1);
