@@ -125,8 +125,29 @@ function addAndRemoveBadgeWithFilter(elemList, badgeList, badgeElem, elemFilter)
 }
 
 
+function GetAllMissions() {
+    debugger
+    $.ajax({
+        url: "Home/GetAllMissions",
+        type: "GET",
+        dataType: "html",
+        success: function (data) {
+            debugger;
+            console.log(data);
+            $("#missionCardsList").html(data);
+        },
+        error: function (request, error) {
+            console.log(request.getAllResponseHeaders())
+            alert(request);
+        }
+    });
+}
+
+
 $(document).ready(function () {
     let removeFilterBtns = [];
+
+    GetAllMissions();
 
     document.getElementById("selectCountryFilter").addEventListener('change', (e) => {
         e.preventDefault();
@@ -156,3 +177,4 @@ $(document).ready(function () {
         }
     })
 });
+

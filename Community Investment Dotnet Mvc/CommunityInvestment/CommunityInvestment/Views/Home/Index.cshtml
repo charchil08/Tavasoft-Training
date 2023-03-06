@@ -13,8 +13,38 @@
         <hr class="m-auto" />
         @Html.Partial("_SearchFilterHeader",Model)
 
-        <div id="missionListWrapper" >
-            @*@Html.Partial("_MissionCardsGrid", Model)*@
+        <div class="container-fluid container-lg mission_cards">
+            <div class="row align-middle">
+                <div class="col-12 col-md-6">
+                    <p class="fs_6">
+                        Explore <span class="fw-bold fs_7">72 missions</span>
+                    </p>
+                </div>
+                <div class="d-none col-md-6 d-md-flex justify-content-end align-items-center my-auto">
+                    <select class="form-select sort_by" aria-label="Sort by">
+                        <option selected>Sort by</option>
+                        <option value="newest">Newest</option>
+                        <option value="oldest">Oldest</option>
+                        <option value="lowestAvailableSeats">Lowest available seats</option>
+                        <option value="highestAvailableSeats">
+                            Highest available seats
+                        </option>
+                        <option value="myFavourites">My favourites</option>
+                        <option value="deadline">Deadline</option>
+                    </select>
+                    <div class="view_type d-md-flex flex-row ms-4">
+                        <button type="button" class="btn btn-light rounded-circle">
+                            <img src="./assets/grid.png" alt="grid-view" />
+                        </button>
+                        <button type="button" class="btn bg-transparent rounded-circle">
+                            <img src="./assets/list.png" alt="list-view" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="missionCardsList" >
+
+            </div>
         </div>
 
         @*if No mssion found*@
@@ -34,4 +64,4 @@
 
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="~/js/searchFilterHeader.js" ></script>
+<script type="text/javascript" src="~/js/searchFilterHeader.js"></script>

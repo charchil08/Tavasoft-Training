@@ -1,5 +1,98 @@
-﻿@using CommunityInvestment.Models.ViewModels
-@model SearchFilterHeaderModel
+﻿@using CommunityInvestment.Models.ViewModels.Mission
+@model MissionCard
 
-@{
-}
+<div class="col-md-6 col-lg-4">
+    <div class="card">
+        <div class="card text-bg-dark">
+            <img src="./assets/Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png"
+                 class="card-img"
+                 alt="mission img" />
+            <div class="card-img-overlay d-flex flex-column justify-content-between align-items-end">
+                <div class="card-text text-white bg-dark bg-opacity-50 text-end rounded-pill px-3 py-1 pin1"
+                     style="cursor: pointer">
+                    <img src="./assets/pin.png" alt="." />
+                    <span class="">@Model.CityName</span>
+                </div>
+                <div class="d-flex flex-column g-2">
+                    <button class="card-text text-dark btn p-1 rounded-circle bg-dark borer-0 bg-opacity-75 outline-0 heart_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="22"
+                             height="22"
+                             fill="white"
+                             class="bi bi-heart-fill"
+                             viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                        </svg>
+                    </button>
+                    <button class="card-text btn p-1 rounded-circle bg-dark borer-0 outline-0 bg-opacity-75 add_person_btn mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="16"
+                             height="16"
+                             fill="white"
+                             class="bi bi-person-fill-add"
+                             viewBox="0 0 16 16">
+                            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card-body position-relative">
+            <p class="card_theme rounded-pill py-1 px-3 border-0 ms-auto me-auto bg-white">
+                @Model.MissionThemeName
+            </p>
+            <h5 class="card-title">
+                @Model.Title
+            </h5>
+            <p class="card-text">
+                @Model.ShortDescription
+            </p>
+        </div>
+        <div class="d-flex flex-row justify-content-between card-body pt-0">
+            <div class="">
+                <p>Australian Paradise</p>
+            </div>
+            <div class="">
+                <img src="./assets/selected-star.png" alt="." />
+                <img src="./assets/selected-star.png" alt="." />
+                <img src="./assets/selected-star.png" alt="." />
+                <img src="./assets/star.png" alt="" />
+                <img src="./assets/star.png" alt="" />
+            </div>
+        </div>
+        <div class="list-group text-center border-bottom-0">
+            <p class="border-opacity-50 rounded-pill border-1 bg-white mx-auto border border-secondary px-2 time_goal_section">
+                From 10/01/2019 until 25/02/2019
+            </p>
+        </div>
+        <div class="card-body d-flex flex-row justify-content-between align-items-center py-0">
+            <div class="d-flex flex-row">
+                <img src="./assets/Already-volunteered.png"
+                     class="h_fit_content me-1"
+                     alt="volunteered" />
+                <div class="">
+                    <p class="py-0 my-0">250</p>
+                    <p class="py-0 my-0 text-muted">Already volunteered</p>
+                </div>
+            </div>
+            <div class="d-flex flex-row">
+                <img src="./assets/deadline.png"
+                     class="h_fit_content me-1"
+                     alt="deadline" />
+                <div class="">
+                    <p class="py-0 my-0">09/01/2019</p>
+                    <p class="py-0 my-0 text-muted">Deadline</p>
+                </div>
+            </div>
+        </div>
+        <div class="list-group border-bottom-0 card-body d-flex flex-row justify-content-center">
+            <button type="submit"
+                    class="btn btn-outline-warning custom_btn d-flex flex-row justify-content-around align-items-center btn_apply">
+                <span>Apply</span>
+                <i class="bi bi-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+</div>
