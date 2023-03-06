@@ -1,4 +1,5 @@
 ﻿using CommunityInvestment.Entities.DataModels;
+using CommunityInvestment.Models.ViewModels.Mission;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace CommunityInvestment.Models.ViewModels
@@ -15,5 +16,6 @@ namespace CommunityInvestment.Models.ViewModels
 
         public IEnumerable<Skill> SkillsList { get; set; } = null!;
 
+        public IEnumerable<MissionCard>? MissionList { get; set; }
     }
 }

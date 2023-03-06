@@ -7,10 +7,12 @@ let skillList = [...document.querySelectorAll(".skillListClass")];
 let cityList = [];
 
 let badges = {
+    title:"",
     themes: [],
     skills: [],
     cities: [],
 };
+
 
 function fetchcityBasedOnCountry(countryId) {
     $.ajax({
@@ -41,19 +43,16 @@ function removeFilterBadge(badgeId) {
         uncheckCheckbox.checked = false;
         badges.themes.filter(theme => theme.id !== badgeId.id);
     }
-    else if (badgeId.id.startsWith("badgeTheme")) {
-        let checkboxId = badgeId.id.replace("badgeSkill", "skillFilter");
-        let uncheckCheckbox = document.getElementById(checkboxId);
-
+    else if (badgeId.id.startsWith("badgeSkill")) {
+     
+        let uncheckCheckbox = document.getElementById(badgeId.id.replace("badgeSkill", "skillFilter"));
         uncheckCheckbox.checked = false;
         badges.skills.filter(skill => skill.id !== badgeId.id)
     }
     else {
-        let checkboxId = badgeId.id.replace("badgeCity", "cityFilter");
-        let uncheckCheckbox = document.getElementById(checkboxId);
-
+        let uncheckCheckbox = document.getElementById(badgeId.id.replace("badgeCity", "cityFilter"));
         uncheckCheckbox.checked = false;
-        badges.skills.filter(skill => skill.id !== badgeId.id)
+        badges.cities.filter(city => city.id !== badgeId.id)
     }
 
     badgeId.remove();
@@ -83,6 +82,7 @@ function clearAllFilterByBtn() {
     };
 }
 
+//Heart
 function addAndRemoveBadgeWithFilter(elemList, badgeList, badgeElem, elemFilter) {
     elemList.forEach(function (elem) {
         elem.addEventListener("change", function () {
@@ -124,7 +124,10 @@ function addAndRemoveBadgeWithFilter(elemList, badgeList, badgeElem, elemFilter)
     });
 }
 
+
 $(document).ready(function () {
+    let removeFilterBtns = [];
+
     document.getElementById("selectCountryFilter").addEventListener('change', (e) => {
         e.preventDefault();
         console.log(e.target.value)
@@ -132,7 +135,10 @@ $(document).ready(function () {
         fetchcityBasedOnCountry(e.target.value);
     });
 
-    let removeFilterBtns = [];
+    document.getElementById("searchByMissionTitle").addEventListener("change", function (e) {
+        debugger;
+        badges.title = e.target.value;
+    });
 
     //Appending Cities, Skills and themes for badges    
     addAndRemoveBadgeWithFilter(themeList, badges.themes, "badgeTheme", "themeFilter");
