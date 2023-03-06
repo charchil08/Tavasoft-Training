@@ -2,7 +2,8 @@
 
 let badges = {
     themes: [],
-    skills: []
+    skills: [],
+    cities:[],
 };
 
 function removeFilterBadge(badgeId) {
@@ -28,10 +29,20 @@ function removeFilterBadge(badgeId) {
 //Clear all filters functionality
 function clearAllFilterByBtn() {
     debugger;
-    document.getElementById("clearAllFilter").addEventListener('click', function () {
-        if (badges.themes > 0) console.log("legth");
-    });
-
+    
+    for (let badge of badges.themes) {
+        let badgeElem = document.getElementById(badge.id);
+        removeFilterBadge(badgeElem);
+    }
+    for (let badge of badges.skills) {
+        let badgeElem = document.getElementById(badge.id);
+        removeFilterBadge(badgeElem);
+    }
+    badges = {
+        themes: [],
+        skills: [],
+        cities:[]
+    };
 }
 
 
@@ -62,10 +73,10 @@ $(document).ready(function () {
     }
 
     let themeList = [...document.querySelectorAll(".themeListClass")];
-    console.log("Theme list : ", themeList);
-
+    
     let skillList = [...document.querySelectorAll(".skillListClass")];
-    console.log("Skill list : ", skillList);
+
+    let cityList = [...document.querySelectorAll(".cityListClass")];
 
     let removeFilterBtns = [];
 
@@ -110,7 +121,7 @@ $(document).ready(function () {
         });
     });
 
-    skillList.forEach(function (skill, ind) {
+    skillList.forEach(function (skill) {
         skill.addEventListener("change", function () {
             debugger;
 
@@ -150,4 +161,14 @@ $(document).ready(function () {
         });
     });
 
+    document.getElementById("clearAllFilter").addEventListener('click', function (e) {
+        e.preventDefault(); 
+        clearAllFilterByBtn(e);
+        //Clear all button
+        if (badges.themes.length > 0 || badges.skills.length > 0) {
+            document.getElementById("clearAllFilter").classList.contains("d-none") ? document.getElementById("clearAllFilter").classList.remove("d-none") : "";
+        } else {
+            document.getElementById("clearAllFilter").classList.add("d-none")
+        }
+    })
 });

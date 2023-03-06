@@ -6,11 +6,11 @@
 @*City*@
 @foreach (var city in @Model.CityList)
 {
-    var checkBoxId = city.CityId;
+    var checkBoxId = "cityFilter" + city.CityId;
     var liId = "li" + city.Name;
     <li id="@liId">
         <div class="form-check dropdown-item px-4">
-            <input class="form-check-input mx-auto"
+            <input class="form-check-input mx-auto cityListClass"
                type="checkbox"
                value=""
                id="@checkBoxId" />
