@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5Vk0EsRX2AWAcHmDwrbMtMA+fW6iFw/KIKVnKigYoGU=",
+  "Hash": "8dz1wbgFkUzP4ZOj5b6OKvsS7T8mvdx5qDVwEEOXaIM=",
   "Source": "CommunityInvestment",
   "BasePath": "_content/CommunityInvestment",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "CommunityInvestment\\wwwroot",
       "Source": "CommunityInvestment",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\obj\\Debug\\net6.0\\scopedcss\\bundle\\CommunityInvestment.styles.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\obj\\Debug\\net6.0\\scopedcss\\bundle\\CommunityInvestment.styles.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "CommunityInvestment.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\obj\\Debug\\net6.0\\scopedcss\\bundle\\CommunityInvestment.styles.css"
+      "OriginalItemSpec": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\obj\\Debug\\net6.0\\scopedcss\\bundle\\CommunityInvestment.styles.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CommunityInvestment.bundle.scp.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CommunityInvestment.bundle.scp.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "CommunityInvestment.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CommunityInvestment.bundle.scp.css"
+      "OriginalItemSpec": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CommunityInvestment.bundle.scp.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\404-Page-image.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\404-Page-image.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/404-Page-image.png",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\404-Page-image.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\achieved.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\achieved.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/achieved.png",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\achieved.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\add.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\add.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/add.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\add.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\add1.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\add1.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/add1.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\add1.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Already-volunteered.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Already-volunteered.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Already-volunteered.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Already-volunteered.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Animal-welfare-&-save-birds-campaign.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Animal-welfare-&-save-birds-campaign.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Animal-welfare-&-save-birds-campaign.png",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Animal-welfare-&-save-birds-campaign.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Animal-welfare-&-save-birds-campaign-1.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Animal-welfare-&-save-birds-campaign-1.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Animal-welfare-&-save-birds-campaign-1.png",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Animal-welfare-&-save-birds-campaign-1.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\arrow.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\arrow.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/arrow.png",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\arrow.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\bell.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\bell.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/bell.png",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\bell.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\bell-big.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\bell-big.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/bell-big.png",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\bell-big.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\bin.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\bin.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/bin.png",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\bin.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\calender.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\calender.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/calender.png",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\calender.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\cancel.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\cancel.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/cancel.png",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\cancel.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\cancel1.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\cancel1.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/cancel1.png",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\cancel1.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\checked.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\checked.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/checked.png",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\checked.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\cross.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\cross.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/cross.png",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\cross.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\CSE NEtwork.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\CSE NEtwork.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/CSE NEtwork.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\CSE NEtwork.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-2.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-2.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-2.png",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-2.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-3.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-3.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-3.png",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-3.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-6.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-6.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-6.png",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-6.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\deadline.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\deadline.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/deadline.png",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\deadline.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\doc.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\doc.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/doc.png",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\doc.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\down.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\down.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/down.png",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\down.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\drag-and-drop.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\drag-and-drop.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/drag-and-drop.png",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\drag-and-drop.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\drop-down.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\drop-down.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/drop-down.png",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\drop-down.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Education-Supplies-for-Every--Pair-of-Shoes-Sold.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Education-Supplies-for-Every--Pair-of-Shoes-Sold.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Education-Supplies-for-Every--Pair-of-Shoes-Sold.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Education-Supplies-for-Every--Pair-of-Shoes-Sold-2.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Education-Supplies-for-Every--Pair-of-Shoes-Sold-2.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Education-Supplies-for-Every--Pair-of-Shoes-Sold-2.png",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Education-Supplies-for-Every--Pair-of-Shoes-Sold-2.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\eye.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\eye.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/eye.png",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\eye.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\facebook.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\facebook.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/facebook.png",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\facebook.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\filter.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\filter.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/filter.png",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\filter.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\gift.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\gift.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/gift.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\gift.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\graph.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\graph.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/graph.png",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\graph.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\grid.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\grid.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/grid.png",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\grid.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Grow-Trees-On-the-path-to-environment-sustainability.png",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability-1.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability-1.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Grow-Trees-On-the-path-to-environment-sustainability-1.png",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability-1.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability-2.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability-2.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Grow-Trees-On-the-path-to-environment-sustainability-2.png",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability-2.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability-3.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability-3.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Grow-Trees-On-the-path-to-environment-sustainability-3.png",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability-3.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability-4.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability-4.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Grow-Trees-On-the-path-to-environment-sustainability-4.png",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability-4.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability-5.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability-5.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Grow-Trees-On-the-path-to-environment-sustainability-5.png",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability-5.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability-login.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability-login.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Grow-Trees-On-the-path-to-environment-sustainability-login.png",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Grow-Trees-On-the-path-to-environment-sustainability-login.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\heart.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\heart.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/heart.png",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\heart.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\heart1.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\heart1.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/heart1.png",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\heart1.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\hours.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\hours.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/hours.png",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\hours.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\image.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\image.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/image.png",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\image1.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\image1.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/image1.png",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image1.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\image2.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\image2.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/image2.png",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\image2.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\img.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\img.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/img.png",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\img1.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\img1.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/img1.png",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img1.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\img11.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\img11.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/img11.png",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img11.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\img2.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\img2.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/img2.png",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img2.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\img22.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\img22.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/img22.png",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img22.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\img3.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\img3.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/img3.png",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img3.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\img33.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\img33.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/img33.png",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img33.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\info.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\info.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/info.png",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\info.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\left.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\left.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/left.png",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\left.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\left1.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\left1.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/left1.png",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\left1.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\linkedin.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\linkedin.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/linkedin.png",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\linkedin.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\list.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\list.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/list.png",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\list.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\logo.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\logo.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/logo.png",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\logo.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\mission.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\mission.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/mission.png",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\mission.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\my-story.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\my-story.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/my-story.png",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\my-story.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\new-message.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\new-message.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/new-message.png",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\new-message.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\next.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\next.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/next.png",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\next.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Nourish-the-Children-in--African-country.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Nourish-the-Children-in--African-country.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Nourish-the-Children-in--African-country.png",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Nourish-the-Children-in--African-country.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Nourish-the-Children-in--African-country-1.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Nourish-the-Children-in--African-country-1.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Nourish-the-Children-in--African-country-1.png",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Nourish-the-Children-in--African-country-1.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Open-Volunteering-Requests.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Open-Volunteering-Requests.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Open-Volunteering-Requests.png",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Open-Volunteering-Requests.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\organization.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\organization.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/organization.png",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\organization.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\pdf.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\pdf.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/pdf.png",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\pdf.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\pin.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\pin.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/pin.png",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\pin.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\pin1.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\pin1.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/pin1.png",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\pin1.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Plantation-and-Afforestation-programme.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Plantation-and-Afforestation-programme.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Plantation-and-Afforestation-programme.png",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Plantation-and-Afforestation-programme.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Plantation-and-Afforestation-programme-1.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Plantation-and-Afforestation-programme-1.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Plantation-and-Afforestation-programme-1.png",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Plantation-and-Afforestation-programme-1.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\previous.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\previous.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/previous.png",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\previous.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\right.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\right.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/right.png",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\right.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\right-arrow.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\right-arrow.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/right-arrow.png",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\right-arrow.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\right-arrow1.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\right-arrow1.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/right-arrow1.png",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\right-arrow1.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\right-arrow2.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\right-arrow2.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/right-arrow2.png",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\right-arrow2.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\right-white.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\right-white.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/right-white.png",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\right-white.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\search.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\search.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/search.png",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\search.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Seats-left.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Seats-left.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Seats-left.png",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Seats-left.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\selected-star.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\selected-star.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/selected-star.png",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\selected-star.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\settings.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\settings.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/settings.png",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\settings.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\star.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\star.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/star.png",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\star.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\star-empty.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\star-empty.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/star-empty.png",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\star-empty.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\twitter.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\twitter.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/twitter.png",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\twitter.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\up.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\up.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/up.png",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\up.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\user.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\user.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/user.png",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\user.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\user1.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\user1.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/user1.png",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\user1.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\user-img.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\user-img.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/user-img.png",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\user-img.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\user-img-large.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\user-img-large.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/user-img-large.png",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\user-img-large.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\volunteer1.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\volunteer1.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/volunteer1.png",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\volunteer1.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\volunteer2.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\volunteer2.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/volunteer2.png",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\volunteer2.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\volunteer3.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\volunteer3.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/volunteer3.png",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\volunteer3.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\volunteer4.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\volunteer4.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/volunteer4.png",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\volunteer4.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\volunteer5.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\volunteer5.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/volunteer5.png",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\volunteer5.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\volunteer6.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\volunteer6.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/volunteer6.png",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\volunteer6.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\volunteer7.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\volunteer7.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/volunteer7.png",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\volunteer7.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\volunteer8.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\volunteer8.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/volunteer8.png",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\volunteer8.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\volunteer9.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\volunteer9.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/volunteer9.png",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\volunteer9.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Volunteering-Rank.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Volunteering-Rank.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Volunteering-Rank.png",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Volunteering-Rank.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Voted-Missions.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\Voted-Missions.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/Voted-Missions.png",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Voted-Missions.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\web.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\web.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/web.png",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\web.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\xlsx.png",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\assets\\xlsx.png",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "assets/xlsx.png",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\xlsx.png"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\css\\site.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\css\\site.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\css\\slider.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\css\\slider.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "css/slider.css",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\css\\slider.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\favicon.ico",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\favicon.ico",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\js\\missionDetails.js",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\js\\missionDetails.js",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "js/missionDetails.js",
       "AssetKind": "All",
@@ -1955,10 +1955,27 @@
       "OriginalItemSpec": "wwwroot\\js\\missionDetails.js"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\js\\site.js",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\js\\searchFilterHeader.js",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "BasePath": "_content/CommunityInvestment",
+      "RelativePath": "js/searchFilterHeader.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\searchFilterHeader.js"
+    },
+    {
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\js\\site.js",
+      "SourceId": "CommunityInvestment",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1972,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\js\\storyList.js",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\js\\storyList.js",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "js/storyList.js",
       "AssetKind": "All",
@@ -1989,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\js\\storyList.js"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -2006,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -2023,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -2040,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2057,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2074,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2091,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2108,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2125,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -2142,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -2159,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -2176,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -2193,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -2210,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -2227,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -2244,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2261,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2278,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2295,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2312,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2329,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2346,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2363,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2380,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2397,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2414,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2431,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2448,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2465,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2482,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2499,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2516,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2533,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2550,10 +2567,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2567,10 +2584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2584,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2601,10 +2618,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2618,10 +2635,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2635,10 +2652,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2652,10 +2669,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2669,10 +2686,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2686,10 +2703,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2703,10 +2720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2720,10 +2737,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2737,10 +2754,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2754,10 +2771,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2771,10 +2788,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2788,10 +2805,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2805,10 +2822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2822,10 +2839,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2839,10 +2856,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2856,10 +2873,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2873,10 +2890,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2890,10 +2907,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2907,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2924,10 +2941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2941,10 +2958,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "CommunityInvestment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\CHARCHIL\\Tavasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
+      "ContentRoot": "C:\\itERSem8\\Tatvasoft-Training\\Community Investment Dotnet Mvc\\CommunityInvestment\\CommunityInvestment\\wwwroot\\",
       "BasePath": "_content/CommunityInvestment",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
