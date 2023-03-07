@@ -153,3 +153,5 @@ VALUES
 
 (3, 2, 1, 'Orphanage volunteering', 'Volunteer at an orphanage', 'Join us in volunteering at an orphanage and help provide care and support to orphaned children. Tasks may include teaching, playing with the children, and assisting with daily activities. Accommodation and meals will be provided.', '2023-10-01', '2023-11-30', 2, 1, 'Hope Foundation', 'Supporting orphaned children', 2);
 go
+
+

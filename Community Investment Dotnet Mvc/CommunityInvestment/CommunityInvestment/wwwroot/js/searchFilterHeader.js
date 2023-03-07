@@ -7,7 +7,7 @@ let skillList = [...document.querySelectorAll(".skillListClass")];
 let cityList = [];
 
 let badges = {
-    title:"",
+    title: "",
     themes: [],
     skills: [],
     cities: [],
@@ -65,7 +65,6 @@ function getAllMissions() {
         contentType: "application/json",
         success: function (data) {
             debugger;
-            console.log(data);
             $("#missionCardsList").html(data);
         },
         error: function (request, error) {
@@ -85,7 +84,7 @@ function removeFilterBadge(badgeId) {
         badges.themes.filter(theme => theme.id !== badgeId.id);
     }
     else if (badgeId.id.startsWith("badgeSkill")) {
-     
+
         let uncheckCheckbox = document.getElementById(badgeId.id.replace("badgeSkill", "skillFilter"));
         uncheckCheckbox.checked = false;
         badges.skills.filter(skill => skill.id !== badgeId.id)
@@ -153,8 +152,10 @@ function addAndRemoveBadgeWithFilter(elemList, badgeList, badgeElem, elemFilter)
                             <span class="btn m-0 p-0 removeFilterX" id="${removeFilterId}" onclick=removeFilterBadge(${badgeId})  ><i class="bi bi-x"></i></span>
                        </div>
                     `);
-                getAllMissions();
+
             }
+
+            getAllMissions();
 
             //Clear all button
             if (badges.themes.length > 0 || badges.skills.length > 0 || badges.cities.length > 0) {
