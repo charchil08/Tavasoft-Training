@@ -17,5 +17,6 @@ namespace CommunityInvestment.Models.ViewModels
         public IEnumerable<Skill> SkillsList { get; set; } = null!;
 
         public IEnumerable<MissionCard>? MissionList { get; set; }
+
     }
 }

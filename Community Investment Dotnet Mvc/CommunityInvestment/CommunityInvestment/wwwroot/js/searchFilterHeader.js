@@ -15,6 +15,7 @@ let badges = {
 
 
 function fetchcityBasedOnCountry(countryId) {
+
     $.ajax({
         url: "Home/FetchCityBasedOnCountry",
         type: "GET",
@@ -30,6 +31,46 @@ function fetchcityBasedOnCountry(countryId) {
         },
         error: function (request, error) {
             alert("Request: " + JSON.stringify(request));
+        }
+    });
+}
+
+function getAllMissions() {
+
+    let filters = {
+        SearchKeyword: badges.title,
+        Themes: [],
+        Skills: [],
+        Cities: []
+    };
+
+    for (let theme of badges.themes) {
+        filters.Themes.push(Number(theme.id.replace("badgeTheme", "")));
+    }
+
+    for (let skills of badges.skills) {
+        filters.Skills.push(Number(theme.id.replace("badgeSkill", "")));
+    }
+
+    for (let cities of badges.cities) {
+        filters.Cities.push(Number(theme.id.replace("badgeCities", "")));
+    }
+
+    debugger;
+    $.ajax({
+        url: "Home/GetAllMissions",
+        type: "POST",
+        dataType: "html",
+        data: JSON.stringify(filters),
+        contentType: "application/json",
+        success: function (data) {
+            debugger;
+            console.log(data);
+            $("#missionCardsList").html(data);
+        },
+        error: function (request, error) {
+            console.log(request.getAllResponseHeaders())
+            alert(request);
         }
     });
 }
@@ -112,6 +153,7 @@ function addAndRemoveBadgeWithFilter(elemList, badgeList, badgeElem, elemFilter)
                             <span class="btn m-0 p-0 removeFilterX" id="${removeFilterId}" onclick=removeFilterBadge(${badgeId})  ><i class="bi bi-x"></i></span>
                        </div>
                     `);
+                getAllMissions();
             }
 
             //Clear all button
@@ -125,29 +167,13 @@ function addAndRemoveBadgeWithFilter(elemList, badgeList, badgeElem, elemFilter)
 }
 
 
-function GetAllMissions() {
-    debugger
-    $.ajax({
-        url: "Home/GetAllMissions",
-        type: "GET",
-        dataType: "html",
-        success: function (data) {
-            debugger;
-            console.log(data);
-            $("#missionCardsList").html(data);
-        },
-        error: function (request, error) {
-            console.log(request.getAllResponseHeaders())
-            alert(request);
-        }
-    });
-}
+
 
 
 $(document).ready(function () {
     let removeFilterBtns = [];
 
-    GetAllMissions();
+    getAllMissions();
 
     document.getElementById("selectCountryFilter").addEventListener('change', (e) => {
         e.preventDefault();
@@ -159,6 +185,7 @@ $(document).ready(function () {
     document.getElementById("searchByMissionTitle").addEventListener("change", function (e) {
         debugger;
         badges.title = e.target.value;
+        getAllMissions();
     });
 
     //Appending Cities, Skills and themes for badges    

@@ -63,7 +63,7 @@ namespace CommunityInvestment.Controllers
             return PartialView("_CityFilterHeader", searchFilterHeaderModel);
         }
 
-        public IActionResult GetAllMissions()
+        public IActionResult GetAllMissions([FromBody]Filters filters)
         {
             IEnumerable<MissionCard> missions = (from m in _context.Missions
                                                              join c in _context.Cities on m.CityId equals c.CityId
