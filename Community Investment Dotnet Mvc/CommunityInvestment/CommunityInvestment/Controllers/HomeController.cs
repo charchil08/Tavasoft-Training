@@ -4,6 +4,7 @@ using CommunityInvestment.Models.ViewModels;
 using CommunityInvestment.Models.ViewModels.Mission;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Linq;
 
 namespace CommunityInvestment.Controllers
 {
@@ -63,28 +64,45 @@ namespace CommunityInvestment.Controllers
             return PartialView("_CityFilterHeader", searchFilterHeaderModel);
         }
 
-        public IActionResult GetAllMissions([FromBody]Filters filters)
+        public IActionResult GetAllMissions([FromBody] Filters filters)
         {
-            IEnumerable<MissionCard> missions = (from m in _context.Missions
-                                                             join c in _context.Cities on m.CityId equals c.CityId
-                                                             join md in _context.MissionDocuments on m.MissionId equals md.MissionId
-                                                             join mt in _context.MissionTypes on m.MissionTypeId equals mt.MissionTypeId
-                                                             join mth in _context.MissionThemes on m.MissionThemeId equals mth.MissionThemeId
-                                                             select new MissionCard()
-                                                             {
-                                                                 MissionId = m.MissionId,
-                                                                 Title = m.Title,
-                                                                 ShortDescription = m.ShortDescription,
-                                                                 Description = m.Description,
-                                                                 CityId = c.CityId,
-                                                                 CityName = c.Name,
-                                                                 DocumentName = md.DocumentName,
-                                                                 DocumentPath = md.DocumentPath,
-                                                                 MissionTypeId = mt.MissionTypeId,
-                                                                 MissionTypeName = mt.Name,
-                                                                 MissionThemeId = mth.MissionThemeId,
-                                                                 MissionThemeName = mth.Title
-                                                             }).ToList();
+            List<MissionCard> missions = (from m in _context.Missions
+                                          join c in _context.Cities on m.CityId equals c.CityId
+                                          join md in _context.MissionDocuments on m.MissionId equals md.MissionId
+                                          join mt in _context.MissionTypes on m.MissionTypeId equals mt.MissionTypeId
+                                          join mth in _context.MissionThemes on m.MissionThemeId equals mth.MissionThemeId
+                                          select new MissionCard()
+                                          {
+                                              MissionId = m.MissionId,
+                                              Title = m.Title,
+                                              ShortDescription = m.ShortDescription,
+                                              Description = m.Description,
+                                              CityId = c.CityId,
+                                              CityName = c.Name,
+                                              DocumentName = md.DocumentName,
+                                              DocumentPath = md.DocumentPath,
+                                              MissionTypeId = mt.MissionTypeId,
+                                              MissionTypeName = mt.Name,
+                                              MissionThemeId = mth.MissionThemeId,
+                                              MissionThemeName = mth.Title
+                                          })
+                                      .Where(m => m.Title.ToLower().Contains(filters.SearchKeyword.ToLower())).ToList();
+
+
+            if (filters.Cities != null && filters.Cities.Any())
+            {
+                missions = (List<MissionCard>)(from mission in missions where filters.Cities.Contains(mission.CityId) select mission).ToList();
+            }
+
+            if (filters.Themes != null && filters.Themes.Any())
+            {
+                missions = (List<MissionCard>)(from mission in missions where filters.Themes.Contains(mission.MissionThemeId) select mission).ToList();
+            }
+
+            if (filters.Skills != null && filters.Skills.Any())
+            {
+                missions = (List<MissionCard>)(from mission in missions where filters.Skills.Contains(mission.MissionThemeId) select mission).ToList();
+            }
 
             return PartialView("_MissionCardsGrid", missions);
 

@@ -52,8 +52,8 @@ function getAllMissions() {
         filters.Skills.push(Number(theme.id.replace("badgeSkill", "")));
     }
 
-    for (let cities of badges.cities) {
-        filters.Cities.push(Number(theme.id.replace("badgeCities", "")));
+    for (let city of badges.cities) {
+        filters.Cities.push(Number(city.id.replace("badgeCity", "")));
     }
 
     debugger;
