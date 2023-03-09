@@ -450,8 +450,6 @@ CREATE TABLE dbo.mission_skill
 	mission_skill_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (mission_skill_id > 0),
 	mission_id bigint,
 	skill_id bigint not null,
-	media_name VARCHAR(64),
-	rating TINYINT CHECK (rating<=5 and rating>=1),
 	created_at timestamp not null,
 	updated_at datetime,
 	deleted_at datetime,
@@ -597,6 +595,25 @@ CREATE TABLE dbo.goal_mission
 );
 GO
 
+-- Create a new table called 'time_mission' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.time_mission', 'U') IS NOT NULL
+DROP TABLE dbo.time_mission
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.time_mission
+(
+    time_mission_Id BIGINT IDENTITY(1,1) NOT NULL PRIMARY KEY CHECK(time_mission_Id>0),
+    mission_id bigint not null,
+    total_seat int DEFAULT NULL,
+	enrolled_user int default 0,
+    deadline datetime DEFAULT NULL,
+    created_at TIMESTAMP,
+    updated_at datetime ,
+    deleted_at datetime
+);
+GO
+
 
 -- ##############
 -- Foregin Key
@@ -638,6 +655,11 @@ GO
 
 ALTER TABLE goal_mission
 ADD CONSTRAINT fk_mission_missionId__goalMission__missionId 
+FOREIGN KEY (mission_id) REFERENCES [mission](mission_id)
+GO
+
+ALTER TABLE time_mission
+ADD CONSTRAINT fk_mission_missionId__timeMission__missionId 
 FOREIGN KEY (mission_id) REFERENCES [mission](mission_id)
 GO
 

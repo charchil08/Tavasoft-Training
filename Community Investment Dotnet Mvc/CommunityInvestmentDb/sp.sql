@@ -1,23 +1,3 @@
-
-use CommunityInvestment
-go
-
-select * from dbo.[user]
-go
-
-
-truncate table dbo.password_reset
-go
-
-select * from dbo.password_reset
-go
--- hlxjrtuyfztfxmii
-
-delete from dbo.[user] 
-where user_id in (7)
-go
-
-
 alter proc spGetAllMissions
 (
 	@SearchKeyword varchar(100) = NULL,
@@ -27,10 +7,10 @@ alter proc spGetAllMissions
 	@SortColumn varchar(100) = 'Title',
 	@SortOrder varchar(4) = 'ASC',
 	@PageIndex int = 1,
-	@PageSize int = 5
+	@PageSize int = 6
 )
 as
-begin
+BEGIN
 	declare @mission_card Table (
 		mission_id bigint,
 		title varchar(128),
@@ -62,18 +42,18 @@ begin
 	inner join dbo.[time_mission] tm on tm.mission_id = m.mission_id 
 		
 	--if(@Cities is NULL AND @Themes IS NULL AND @Skills IS NULL AND @SearchKeyword IS NULL OR (@SearchKeyword = '' AND @Themes = '' AND @Skills = '' )
-	--begin
+	--BEGIN
 	--end
 
 	if (@SearchKeyword is not null and TRIM(@SearchKeyword) is not null)
-	begin
+	BEGIN
 		delete from @mission_card
 		where mission_id not in (
 		select mission_id from @mission_card
 		where title LIKE '%' + @SearchKeyword+ '%')
 	end
 	if (@Cities is not null AND  TRIM(@Cities) is not null)
-	begin
+	BEGIN
 		delete from @mission_card
 		where mission_id not in (
 		select mission_id from @mission_card
@@ -89,13 +69,16 @@ begin
 		)
 	END
 	if(@Skills is not null AND TRIM(@Skills) is not null) 
-	begin
+	BEGIN
 		DELETE FROM @mission_card
 		where mission_id not in (
 			select mission_id from dbo.mission_skill
 			where skill_id in (select CAST(VALUE AS bigint) FROM string_split(@Skills,','))
 		)
 	end
+	
+	--TODO: count of toal missions
+
 
 	-- pagination and sorting
 	SELECT *, ROW_NUMBER() OVER(
@@ -120,46 +103,4 @@ begin
 	OFFSET ((@PageIndex - 1) * @PageSize) ROWS 
 	FETCH NEXT @PageSize ROWS ONLY;
 end
-go
-
-exec spGetAllMissions @PageIndex=1, @Skills='1', @SortColumn='lowest_available_seats', @SortOrder='DESC'
-go
-
-select mission.mission_id from mission
-inner join mission_skill on mission.mission_id = mission_skill.mission_id
-where skill_id = 1
-
-exec spGetAllMissions @Cities = '11,4,5', @Themes='2', @SearchKeyword=' proj'
-go
-
-sp_help time_mission
-
-
-
-select * from dbo.skill
-go
-select * from mission
-go
-
-select * from time_mission
-go
-select * from mission_skill
-go
-
-insert into mission_skill (mission_id, skill_id)
-values (2,1),(2,2), (3,1), (3,2), (3,3), (4,4), (4,5), (5,1), (5,4), (5,3), (6,1), (6,5)
-go
-
-insert into dbo.[time_mission] (mission_id, total_seat, enrolled_user, deadline, updated_at) 
-values
-(2, 20, 10, '2023-04-01 00:00:00','2023-03-09 10:30:00'),
-(3, 15, 5, '2023-03-20 00:00:00', '2023-03-09 11:15:00'),
-(4, 25, 0, '2023-05-01 00:00:00', '2023-03-09 12:00:00'),
-(5, 40, 11, '2023-04-01 00:00:00','2023-03-09 10:30:00'),
-(6, 55, 5, '2023-03-20 00:00:00', '2023-03-09 11:15:00'),
-(8, 21, 9, '2023-05-01 00:00:00', '2023-03-09 12:00:00'),
-(9, 19, 4, '2023-04-01 00:00:00','2023-03-09 10:30:00'),
-(10, 50, 27, '2023-03-20 00:00:00', '2023-03-09 11:15:00'),
-(11, 60, 33, '2023-05-01 00:00:00', '2023-03-09 12:00:00'),
-(12, 18, 0, '2023-05-01 00:00:00', '2023-03-09 12:00:00');
 go
