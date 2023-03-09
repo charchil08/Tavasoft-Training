@@ -155,3 +155,12 @@ VALUES
 go
 
 
+INSERT INTO [dbo].[mission_document] ([mission_id], [document_name], [doucment_type], [document_path])
+VALUES
+(8, 'Mission Image 1', 'image', 'D://CHARCHIL//Tavasoft-Training//Community Investment Dotnet Mvc//CommunityInvestment//CommunityInvestment//wwwroot//assets//CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png'),
+(9, 'Mission Image 2', 'image', 'D://CHARCHIL//Tavasoft-Training//Community Investment Dotnet Mvc//CommunityInvestment//CommunityInvestment//wwwroot//assets//Education-Supplies-for-Every--Pair-of-Shoes-Sold.png'),
+(10, 'Mission Image 3', 'image', 'D://CHARCHIL//Tavasoft-Training//Community Investment Dotnet Mvc//CommunityInvestment//CommunityInvestment//wwwroot//assets//Grow-Trees-On-the-path-to-environment-sustainability.png'),
+(11, 'Mission Image 4', 'image', 'https://example.com/mission-image-4.jpg'),
+(12, 'Mission Image 5', 'image', 'https://example.com/mission-image-5.jpg'),
+(13, 'Mission Image 6', 'image', 'https://example.com/mission-image-6.jpg')
+go
