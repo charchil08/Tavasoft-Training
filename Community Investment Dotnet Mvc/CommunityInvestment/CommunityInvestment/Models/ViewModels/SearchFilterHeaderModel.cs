@@ -6,7 +6,7 @@ namespace CommunityInvestment.Models.ViewModels
 {
     public class SearchFilterHeaderModel
     {
-        public IEnumerable<SelectListItem> CountryList { get; set; } = null!;
+        public IEnumerable<Country> CountryList { get; set; } = null!;
 
         public long? CountryId { get; set; }
 

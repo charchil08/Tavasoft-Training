@@ -5,6 +5,10 @@ using CommunityInvestment.Models.ViewModels.Mission;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Linq;
+using Dapper;
+using System.Data.SqlClient;
+using System.Data;
+using CommunityInvestment.SP;
 
 namespace CommunityInvestment.Controllers
 {
@@ -12,6 +16,7 @@ namespace CommunityInvestment.Controllers
     {
         private readonly CommunityInvestmentContext _context;
         private readonly IConfiguration _configuration;
+
 
         public HomeController(CommunityInvestmentContext context, IConfiguration configuration)
         {
@@ -21,18 +26,15 @@ namespace CommunityInvestment.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<SelectListItem> CountryList = _context.Countries.ToList().Select(
-                    u => new SelectListItem
-                    {
-                        Text = u.Name,
-                        Value = u.CountryId.ToString()
-                    }
-                );
+            IEnumerable<Country> countries = _context.Countries.ToList();
             IEnumerable<MissionTheme> missionThemes = _context.MissionThemes.ToList();
             IEnumerable<Skill> skills = _context.Skills.ToList();
 
+            Common2 c = new Common2();
+            c.Test();
+
             SearchFilterHeaderModel sfm = new();
-            sfm.CountryList = CountryList;
+            sfm.CountryList = countries;
             sfm.MissionThemesList = missionThemes;
             sfm.SkillsList = skills;
             return View(sfm);
@@ -48,13 +50,12 @@ namespace CommunityInvestment.Controllers
             return View();
         }
 
-        public IActionResult FetchCityBasedOnCountry([FromQuery] string countryId)
+        public IActionResult FetchCityBasedOnCountry([FromBody] List<long> Countries)
         {
-            IEnumerable<City> cities = _context.Cities.Where(c => c.CountryId == (long)Convert.ToDouble(countryId)).ToList();
+            IEnumerable<City> cities = (List<City>)(from city in _context.Cities where Countries.Contains((long)city.CountryId) select city).ToList();
             SearchFilterHeaderModel searchFilterHeaderModel = new();
-            searchFilterHeaderModel.CountryId = (long)Convert.ToDouble(countryId);
             searchFilterHeaderModel.CityList = cities;
-
+            
             ViewBag.SelectedCityList = cities.Select(c => new SelectListItem
             {
                 Text = c.Name,
@@ -66,6 +67,7 @@ namespace CommunityInvestment.Controllers
 
         public IActionResult GetAllMissions([FromBody] Filters filters)
         {
+
             List<MissionCard> missions = (from m in _context.Missions
                                           join c in _context.Cities on m.CityId equals c.CityId
                                           join md in _context.MissionDocuments on m.MissionId equals md.MissionId
@@ -88,7 +90,6 @@ namespace CommunityInvestment.Controllers
                                           })
                                       .Where(m => m.Title.ToLower().Contains(filters.SearchKeyword.ToLower())).ToList();
 
-
             if (filters.Cities != null && filters.Cities.Any())
             {
                 missions = (List<MissionCard>)(from mission in missions where filters.Cities.Contains(mission.CityId) select mission).ToList();
@@ -106,6 +107,21 @@ namespace CommunityInvestment.Controllers
 
             return PartialView("_MissionCardsGrid", missions);
 
+        }
+
+        public int Execute(string commandText, object? param = null, SqlTransaction? transaction = null, int? commandTimeout = null, bool isSP = true)
+        {
+            using (IDbConnection db = new SqlConnection(_configuration.GetConnectionString("CiConnection")))
+            {
+                if (isSP)
+                {
+                    return db.Execute(commandText, param: param, transaction: transaction, commandTimeout: commandTimeout, commandType: CommandType.StoredProcedure);
+                }
+                else
+                {
+                    return db.Execute(commandText, param);
+                }
+            }
         }
     }
 }

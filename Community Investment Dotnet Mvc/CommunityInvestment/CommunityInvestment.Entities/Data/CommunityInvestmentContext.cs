@@ -42,6 +42,7 @@ namespace CommunityInvestment.Entities.Data
         public virtual DbSet<StoryInvite> StoryInvites { get; set; } = null!;
         public virtual DbSet<StoryMedium> StoryMedia { get; set; } = null!;
         public virtual DbSet<StoryStatus> StoryStatuses { get; set; } = null!;
+        public virtual DbSet<TimeMission> TimeMissions { get; set; } = null!;
         public virtual DbSet<Timesheet> Timesheets { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
         public virtual DbSet<UserSkill> UserSkills { get; set; } = null!;
@@ -741,14 +742,7 @@ namespace CommunityInvestment.Entities.Data
                     .HasColumnType("datetime")
                     .HasColumnName("deleted_at");
 
-                entity.Property(e => e.MediaName)
-                    .HasMaxLength(64)
-                    .IsUnicode(false)
-                    .HasColumnName("media_name");
-
                 entity.Property(e => e.MissionId).HasColumnName("mission_id");
-
-                entity.Property(e => e.Rating).HasColumnName("rating");
 
                 entity.Property(e => e.SkillId).HasColumnName("skill_id");
 
@@ -1042,6 +1036,44 @@ namespace CommunityInvestment.Entities.Data
                 entity.Property(e => e.UpdatedAt)
                     .HasColumnType("datetime")
                     .HasColumnName("updated_at");
+            });
+
+            modelBuilder.Entity<TimeMission>(entity =>
+            {
+                entity.ToTable("time_mission");
+
+                entity.Property(e => e.TimeMissionId).HasColumnName("time_mission_Id");
+
+                entity.Property(e => e.CreatedAt)
+                    .IsRowVersion()
+                    .IsConcurrencyToken()
+                    .HasColumnName("created_at");
+
+                entity.Property(e => e.Deadline)
+                    .HasColumnType("datetime")
+                    .HasColumnName("deadline");
+
+                entity.Property(e => e.DeletedAt)
+                    .HasColumnType("datetime")
+                    .HasColumnName("deleted_at");
+
+                entity.Property(e => e.EnrolledUser)
+                    .HasColumnName("enrolled_user")
+                    .HasDefaultValueSql("((0))");
+
+                entity.Property(e => e.MissionId).HasColumnName("mission_id");
+
+                entity.Property(e => e.TotalSeat).HasColumnName("total_seat");
+
+                entity.Property(e => e.UpdatedAt)
+                    .HasColumnType("datetime")
+                    .HasColumnName("updated_at");
+
+                entity.HasOne(d => d.Mission)
+                    .WithMany(p => p.TimeMissions)
+                    .HasForeignKey(d => d.MissionId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("fk_mission_missionId__timeMission__missionId");
             });
 
             modelBuilder.Entity<Timesheet>(entity =>

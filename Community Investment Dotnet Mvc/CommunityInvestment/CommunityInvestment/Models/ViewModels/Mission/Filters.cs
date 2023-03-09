@@ -6,5 +6,6 @@
         public List<long>? Themes { get; set; }
         public List<long>? Skills { get; set; }
         public List<long>? Cities { get; set; }
+        public List<long>? Countries { get; set; }
     }
 }

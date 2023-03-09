@@ -17,6 +17,7 @@ namespace CommunityInvestment.Entities.DataModels
             MissionRatings = new HashSet<MissionRating>();
             MissionSkills = new HashSet<MissionSkill>();
             Stories = new HashSet<Story>();
+            TimeMissions = new HashSet<TimeMission>();
             Timesheets = new HashSet<Timesheet>();
         }
 
@@ -53,6 +54,7 @@ namespace CommunityInvestment.Entities.DataModels
         public virtual ICollection<MissionRating> MissionRatings { get; set; }
         public virtual ICollection<MissionSkill> MissionSkills { get; set; }
         public virtual ICollection<Story> Stories { get; set; }
+        public virtual ICollection<TimeMission> TimeMissions { get; set; }
         public virtual ICollection<Timesheet> Timesheets { get; set; }
     }
 }

@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CommunityInvestment.DataModels
+namespace CommunityInvestment.Entities.DataModels
 {
-    public partial class MissionMedium
+    public partial class TimeMission
     {
-        public long MissionMediaId { get; set; }
+        public long TimeMissionId { get; set; }
         public long MissionId { get; set; }
-        public string? MediaName { get; set; }
-        public string? MediaType { get; set; }
-        public string? MediaPath { get; set; }
-        public bool? Default { get; set; }
+        public int? TotalSeat { get; set; }
+        public int? EnrolledUser { get; set; }
+        public DateTime? Deadline { get; set; }
         public byte[] CreatedAt { get; set; } = null!;
         public DateTime? UpdatedAt { get; set; }
         public DateTime? DeletedAt { get; set; }

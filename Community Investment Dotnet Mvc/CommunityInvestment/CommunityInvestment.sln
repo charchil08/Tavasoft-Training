@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityInvestment", "CommunityInvestment\CommunityInvestment.csproj", "{0CED6826-44B0-47CF-B29D-7240D6D168F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunityInvestment", "CommunityInvestment\CommunityInvestment.csproj", "{0CED6826-44B0-47CF-B29D-7240D6D168F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityInvestment.Entities", "CommunityInvestment.Entities\CommunityInvestment.Entities.csproj", "{2E29EC42-AEB0-4D30-9BEA-59888DD2B233}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunityInvestment.Entities", "CommunityInvestment.Entities\CommunityInvestment.Entities.csproj", "{2E29EC42-AEB0-4D30-9BEA-59888DD2B233}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityInvestment.Repository", "CommunityInvestment.Repository\CommunityInvestment.Repository.csproj", "{193086C7-A53C-434D-9137-5BCB7F713086}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunityInvestment.Repository", "CommunityInvestment.Repository\CommunityInvestment.Repository.csproj", "{193086C7-A53C-434D-9137-5BCB7F713086}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityInvestment.Common", "CommunityInvestment.Common\CommunityInvestment.Common.csproj", "{C3163A39-2963-4720-A7C9-F2D35093CC5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunityInvestment.Common", "CommunityInvestment.Common\CommunityInvestment.Common.csproj", "{C3163A39-2963-4720-A7C9-F2D35093CC5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

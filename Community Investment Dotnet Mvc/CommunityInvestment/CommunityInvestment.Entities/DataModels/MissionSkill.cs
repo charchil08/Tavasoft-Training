@@ -8,8 +8,6 @@ namespace CommunityInvestment.Entities.DataModels
         public long MissionSkillId { get; set; }
         public long? MissionId { get; set; }
         public long SkillId { get; set; }
-        public string? MediaName { get; set; }
-        public byte? Rating { get; set; }
         public byte[] CreatedAt { get; set; } = null!;
         public DateTime? UpdatedAt { get; set; }
         public DateTime? DeletedAt { get; set; }

@@ -104,3 +104,26 @@ BEGIN
 	FETCH NEXT @PageSize ROWS ONLY;
 end
 go
+
+
+
+alter proc spFetchCityBasedOnCountry
+(
+	@Countries varchar(100) = NULL
+)
+as
+begin
+	select city.city_id, city.[name]
+	from city
+	where city.country_id in (select CAST(value as bigint) from string_split(@Countries, ','))
+end
+go
+
+
+alter proc spDemo
+as
+begin
+	insert into country ([name]) values('Zimbawe');
+	select count(*) from mission;
+end
+go

@@ -39,14 +39,42 @@
             </div>
             <div class="offcanvas-body filter_container h-100">
                 <div class="d-lg-flex row d-flex align-items-center g-lg-0 g-2 w-100">
-                    <div class="col-lg-3 h-100 filter_item">
+                    @*<div class="col-lg-3 h-100 filter_item">
                         <select class="form-select hide_border_select h-100"
                                 aria-label="country"
                                 asp-items="@Model.CountryList"
                                 id="selectCountryFilter">
                             <option disabled selected>-- Country --</option>
 
-                        </select>
+                        </select>*@
+                        <div class="dropdown h-100">
+                            <div class="form-select d-flex align-items-center dropdown-toggle hide_dropdown_arrow hide_border_select h-100"
+                                 type="button"
+                                 id="dropdownMenuButton1"
+                                 data-bs-toggle="dropdown"
+                                 aria-expanded="false">
+                                Country
+                            </div>
+                            <ul class="dropdown-menu w-100 scroll_dropdown"
+                            id="countryListFilter"
+                                aria-labelledby="dropdownMenuButton1">
+                                @foreach (var country in @Model.CountryList)
+                                {
+                                    var checkBoxId = "countryFilter" + country.CountryId;
+                                    var liId = "li" + country.Name;
+                                    <li id="@liId">
+                                        <div class="form-check dropdown-item px-4">
+                                            <input class="form-check-input mx-auto countryListClass"
+                                               type="checkbox"
+                                               id="@checkBoxId" />
+                                            <label class="form-check-label ps-2" for="@country.Name">
+                                                @country.Name
+                                            </label>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-lg-3 outline-0 h-100 filter_item">
                         @*City*@
