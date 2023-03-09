@@ -120,10 +120,10 @@ end
 go
 
 
-alter proc spDemo
-as
-begin
-	insert into country ([name]) values('Zimbawe');
-	select count(*) from mission;
-end
-go
+	alter proc spDemo
+	as
+	begin
+	
+		select title from mission where mission_id=2;
+	end
+	go

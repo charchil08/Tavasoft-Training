@@ -164,3 +164,21 @@ VALUES
 (12, 'Mission Image 5', 'image', 'https://example.com/mission-image-5.jpg'),
 (13, 'Mission Image 6', 'image', 'https://example.com/mission-image-6.jpg')
 go
+
+
+INSERT INTO [dbo].[mission] ([mission_theme_id], [city_id], [country_id], [title], [short_description], [description], [start_date], [end_date], [mission_type_id], [status], [organization_name], [organization_detail], [availability_id])
+VALUES
+(1, 22, 3, 'Teaching English in rural areas', 'Volunteer to teach English in rural areas', 'We are looking for volunteers to teach English to students in remote rural areas. No previous teaching experience required. Accommodation and meals will be provided.', '2023-05-01', '2023-06-30', 1, 0, 'ABC Organization', 'Helping students to achieve their dreams', 2),
+
+(2, 22, 3, 'Building homes for the homeless', 'Help us build homes for the homeless', 'Join us in building affordable homes for the homeless. We need volunteers who are willing to get their hands dirty and help with construction work. Accommodation and meals will be provided.', '2023-06-01', '2023-08-31', 1, 1, 'XYZ Foundation', 'Providing shelter for the homeless', 1),
+
+(3, 22, 3, 'Medical mission in a developing country', 'Join us in providing medical care in a developing country', 'We are looking for medical professionals to join us in providing medical care to underserved communities in a developing country. Accommodation and meals will be provided.', '2023-09-01', '2023-09-15', 1, 0, 'Medical Missions International', 'Improving global health', 3);
+
+select * from city;
+	
+INSERT INTO [dbo].[mission_document] ([mission_id], [document_name], [doucment_type], [document_path])
+VALUES
+(14, 'Mission Image 1', 'image', 'D://CHARCHIL//Tavasoft-Training//Community Investment Dotnet Mvc//CommunityInvestment//CommunityInvestment//wwwroot//assets//CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png'),
+(15, 'Mission Image 2', 'image', 'D://CHARCHIL//Tavasoft-Training//Community Investment Dotnet Mvc//CommunityInvestment//CommunityInvestment//wwwroot//assets//Education-Supplies-for-Every--Pair-of-Shoes-Sold.png'),
+(16, 'Mission Image 3', 'image', 'D://CHARCHIL//Tavasoft-Training//Community Investment Dotnet Mvc//CommunityInvestment//CommunityInvestment//wwwroot//assets//Grow-Trees-On-the-path-to-environment-sustainability.png')
+go
