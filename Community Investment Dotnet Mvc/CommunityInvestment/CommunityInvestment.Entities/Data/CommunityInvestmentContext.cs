@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using CommunityInvestment.Entities.DataModels;
+using CommunityInvestment.Entities.StoredProcModels;
 
 namespace CommunityInvestment.Entities.Data
 {
@@ -47,6 +48,9 @@ namespace CommunityInvestment.Entities.Data
         public virtual DbSet<User> Users { get; set; } = null!;
         public virtual DbSet<UserSkill> UserSkills { get; set; } = null!;
 
+        //Add Stored Procedure context 
+        public virtual DbSet<SpGetAllMissions> GetAllMissions { get; set; } = null!;
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -57,6 +61,11 @@ namespace CommunityInvestment.Entities.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Add no key or any other configuration
+            modelBuilder.Entity<SpGetAllMissions>().HasNoKey();
+
+
+            //Scaffold configuration
             modelBuilder.Entity<Admin>(entity =>
             {
                 entity.ToTable("admin");

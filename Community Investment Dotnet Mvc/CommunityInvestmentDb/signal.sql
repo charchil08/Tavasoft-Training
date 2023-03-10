@@ -17,7 +17,7 @@ delete from dbo.[user]
 where user_id in (7)
 go
 
-
+exec spGetAllMissions
 
 exec spGetAllMissions @PageIndex=1, @Skills='1', @SortColumn='lowest_available_seats', @SortOrder='DESC'
 go
@@ -49,3 +49,4 @@ values
 (11, 60, 33, '2023-05-01 00:00:00', '2023-03-09 12:00:00'),
 (12, 18, 0, '2023-05-01 00:00:00', '2023-03-09 12:00:00');
 go
+

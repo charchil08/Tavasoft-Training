@@ -1,10 +1,10 @@
-﻿@using CommunityInvestment.Models.ViewModels.Mission
-@model List<MissionCard>
+﻿@using CommunityInvestment.Entities.StoredProcModels
+@model List<SpGetAllMissions>
 
 <div class="row align-middle">
     <div class="col-12 col-md-6">
         <p class="fs_6">
-            Explore <span class="fw-bold fs_7">@Model.Count missions</span>
+            Explore <span class="fw-bold fs_7">@Model[0].TotalRows missions</span>
         </p>
     </div>
     <div class="d-none col-md-6 d-md-flex justify-content-end align-items-center my-auto">
@@ -72,13 +72,13 @@
                 </div>
                 <div class="card-body position-relative">
                     <p class="card_theme rounded-pill py-1 px-3 border-0 ms-auto me-auto bg-white">
-                        @item.MissionThemeName
+                        @item.ThemeName
                     </p>
                     <h5 class="card-title">
                         @item.Title
                     </h5>
                     <p class="card-text">
-                        @item.ShortDescription
+                        @item.ShortDesc
                     </p>
                 </div>
                 <div class="d-flex flex-row justify-content-between card-body pt-0">
