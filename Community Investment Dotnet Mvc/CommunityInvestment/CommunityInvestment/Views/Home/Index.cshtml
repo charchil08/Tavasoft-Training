@@ -8,7 +8,6 @@
 <div class="container-fluid custom_container">
 
     <header>
-
         <partial name="_TopHeader" />
         <hr class="m-auto" />
         @Html.Partial("_SearchFilterHeader",Model)
@@ -17,20 +16,20 @@
             <div class="row align-middle">
                 <div class="col-12 col-md-6">
                     <p class="fs_6">
-                        Explore <span class="fw-bold fs_7">72 missions</span>
+                        Explore <span class="fw-bold fs_7">@TempData["TotalCards"] missions</span>
                     </p>
                 </div>
                 <div class="d-none col-md-6 d-md-flex justify-content-end align-items-center my-auto">
-                    <select class="form-select sort_by" aria-label="Sort by">
-                        <option selected>Sort by</option>
-                        <option value="newest">Newest</option>
-                        <option value="oldest">Oldest</option>
-                        <option value="lowestAvailableSeats">Lowest available seats</option>
-                        <option value="highestAvailableSeats">
+                    <select class="form-select sort_by" aria-label="Sort by" id="sortByMissionList" >
+                        <option class="sortByMissionCategory" selected>Sort by</option>
+                        <option class="sortByMissionCategory" id="sortByMissionCategory1" value="newest">Newest</option>
+                        <option class="sortByMissionCategory" id="sortByMissionCategory2" value="oldest">Oldest</option>
+                        <option class="sortByMissionCategory" id="sortByMissionCategory3" value="lowestAvailableSeats">Lowest available seats</option>
+                        <option class="sortByMissionCategory" id="sortByMissionCategory4" value="highestAvailableSeats">
                             Highest available seats
                         </option>
-                        <option value="myFavourites">My favourites</option>
-                        <option value="deadline">Deadline</option>
+                        <option class="sortByMissionCategory" id="sortByMissionCategory5" value="myFavourites">My favourites</option>
+                        <option class="sortByMissionCategory" id="sortByMissionCategory6" value="deadline">Deadline</option>
                     </select>
                     <div class="view_type d-md-flex flex-row ms-4">
                         <button type="button" class="btn btn-light rounded-circle">
@@ -42,12 +41,20 @@
                     </div>
                 </div>
             </div>
-            <div class="row" id="missionCardsList" >
-
+            <div class="row" id="missionCardsList">
             </div>
         </div>
 
-        @*if No mssion found*@
+       
+    </header>
+</div>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="~/js/searchFilterHeader.js"></script>
+
+
+ @*if No mssion found*@
         @*if(false)
             {
             <div class="container-fluid container-lg d-flex flex-column justify-content-center align-items-center my-4">
@@ -59,9 +66,3 @@
             </button>
             </div>
             }*@
-    </header>
-</div>
-
-
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="~/js/searchFilterHeader.js"></script>

@@ -86,6 +86,7 @@ namespace CommunityInvestment.Controllers
                     @PageIndex = {pageIndex},
                     @PageSize = {pageSize}")
                 .ToList();
+            TempData["TotalCards"] = missionCards[0].TotalRows;
             #region linq query
             //List<MissionCard> missions = (from m in _context.Missions
             //                              join c in _context.Cities on m.CityId equals c.CityId

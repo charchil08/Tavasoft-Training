@@ -17,7 +17,16 @@ delete from dbo.[user]
 where user_id in (7)
 go
 
-exec spGetAllMissions @Countries='5,1'
+exec spGetAllMissions @Countries='5,1', @Cities='11,42'
+
+select country_id,count(*) from city c
+where country_id in (5,1)
+group by country_id
+
+
+select value from string_split('5,1',',')
+
+
 
 exec spGetAllMissions @PageIndex=1, @Skills='1', @SortColumn='lowest_available_seats', @SortOrder='DESC'
 go
@@ -38,3 +47,7 @@ insert into mission_skill (mission_id, skill_id)
 values (2,1),(2,2), (3,1), (3,2), (3,3), (4,4), (4,5), (5,1), (5,4), (5,3), (6,1), (6,5)
 go
 
+
+select c.city_id from city c
+			inner join country cnt on cnt.country_id = c.country_id
+			where c.country_id in (5,1)

@@ -8,8 +8,12 @@ let skillList = [...document.querySelectorAll(".skillListClass")];
 
 let cityList = [];
 
+let sortByMissionCategory = [];
+
 let badges = {
     title: "",
+    sortColumn: "",
+    sortOrder:"",
     themes: [],
     skills: [],
     cities: [],
@@ -34,7 +38,7 @@ function fetchcityBasedOnCountry() {
             $("#filteredCityList").html(data);
             cityList = [...document.querySelectorAll(".cityListClass")];
 
-            debugger;
+            //remove city that was gine by country and add checkbox true if country is selected
             for (let ct of badges.cities) {
                 let x = 1;
                 for (let fct of cityList) {
@@ -63,6 +67,8 @@ function getAllMissions() {
 
     let filters = {
         SearchKeyword: badges.title,
+        sortColumn: badges.sortColumn || "title",
+        sortOrder: badges.sortOrder || "ASC",
         Themes: [],
         Skills: [],
         Cities: [],
@@ -83,7 +89,7 @@ function getAllMissions() {
     for (let country of badges.countries) {
         filters.countries.push(Number(country.id.replace("badgeCountry", "")));
     }
-
+    debugger;
 
     $.ajax({
         url: "Home/GetAllMissions",
@@ -92,12 +98,12 @@ function getAllMissions() {
         data: JSON.stringify(filters),
         contentType: "application/json",
         success: function (data) {
-
-            $("#missionCardsWrapper").html(data);
+            debugger;
+            $("#missionCardsList").html(data);
         },
         error: function (request, error) {
             console.log(request.getAllResponseHeaders())
-            alert(request);
+            console.table({ ...request })
         }
     });
 }
@@ -216,15 +222,13 @@ function addAndRemoveBadgeWithFilter(elemList, badgeList, badgeElem, elemFilter)
     });
 }
 
-
-
+//Sorting
 
 
 $(document).ready(function () {
     let removeFilterBtns = [];
 
     getAllMissions();
-
 
     document.getElementById("searchByMissionTitle").addEventListener("change", function (e) {
 
@@ -249,5 +253,52 @@ $(document).ready(function () {
             document.getElementById("clearAllFilter").classList.add("d-none")
         }
     })
+
+
+    sortByMissionCategory = [...document.querySelectorAll(".sortByMissionCategory")];
+
+    document.getElementById("sortByMissionList").addEventListener("change", function (e) {
+        console.log(e.target)
+    });
+
+    //sortByMissionCategory.forEach(function (sortCol, ind) {
+    //    console.log(sortCol);
+    //    sortCol.addEventListener("change", function () {
+    //        let thisId = this.id.replace("sortByMissionCategory", "");
+    //        switch (thisId) {
+    //            case "1":
+    //                badges.sortColumn = "start_date";
+    //                badges.sortOrder = "DESC";
+    //                break;
+    //            case "2":
+    //                badges.sortColumn = "start_date";
+    //                badges.sortOrder = "ASC";
+    //                break;
+    //            case "3":
+    //                badges.sortColumn = "lowest_available_seats";
+    //                badges.sortOrder = "ASC";
+    //                break;
+    //            case "4":
+    //                badges.sortColumn = "lowest_available_seats";
+    //                badges.sortOrder = "DESC";
+    //                break;
+    //            case "5":
+    //                //TODO:Pending
+    //                //badges.sortColumn = "lowest_available_seats";
+    //                //badges.sortOrder = "DESC";
+    //                break;
+    //            case "6":
+    //                badges.sortColumn = "deadline";
+    //                badges.sortOrder = "ASC";
+    //                break;
+    //            default:
+    //                badges.sortColumn = "title";
+    //                badges.sortOrder = "ASC";
+    //                break;
+    //        }
+    //        debugger;
+    //        getAllMissions();
+    //    });
+    //});
 });
 
