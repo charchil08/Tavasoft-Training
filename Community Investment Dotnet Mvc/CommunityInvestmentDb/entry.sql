@@ -139,6 +139,53 @@ VALUES
 go
 
 
+insert into dbo.[time_mission] (mission_id, total_seat, enrolled_user, deadline, updated_at) 
+values
+(2, 20, 10, '2023-04-01 00:00:00','2023-03-09 10:30:00'),
+(3, 15, 5, '2023-03-20 00:00:00', '2023-03-09 11:15:00'),
+(4, 25, 0, '2023-05-01 00:00:00', '2023-03-09 12:00:00'),
+(5, 40, 11, '2023-04-01 00:00:00','2023-03-09 10:30:00'),
+(6, 55, 5, '2023-03-20 00:00:00', '2023-03-09 11:15:00'),
+(8, 21, 9, '2023-05-01 00:00:00', '2023-03-09 12:00:00'),
+(9, 19, 4, '2023-04-01 00:00:00','2023-03-09 10:30:00'),
+(10, 50, 27, '2023-03-20 00:00:00', '2023-03-09 11:15:00'),
+(11, 60, 33, '2023-05-01 00:00:00', '2023-03-09 12:00:00'),
+(12, 18, 0, '2023-05-01 00:00:00', '2023-03-09 12:00:00');
+go
+
+select city.city_id, city.name, c.country_id, c.name from city 
+inner join country c on c.country_id = city.country_id
+where city_id > 11
+
+
+INSERT INTO [dbo].[mission_document] ([mission_id], [document_name], [doucment_type], [document_path])
+VALUES
+(17, 'Mission Image 1', 'image', 'D://CHARCHIL//Tavasoft-Training//Community Investment Dotnet Mvc//CommunityInvestment//CommunityInvestment//wwwroot//assets//CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png'),
+(18, 'Mission Image 2', 'image', 'D://CHARCHIL//Tavasoft-Training//Community Investment Dotnet Mvc//CommunityInvestment//CommunityInvestment//wwwroot//assets//Education-Supplies-for-Every--Pair-of-Shoes-Sold.png'),
+(19, 'Mission Image 3', 'image', 'D://CHARCHIL//Tavasoft-Training//Community Investment Dotnet Mvc//CommunityInvestment//CommunityInvestment//wwwroot//assets//Grow-Trees-On-the-path-to-environment-sustainability.png'),
+(20, 'Mission Image 1', 'image', 'D://CHARCHIL//Tavasoft-Training//Community Investment Dotnet Mvc//CommunityInvestment//CommunityInvestment//wwwroot//assets//CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png'),
+(21, 'Mission Image 2', 'image', 'D://CHARCHIL//Tavasoft-Training//Community Investment Dotnet Mvc//CommunityInvestment//CommunityInvestment//wwwroot//assets//Education-Supplies-for-Every--Pair-of-Shoes-Sold.png'),
+(22, 'Mission Image 3', 'image', 'D://CHARCHIL//Tavasoft-Training//Community Investment Dotnet Mvc//CommunityInvestment//CommunityInvestment//wwwroot//assets//Grow-Trees-On-the-path-to-environment-sustainability.png')
+go
+
+insert into dbo.[time_mission] (mission_id, total_seat, enrolled_user, deadline, updated_at) 
+values
+(13, 15, 5, '2023-03-20 00:00:00', '2023-03-09 11:15:00'),
+(14, 25, 0, '2023-05-01 00:00:00', '2023-03-09 12:00:00'),
+(15, 40, 11, '2023-04-01 00:00:00','2023-03-09 10:30:00'),
+(16, 55, 5, '2023-03-20 00:00:00', '2023-03-09 11:15:00'),
+(17, 21, 9, '2023-05-01 00:00:00', '2023-03-09 12:00:00'),
+(18, 20, 10, '2023-04-01 00:00:00','2023-03-09 10:30:00'),
+(19, 19, 4, '2023-04-01 00:00:00','2023-03-09 10:30:00'),
+(20, 50, 27, '2023-03-20 00:00:00', '2023-03-09 11:15:00'),
+(21, 60, 33, '2023-05-01 00:00:00', '2023-03-09 12:00:00'),
+(22, 18, 0, '2023-05-01 00:00:00', '2023-03-09 12:00:00');
+go
+
+insert into mission_skill (mission_id, skill_id)
+values (7,1),(8,2), (9,1), (7,2), (8,3), (9,4), (7,5), (8,1), (9,4), (18,3), (18,1), (18,5)
+go
+
 INSERT INTO [dbo].[mission] ([mission_theme_id], [city_id], [country_id], [title], [short_description], [description], [start_date], [end_date], [mission_type_id], [status], [organization_name], [organization_detail], [availability_id])
 VALUES
 (1, 8, 1, 'Teaching English in rural areas', 'Volunteer to teach English in rural areas', 'We are looking for volunteers to teach English to students in remote rural areas. No previous teaching experience required. Accommodation and meals will be provided.', '2023-05-01', '2023-06-30', 1, 0, 'ABC Organization', 'Helping students to achieve their dreams', 2),

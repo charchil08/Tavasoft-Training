@@ -1,10 +1,26 @@
-alter proc spGetAllMissions
+CREATE FUNCTION is_part_of_cities_fn(@countriesid NVARCHAR(MAX), @citiesid NVARCHAR(MAX))
+RETURNS TABLE
+AS
+RETURN
 (
+    SELECT 
+        country.country_id,
+        CASE WHEN EXISTS (SELECT 1 FROM city WHERE city.country_id = country.country_id AND city.city_id IN (SELECT value FROM STRING_SPLIT(@citiesid, ','))) THEN 1 ELSE 0 END AS is_part_of_cities
+    FROM 
+        country
+    WHERE 
+        country.country_id IN (SELECT value FROM STRING_SPLIT(@countriesid, ','))
+)
+go
+
+alter proc spGetAllMissions
+	(
 	@SearchKeyword varchar(100) = NULL,
+	@Countries varchar(100) = NULL,
 	@Cities varchar(100) = NULL,
 	@Themes varchar(100) = NULL,
 	@Skills varchar(100) = NULL,
-	@SortColumn varchar(100) = 'Title',
+	@SortColumn varchar(100) = 'title',
 	@SortOrder varchar(4) = 'ASC',
 	@PageIndex int = 1,
 	@PageSize int = 6
@@ -31,16 +47,16 @@ BEGIN
 		EnrolledUser int,
 		Deadline datetime
 	)
-	
-	insert into @mission_card 
-	select m.mission_id, m.title, m.short_description, m.[start_date], m.end_date, m.city_id, c.[name], md.document_name, md.document_path, mty.mission_type_id, mty.[name], mt.mission_theme_id, mt.[title] , tm.total_seat ,tm.enrolled_user , tm.deadline
+
+	insert into @mission_card
+	select m.mission_id, m.title, m.short_description, m.[start_date], m.end_date, m.city_id, c.[name], md.document_name, md.document_path, mty.mission_type_id, mty.[name], mt.mission_theme_id, mt.[title] , tm.total_seat , tm.enrolled_user , tm.deadline
 	from mission m
-	inner join city c on c.city_id = m.city_id
-	inner join mission_document md on md.mission_id = m.mission_id
-	inner join mission_theme mt on mt.mission_theme_id = m.mission_theme_id
-	inner join mission_type mty on mty.mission_type_id = m.mission_type_id
-	inner join dbo.[time_mission] tm on tm.mission_id = m.mission_id 
-		
+		inner join city c on c.city_id = m.city_id
+		inner join mission_document md on md.mission_id = m.mission_id
+		inner join mission_theme mt on mt.mission_theme_id = m.mission_theme_id
+		inner join mission_type mty on mty.mission_type_id = m.mission_type_id
+		inner join dbo.[time_mission] tm on tm.mission_id = m.mission_id
+
 	--if(@Cities is NULL AND @Themes IS NULL AND @Skills IS NULL AND @SearchKeyword IS NULL OR (@SearchKeyword = '' AND @Themes = '' AND @Skills = '' )
 	--BEGIN
 	--end
@@ -49,34 +65,52 @@ BEGIN
 	BEGIN
 		delete from @mission_card
 		where MissionId not in (
-		select MissionId from @mission_card
+		select MissionId
+		from @mission_card
 		where Title LIKE '%' + @SearchKeyword+ '%')
 	end
-	if (@Cities is not null AND  TRIM(@Cities) <> '')
+
+	-- country selected but not any cities selected
+	if(@Countries is not null AND TRIM(@Countries) <> '' AND (@Cities is NULL OR TRIM(@Cities) = '') )
 	BEGIN
+		delete from @mission_card where CityId not in (
+				select c.city_id
+		from city c inner join country cnt on cnt.country_id = c.country_id
+		where c.country_id IN (select CAST(VALUE AS bigint)
+		FROM string_split(@Countries,',')))
+	end
+
+	if (@Cities is not null AND TRIM(@Cities) <> '')
+	BEGIN
+
 		delete from @mission_card
 		where MissionId not in (
-		select MissionId from @mission_card
-		where CityId in ( select CAST(VALUE AS bigint) FROM string_split(@Cities,','))
-		)
+		select MissionId
+		from @mission_card
+		where CityId in (select CAST(VALUE AS bigint)
+		FROM string_split(@Cities,',')))
 	end
 	if(@Themes is not null AND TRIM(@Themes) <> '')
 	BEGIN
 		DELETE FROM @mission_card
 		WHERE MissionId not in (
-			select MissionId from @mission_card
-		where ThemeId in ( select CAST(VALUE AS bigint) FROM string_split(@Themes,',')) 
+			select MissionId
+		from @mission_card
+		where ThemeId in ( select CAST(VALUE AS bigint)
+		FROM string_split(@Themes,',')) 
 		)
 	END
 	if(@Skills is not null AND TRIM(@Skills) <> '') 
 	BEGIN
 		DELETE FROM @mission_card
 		where MissionId not in (
-			select mission_id from dbo.mission_skill
-			where skill_id in (select CAST(VALUE AS bigint) FROM string_split(@Skills,','))
+			select mission_id
+		from dbo.mission_skill
+		where skill_id in (select CAST(VALUE AS bigint)
+		FROM string_split(@Skills,','))
 		)
 	end
-	
+
 	--TODO: count of toal missions
 
 
@@ -88,6 +122,7 @@ BEGIN
                     WHEN 'start_date' THEN CONVERT(varchar(20), m.StartDate,120)
                     WHEN 'deadline' THEN CONVERT(varchar(20), m.Deadline,120)
 					WHEN 'lowest_available_seats' THEN '00000000' + CAST((CAST(TotalSeat AS INT) - CAST(EnrolledUser AS INT)) AS VARCHAR(10))
+					WHEN 'title' THEN m.Title
                 END
             END ASC,
             CASE WHEN @SortOrder = 'DESC'
@@ -95,6 +130,7 @@ BEGIN
                    WHEN 'start_date' THEN CONVERT(varchar(20), m.StartDate,120)
                     WHEN 'deadline' THEN CONVERT(varchar(20), m.Deadline,120)
 					WHEN 'lowest_available_seats' THEN '00000000' + CAST((CAST(TotalSeat AS INT) - CAST(EnrolledUser AS INT)) AS VARCHAR(10))
+					WHEN 'title' THEN m.Title
 				END
             END DESC
         ) AS RowNo, COUNT_BIG(1) OVER() AS TotalRows
@@ -104,6 +140,10 @@ BEGIN
 	FETCH NEXT @PageSize ROWS ONLY;
 end
 go
+
+
+
+
 
 
 
@@ -127,3 +167,7 @@ go
 	--	select title from mission where MissionId=2;
 	--end
 	--go
+
+
+
+

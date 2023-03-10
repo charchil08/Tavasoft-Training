@@ -65,17 +65,19 @@ namespace CommunityInvestment.Controllers
 
         public IActionResult GetAllMissions([FromBody] Filters filters)
         {
-            var searchKeyword = "";
+            var searchKeyword = filters.SearchKeyword;
+            var countries = string.Join(",", filters.Countries);
             var cities = string.Join(",",filters.Cities);
             var themes = string.Join(",", filters.Themes);
             var skills = string.Join(",", filters.Skills);
-            var sortColumn = "Title";
-            var sortOrder = "DESC";
+            var sortColumn = "title";
+            var sortOrder = "ASC";
             var pageIndex = 1;
             var pageSize = 6;
             List<SpGetAllMissions> missionCards = _context.GetAllMissions.FromSqlInterpolated($@"
                 EXECUTE dbo.spGetAllMissions
                     @SearchKeyword = {searchKeyword},
+                    @Countries = {countries},
                     @Cities = {cities},
                     @Themes = {themes},
                     @Skills = {skills},

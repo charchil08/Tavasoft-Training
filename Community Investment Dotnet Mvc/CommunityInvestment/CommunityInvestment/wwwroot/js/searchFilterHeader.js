@@ -27,12 +27,30 @@ function fetchcityBasedOnCountry() {
         url: "Home/FetchCityBasedOnCountry",
         type: "POST",
         contentType: "application/json",
-        data:JSON.stringify(coutryIdsForCities),
+        data: JSON.stringify(coutryIdsForCities),
         dataType: 'html',
         success: function (data) {
 
             $("#filteredCityList").html(data);
             cityList = [...document.querySelectorAll(".cityListClass")];
+
+            debugger;
+            for (let ct of badges.cities) {
+                let x = 1;
+                for (let fct of cityList) {
+                    if (ct.id.replace("badgeCity", "cityFilter").localeCompare(fct.id) == 0) {
+                        //checkbox true
+                        fct.checked = true;
+                        x = 0;
+                    }
+                }
+                if (x == 1) {
+                    let badgeId = document.getElementById(ct.id);
+                    removeFilterBadge(badgeId);
+                }
+
+            }
+
             addAndRemoveBadgeWithFilter(cityList, badges.cities, "badgeCity", "cityFilter");
         },
         error: function (request, error) {
@@ -102,7 +120,9 @@ function removeFilterBadge(badgeId) {
     }
     else if (badgeId.id.startsWith("badgeCity")) {
         let uncheckCheckbox = document.getElementById(badgeId.id.replace("badgeCity", "cityFilter"));
-        uncheckCheckbox.checked = false;
+        if (uncheckCheckbox != null && uncheckCheckbox != undefined) {
+            uncheckCheckbox.checked = false;
+        }
         badges.cities = badges.cities.filter(city => city.id !== badgeId.id)
     }
     else if (badgeId.id.startsWith("badgeCountry")) {
