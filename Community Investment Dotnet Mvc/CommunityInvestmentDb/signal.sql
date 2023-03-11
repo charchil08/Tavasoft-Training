@@ -40,13 +40,6 @@ go
 
 exec spGetAllMissions @SortColumn='lowest_available_seats', @SortOrder='DESC'
 
-sp_help time_mission 
-
-
-insert into mission_skill (mission_id, skill_id)
-values (2,1),(2,2), (3,1), (3,2), (3,3), (4,4), (4,5), (5,1), (5,4), (5,3), (6,1), (6,5)
-go
-
 
 select c.city_id from city c
 			inner join country cnt on cnt.country_id = c.country_id

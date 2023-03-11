@@ -13,7 +13,7 @@ RETURN
 )
 go
 
-alter proc spGetAllMissions
+create proc spGetAllMissions
 	(
 	@SearchKeyword varchar(100) = NULL,
 	@Countries varchar(100) = NULL,
@@ -145,9 +145,7 @@ go
 
 
 
-
-
-alter proc spFetchCityBasedOnCountry
+create proc spFetchCityBasedOnCountry
 (
 	@Countries varchar(100) = NULL
 )
