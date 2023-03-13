@@ -13,7 +13,7 @@ RETURN
 )
 go
 
-alter proc spGetAllMissions
+create proc spGetAllMissions
 	(
 	@SearchKeyword varchar(100) = NULL,
 	@Countries varchar(100) = NULL,
@@ -157,7 +157,14 @@ end
 go
 
 
+<<<<<<< HEAD
 alter proc spFetchCityBasedOnCountry
+=======
+
+
+
+create proc spFetchCityBasedOnCountry
+>>>>>>> 053b92a4854a566492f847327733a71439745dd6
 (
 	@Countries varchar(100) = NULL
 )
