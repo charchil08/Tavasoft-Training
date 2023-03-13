@@ -187,6 +187,33 @@ header .header_profile .profile_img {
     font-size: 28px;
 }
 
+/*Star rating*/
+.star_rating {
+    font-size: 24px;
+}
+
+.star {
+    color: orange;
+}
+
+.star_half, .star_empty {
+    position: relative;
+    color: grey;
+    display: inline-block;
+}
+
+    .star_half:before {
+        content: "\2605";
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        width: 50%;
+        color: orange;
+    }
+
+/*Star rating done*/
+
 .mission_cards .sort_by {
     max-width: 170px;
     max-height: 38px;
@@ -237,7 +264,7 @@ header .header_profile .profile_img {
 }
 
 .mission_details .time_goal_section {
-    margin-top: -20px;
+    margin-top: -16px;
     width: fit-content;
     cursor: pointer;
     font-size: 17.58px;

@@ -46,17 +46,31 @@ BEGIN
 		--for time mission
 		TotalSeat int,
 		EnrolledUser int,
-		Deadline datetime
+		Deadline datetime,
+
+		-- mission rating
+		MissionRating decimal(2,1)
 	)
 
+	declare @ratings Table(
+		MissionId bigint,
+		AvgRating decimal(2,1)
+	)
+
+	insert into @ratings
+	select m.mission_id, AVG(CAST(mr.rating as decimal(2,1))) from mission m
+	left join mission_rating mr on mr.mission_id = m.mission_id 
+	group by m.mission_id
+	
 	insert into @mission_card
-	select m.mission_id, m.title, m.short_description, m.[start_date], m.end_date, m.organization_name, m.city_id, c.[name], md.document_name, md.document_path, mty.mission_type_id, mty.[name], mt.mission_theme_id, mt.[title] , tm.total_seat , tm.enrolled_user , tm.deadline
+	select m.mission_id, m.title, m.short_description, m.[start_date], m.end_date, m.organization_name, m.city_id, c.[name], md.document_name, md.document_path, mty.mission_type_id, mty.[name], mt.mission_theme_id, mt.[title] , tm.total_seat , tm.enrolled_user , tm.deadline, r.AvgRating
 	from mission m
 		inner join city c on c.city_id = m.city_id
 		inner join mission_document md on md.mission_id = m.mission_id
 		inner join mission_theme mt on mt.mission_theme_id = m.mission_theme_id
 		inner join mission_type mty on mty.mission_type_id = m.mission_type_id
 		inner join dbo.[time_mission] tm on tm.mission_id = m.mission_id
+		inner join @ratings r on r.MissionId = m.mission_id
 
 	--if(@Cities is NULL AND @Themes IS NULL AND @Skills IS NULL AND @SearchKeyword IS NULL OR (@SearchKeyword = '' AND @Themes = '' AND @Skills = '' )
 	--BEGIN
@@ -143,11 +157,6 @@ end
 go
 
 
-
-
-
-
-
 alter proc spFetchCityBasedOnCountry
 (
 	@Countries varchar(100) = NULL
@@ -161,14 +170,91 @@ end
 go
 
 
-	--alter proc spDemo
-	--as
-	--begin
-	
-	--	select title from mission where MissionId=2;
-	--end
-	--go
+alter proc spGetMissionDetail
+(
+	@MissionId bigint
+)
+as 
+begin
+	declare @mission_detail Table (
+		MissionId bigint,
+		Title varchar(128),
+		ShortDesc varchar(128),
+		[Description] text,
 
+		--Time_mission
+		StartDate datetime,
+		EndDate datetime,
+		SeatsLeft int,
+		Deadline datetime,
 
+		--Goal mission
+		GoalObjectiveText varchar(255),
+		GoalValue int,
+		AchievedGoalValue int,
 
+		CityId bigint,
+		CityName varchar(255),
+		ThemeId bigint,
+		ThemeName varchar(100),
+		OrganizationName varchar(128),
 
+		--Skill
+		SkillId bigint,
+		SkillName varchar(64),
+
+		--availability
+		AvailabilityId tinyint,
+		AvailibilityDays varchar(16), 
+
+		--rating & (user ramianing)
+		Rating decimal(10,2)
+	)
+
+	declare @MissionType tinyint
+	set @MissionType = (select mission_type_id from mission where mission_id = @MissionId);
+
+	declare @MissionRating decimal(10,2)
+	set @MissionRating = (select AVG(CAST(mr.rating as decimal(2,1))) from mission_rating mr where mission_id = @MissionId)
+
+	if (@MissionType = 1)
+	begin
+		insert into @mission_detail 
+		(MissionId, Title, ShortDesc, Description, StartDate, EndDate, SeatsLeft, Deadline, CityId, CityName, ThemeId, ThemeName, OrganizationName, SkillId, SkillName, AvailabilityId, AvailibilityDays, Rating)	
+		select m.mission_id, m.[title], m.short_description, m.[description], m.[start_date], m.[end_date],
+		 (tm.total_seat - tm.enrolled_user) as 'SeatsLeft', tm.deadline, ct.city_id, ct.[name], mt.mission_theme_id,
+		 mt.[title] as 'ThemeName', m.organization_name, s.skill_id, s.skill_name, av.availability_id, av.[name],
+		 @MissionRating  
+		from mission m
+		inner join time_mission tm on tm.mission_id = m.mission_id
+		inner join city ct on ct.city_id = m.city_id
+		inner join mission_theme mt on mt.mission_theme_id = m.mission_theme_id
+		inner join dbo.[availability] av on av.availability_id = m.availability_id
+		inner join mission_skill ms on ms.mission_id = m.mission_id
+		inner join skill s on s.skill_id = ms.skill_id
+		where m.mission_id = @MissionId
+	end
+
+	else
+	begin
+		insert into @mission_detail 
+		(MissionId, Title, ShortDesc, Description, GoalObjectiveText, SeatsLeft, AchievedGoalValue, CityId, CityName, ThemeId, ThemeName, OrganizationName, SkillId, SkillName, AvailabilityId, AvailibilityDays,Rating)
+		
+		select m.mission_id, m.[title], m.short_description, m.[description], gm.goal_objective_text,
+		 (gm.goal_value - gm.achieved_goal_value), gm.achieved_goal_value, ct.city_id, ct.[name], mt.mission_theme_id,
+		 mt.[title] as 'ThemeName', m.organization_name, s.skill_id, s.skill_name, av.availability_id, av.[name],
+		 @MissionRating
+		from mission m
+		inner join goal_mission gm on gm.mission_id = m.mission_id
+		inner join city ct on ct.city_id = m.city_id
+		inner join mission_theme mt on mt.mission_theme_id = m.mission_theme_id
+		inner join dbo.[availability] av on av.availability_id = m.availability_id
+		inner join mission_skill ms on ms.mission_id = m.mission_id
+		inner join skill s on s.skill_id = ms.skill_id
+		where m.mission_id = @MissionId
+	end
+
+	select * from @mission_detail for JSON PATH, ROOT('SpMissionDetail')
+
+end
+go

@@ -1,12 +1,13 @@
 ﻿@using CommunityInvestment.Entities.StoredProcModels
 @model List<SpGetAllMissions>
 
+
 @foreach (var item in Model)
 {
     <div class="col-md-6 col-lg-4">
         <div class="card">
-            <div class="card text-bg-dark">
-                <img src="./assets/Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png"
+            <div class="card text-bg-dark border-0">
+                <img src="@item.DocumentPath"
                  class="card-img"
                  alt="mission img" />
                 <div class="card-img-overlay d-flex flex-column justify-content-between align-items-end">
@@ -56,12 +57,19 @@
                 <div class="">
                     <p>@item.OrganizationName</p>
                 </div>
-                <div class="">
-                    <img src="./assets/selected-star.png" alt="." />
-                    <img src="./assets/selected-star.png" alt="." />
-                    <img src="./assets/selected-star.png" alt="." />
-                    <img src="./assets/star.png" alt="" />
-                    <img src="./assets/star.png" alt="" />
+                <div class="star_rating">
+                    @for (var i = 1; i <= Math.Floor(@item.MissionRating); i++)
+                    {
+                        <span class="star">&#9733;</span>
+                    }
+                    @if (@item.MissionRating != Math.Floor(@item.MissionRating))
+                    {
+                        <span class="star_half">&#9733;</span>
+                    }
+                    @for(var i=1;i<=5-Math.Ceiling(@item.MissionRating);i++)
+                    {
+                        <span class="star_empty">&#9733;</span>
+                    }
                 </div>
             </div>
             <div class="list-group text-center border-bottom-0">

@@ -431,7 +431,6 @@ CREATE TABLE dbo.mission_rating
 	mission_rating_id bigint PRIMARY KEY IDENTITY(1,1) CHECK (mission_rating_id > 0),
 	mission_id bigint not null,
 	[user_id] bigint not null,
-	media_name VARCHAR(64),
 	rating TINYINT CHECK (rating<=5 and rating>=1),
 	created_at timestamp not null,
 	updated_at datetime,
@@ -589,6 +588,7 @@ CREATE TABLE dbo.goal_mission
 	mission_id bigint not NULL,
 	goal_objective_text VARCHAR(255),
 	goal_value int not null,
+	achieved_goal_value int not null default 0,
 	created_at timestamp not null,
 	updated_at datetime,
 	deleted_at datetime
@@ -828,3 +828,6 @@ FOREIGN KEY (skill_id) REFERENCES [skill](skill_id)
 GO
 
 
+-- unique index on mission_rating
+CREATE UNIQUE INDEX idx_unique_combination ON dbo.mission_rating (mission_id, [user_id]) 
+WHERE mission_id IS NOT NULL AND [user_id] IS NOT NULL;

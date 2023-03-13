@@ -32,6 +32,8 @@ namespace CommunityInvestment.Entities.StoredProcModels
 		public int EnrolledUser { get; set; }
 		public DateTime Deadline { get; set; }
 
+		public decimal MissionRating { get; set; } = 0;
+
 		public long RowNo { get; set; }
 		public long TotalRows { get; set; }
 

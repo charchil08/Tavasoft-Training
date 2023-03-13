@@ -15,7 +15,10 @@ let badges = {
 
     sortColumn: "",
     sortOrder: "",
-    sortValue:"sortBy",
+    sortValue: "sortBy",
+
+    pageIndex: 1,
+    pageSize: 6,
 
     //to display badges
     themes: [],
@@ -73,6 +76,10 @@ function getAllMissions() {
         SearchKeyword: badges.title,
         sortColumn: badges.sortColumn || "title",
         sortOrder: badges.sortOrder || "ASC",
+
+        PageIndex: Number(badges.pageIndex),
+        PageSize: badges.pageSize,
+
         Themes: [],
         Skills: [],
         Cities: [],
@@ -104,8 +111,8 @@ function getAllMissions() {
         contentType: "application/json",
         success: function (data) {
             $("#missionCardsWrapper").html(data);
+
             //select sortby true after every ajax call
-            debugger;
             const selectBox = document.querySelector(`#sortByMissionList option[value='${selectedSortByValue}']`);
             selectBox.selected = true;
             sortByMissionCategory = [...document.querySelectorAll(".sortByMissionCategory")];
@@ -145,6 +152,9 @@ function getAllMissions() {
                 debugger;
                 getAllMissions();
             });
+
+            //pagination
+            managePagination();
         },
         error: function (request, error) {
             debugger;
@@ -266,41 +276,16 @@ function addAndRemoveBadgeWithFilter(elemList, badgeList, badgeElem, elemFilter)
     });
 }
 
-$(document).ready(function () {
 
-    getAllMissions();
-
-    //Search by mission title
-    document.getElementById("searchByMissionTitle").addEventListener("change", function (e) {
-
-        badges.title = e.target.value;
-        getAllMissions();
-    });
-
-    //Appending Cities, Skills and themes for badges    
-    addAndRemoveBadgeWithFilter(countryList, badges.countries, "badgeCountry", "countryFilter");
-
-    addAndRemoveBadgeWithFilter(themeList, badges.themes, "badgeTheme", "themeFilter");
-
-    addAndRemoveBadgeWithFilter(skillList, badges.skills, "badgeSkill", "skillFilter");
-
-    //clear all filters
-    document.getElementById("clearAllFilter").addEventListener('click', function (e) {
-        e.preventDefault();
-        clearAllFilterByBtn(e);
-        //Clear all button
-        if (badges.themes.length > 0 || badges.skills.length > 0 || badges.cities.length > 0) {
-            document.getElementById("clearAllFilter").classList.contains("d-none") ? document.getElementById("clearAllFilter").classList.remove("d-none") : "";
-        } else {
-            document.getElementById("clearAllFilter").classList.add("d-none")
-        }
-    })
+//manage Pagination
+function managePagination() {
 
     //logic for pagination
     let activePage = 1;
     let pages = document.querySelectorAll(".page-item .page-link:not(.pl)");
     const totalPages = pages.length;
     const links = document.querySelectorAll(".page-item .page-link.pl");
+
 
     const disableLinks = () => {
         debugger;
@@ -319,18 +304,32 @@ $(document).ready(function () {
         }
         e.target.classList.add("active");
         activePage = Number(e.target.firstChild.data);
+
+        //ajax call
+        badges.pageIndex = activePage;
+        getAllMissions();
+        
         disableLinks();
     }
 
     const switchPage = (e, shuffle) => {
-        if (activePage + shuffle < 1 || activePage + shuffle > totalPages) return;
+
         pages[activePage - 1].classList.remove('active');
-        activePage += shuffle;
+
+        if (shuffle == -2) {
+            activePage = 1;
+        }
+        else if (shuffle == 2) {
+            activePage = totalPages;
+        }
+        else if (activePage + shuffle < 1 || activePage + shuffle > totalPages) {
+            return;
+        }
+        else {
+            activePage += shuffle;
+        }
+
         pages[activePage - 1].classList.add('active');
-
-
-        console.log(e.target);
-
         disableLinks();
     };
 
@@ -361,5 +360,36 @@ $(document).ready(function () {
             }
         });
     }
+}
+
+$(document).ready(function () {
+
+    getAllMissions();
+
+    //Search by mission title
+    document.getElementById("searchByMissionTitle").addEventListener("change", function (e) {
+
+        badges.title = e.target.value;
+        getAllMissions();
+    });
+
+    //Appending Cities, Skills and themes for badges    
+    addAndRemoveBadgeWithFilter(countryList, badges.countries, "badgeCountry", "countryFilter");
+
+    addAndRemoveBadgeWithFilter(themeList, badges.themes, "badgeTheme", "themeFilter");
+
+    addAndRemoveBadgeWithFilter(skillList, badges.skills, "badgeSkill", "skillFilter");
+
+    //clear all filters
+    document.getElementById("clearAllFilter").addEventListener('click', function (e) {
+        e.preventDefault();
+        clearAllFilterByBtn(e);
+        //Clear all button
+        if (badges.themes.length > 0 || badges.skills.length > 0 || badges.cities.length > 0) {
+            document.getElementById("clearAllFilter").classList.contains("d-none") ? document.getElementById("clearAllFilter").classList.remove("d-none") : "";
+        } else {
+            document.getElementById("clearAllFilter").classList.add("d-none")
+        }
+    })
 });
 

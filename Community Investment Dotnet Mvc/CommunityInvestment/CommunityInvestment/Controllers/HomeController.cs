@@ -67,7 +67,7 @@ namespace CommunityInvestment.Controllers
         {
             var searchKeyword = filters.SearchKeyword;
             var countries = string.Join(",", filters.Countries);
-            var cities = string.Join(",",filters.Cities);
+            var cities = string.Join(",", filters.Cities);
             var themes = string.Join(",", filters.Themes);
             var skills = string.Join(",", filters.Skills);
             var sortColumn = filters.SortColumn;
@@ -87,7 +87,6 @@ namespace CommunityInvestment.Controllers
                     @PageSize = {pageSize}")
                 .ToList();
 
-            ViewData["TotalPages"] = Math.Ceiling((double)(missionCards[0].TotalRows) / filters.PageSize);
             #region linq query
             //List<MissionCard> missions = (from m in _context.Missions
             //                              join c in _context.Cities on m.CityId equals c.CityId
@@ -126,32 +125,16 @@ namespace CommunityInvestment.Controllers
             //    missions = (List<MissionCard>)(from mission in missions where filters.Skills.Contains(mission.MissionThemeId) select mission).ToList();
             //}
             #endregion
-            return PartialView("_MissionCardsGrid", missionCards);
+            if (missionCards.Count > 0)
+            {
+                ViewData["TotalPages"] = Math.Ceiling(missionCards[0].TotalRows / 6.0);
+                return PartialView("_MissionCardsGrid", missionCards);
+            }
+            else
+            {
+                return PartialView("_NoMissionFound");
+            }
+
         }
     }
-
-    //public IActionResult GetSortByMissions([FromBody] Filters filters)
-    //{
-    //    var searchKeyword = filters.SearchKeyword;
-    //        var countries = string.Join(",", filters.Countries);
-    //        var cities = string.Join(",",filters.Cities);
-    //        var themes = string.Join(",", filters.Themes);
-    //        var skills = string.Join(",", filters.Skills);
-    //        var sortColumn = "title";
-    //        var sortOrder = "ASC";
-    //        var pageIndex = 1;
-    //        var pageSize = 6;
-    //        List<SpGetAllMissions> missionCards = _context.GetAllMissions.FromSqlInterpolated($@"
-    //            EXECUTE dbo.spGetAllMissions
-    //                @SearchKeyword = {searchKeyword},
-    //                @Countries = {countries},
-    //                @Cities = {cities},
-    //                @Themes = {themes},
-    //                @Skills = {skills},
-    //                @SortColumn = {sortColumn},
-    //                @SortOrder = {sortOrder},
-    //                @PageIndex = {pageIndex},
-    //                @PageSize = {pageSize}")
-    //            .ToList();
-    //}
 }

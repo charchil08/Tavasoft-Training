@@ -1,7 +1,6 @@
-﻿@using CommunityInvestment.Entities.StoredProcModels
-@model List<SpGetAllMissions>
+﻿
 
-<nav aria-label="story navigation pagination_page">
+<nav aria-label="story navigation pagination_page" class="my-4" >
     <ul class="pagination justify-content-center ">
         <li class="page-item mx-sm-2">
             <a class="page-link text-dark pl" href="#" aria-label="Previous">
@@ -14,7 +13,7 @@
             </a>
         </li>
 
-        @for (var i = 1; i <= Math.Ceiling((double)(@Model[0].TotalRows) / Model.Count); i++)
+        @for (var i = 1; i <= int.Parse(@ViewData["TotalPages"].ToString()); i++)
         {
             <li class="page-item mx-sm-2"><a class="page-link text-dark" href="#" id="pageIndex"@i >@i</a></li>
         }
