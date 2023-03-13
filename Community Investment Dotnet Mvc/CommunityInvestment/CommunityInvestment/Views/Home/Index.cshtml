@@ -13,36 +13,7 @@
         @Html.Partial("_SearchFilterHeader",Model)
 
         <div class="container-fluid container-lg mission_cards " id="missionCardsWrapper">
-            <div class="row align-middle">
-                <div class="col-12 col-md-6">
-                    <p class="fs_6">
-                        Explore <span class="fw-bold fs_7">@TempData["TotalCards"] missions</span>
-                    </p>
-                </div>
-                <div class="d-none col-md-6 d-md-flex justify-content-end align-items-center my-auto">
-                    <select class="form-select sort_by" aria-label="Sort by" id="sortByMissionList" >
-                        <option class="sortByMissionCategory" selected>Sort by</option>
-                        <option class="sortByMissionCategory" id="sortByMissionCategory1" value="newest">Newest</option>
-                        <option class="sortByMissionCategory" id="sortByMissionCategory2" value="oldest">Oldest</option>
-                        <option class="sortByMissionCategory" id="sortByMissionCategory3" value="lowestAvailableSeats">Lowest available seats</option>
-                        <option class="sortByMissionCategory" id="sortByMissionCategory4" value="highestAvailableSeats">
-                            Highest available seats
-                        </option>
-                        <option class="sortByMissionCategory" id="sortByMissionCategory5" value="myFavourites">My favourites</option>
-                        <option class="sortByMissionCategory" id="sortByMissionCategory6" value="deadline">Deadline</option>
-                    </select>
-                    <div class="view_type d-md-flex flex-row ms-4">
-                        <button type="button" class="btn btn-light rounded-circle">
-                            <img src="./assets/grid.png" alt="grid-view" />
-                        </button>
-                        <button type="button" class="btn bg-transparent rounded-circle">
-                            <img src="./assets/list.png" alt="list-view" />
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="row" id="missionCardsList">
-            </div>
+            
         </div>
 
        

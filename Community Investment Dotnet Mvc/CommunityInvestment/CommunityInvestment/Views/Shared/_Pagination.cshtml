@@ -1,37 +1,33 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-<script src="~/lib/jquery/dist/jquery.min.js" ></script>
-<script src="~/js/storyList.js"></script>
+﻿@using CommunityInvestment.Entities.StoredProcModels
+@model List<SpGetAllMissions>
 
 <nav aria-label="story navigation pagination_page">
-  <ul class="pagination justify-content-center ">
-    <li class="page-item mx-sm-2">
-      <a class="page-link text-dark pl"  href="#" aria-label="Previous">
-        <span aria-hidden="true"><i id="prev_two" class="bi bi-chevron-double-left"></i></span>
-      </a>
-    </li>
-    <li class="page-item mx-sm-2 ">
-      <a class="page-link text-dark pl"  href="#" aria-label="Previous">
-        <span aria-hidden="true"><i id="prev_one" class="bi bi-chevron-left"></i></span>
-      </a>
-    </li>
-    <li class="page-item mx-sm-2"><a class="active page-link text-dark" href="#">1</a></li>
-    <li class="page-item mx-sm-2 "><a class="page-link text-dark" href="#">2</a></li>
-    <li class="page-item mx-sm-2 "><a class="page-link text-dark" href="#">3</a></li>
-    <li class="page-item mx-sm-2 "><a class="page-link text-dark" href="#">4</a></li>
-    <li class="page-item mx-sm-2 "><a class="page-link text-dark" href="#">5</a></li>
-    <li class="page-item mx-sm-2 ">
-      <a class="page-link text-dark pl"  href="#" aria-label="Next">
-        <span aria-hidden="true"><i id="next_one" class="bi bi-chevron-right"></i></span>
-      </a>
-    </li>
-    <li class="page-item mx-sm- 2 ">
-      <a class="page-link text-dark pl" href="#" aria-label="Next">
-        <span aria-hidden="true"><i id="next_two" class="bi bi-chevron-double-right"></i></span>
-      </a>
-    </li>
-  </ul>
+    <ul class="pagination justify-content-center ">
+        <li class="page-item mx-sm-2">
+            <a class="page-link text-dark pl" href="#" aria-label="Previous">
+                <span aria-hidden="true"><i id="prev_two" class="bi bi-chevron-double-left"></i></span>
+            </a>
+        </li>
+        <li class="page-item mx-sm-2 ">
+            <a class="page-link text-dark pl" href="#" aria-label="Previous">
+                <span aria-hidden="true"><i id="prev_one" class="bi bi-chevron-left"></i></span>
+            </a>
+        </li>
+
+        @for (var i = 1; i <= Math.Ceiling((double)(@Model[0].TotalRows) / Model.Count); i++)
+        {
+            <li class="page-item mx-sm-2"><a class="page-link text-dark" href="#" id="pageIndex"@i >@i</a></li>
+        }
+
+        <li class="page-item mx-sm-2 ">
+            <a class="page-link text-dark pl" href="#" aria-label="Next">
+                <span aria-hidden="true"><i id="next_one" class="bi bi-chevron-right"></i></span>
+            </a>
+        </li>
+        <li class="page-item mx-sm- 2 ">
+            <a class="page-link text-dark pl" href="#" aria-label="Next">
+                <span aria-hidden="true"><i id="next_two" class="bi bi-chevron-double-right"></i></span>
+            </a>
+        </li>
+    </ul>
 </nav>

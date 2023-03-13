@@ -14,6 +14,7 @@ namespace CommunityInvestment.Entities.StoredProcModels
 		public string ShortDesc { get; set; } = null!;
 		public DateTime StartDate { get; set; }
 		public DateTime EndDate { get; set; }
+		public string OrganizationName { get; set; } = null!;
 
 		public long CityId { get; set; }
 		public string CityName { get; set; } = null!;

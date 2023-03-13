@@ -29,6 +29,7 @@
         pages[activePage - 1].classList.remove('active');
         activePage += shuffle;
         pages[activePage - 1].classList.add('active');
+        
         disableLinks();
     };
 

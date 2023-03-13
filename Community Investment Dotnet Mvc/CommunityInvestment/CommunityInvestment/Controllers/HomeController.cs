@@ -70,10 +70,10 @@ namespace CommunityInvestment.Controllers
             var cities = string.Join(",",filters.Cities);
             var themes = string.Join(",", filters.Themes);
             var skills = string.Join(",", filters.Skills);
-            var sortColumn = "title";
-            var sortOrder = "ASC";
-            var pageIndex = 1;
-            var pageSize = 6;
+            var sortColumn = filters.SortColumn;
+            var sortOrder = filters.SortOrder;
+            var pageIndex = filters.PageIndex;
+            var pageSize = filters.PageSize;
             List<SpGetAllMissions> missionCards = _context.GetAllMissions.FromSqlInterpolated($@"
                 EXECUTE dbo.spGetAllMissions
                     @SearchKeyword = {searchKeyword},
@@ -86,7 +86,8 @@ namespace CommunityInvestment.Controllers
                     @PageIndex = {pageIndex},
                     @PageSize = {pageSize}")
                 .ToList();
-            TempData["TotalCards"] = missionCards[0].TotalRows;
+
+            ViewData["TotalPages"] = Math.Ceiling((double)(missionCards[0].TotalRows) / filters.PageSize);
             #region linq query
             //List<MissionCard> missions = (from m in _context.Missions
             //                              join c in _context.Cities on m.CityId equals c.CityId
@@ -126,7 +127,31 @@ namespace CommunityInvestment.Controllers
             //}
             #endregion
             return PartialView("_MissionCardsGrid", missionCards);
-
         }
     }
+
+    //public IActionResult GetSortByMissions([FromBody] Filters filters)
+    //{
+    //    var searchKeyword = filters.SearchKeyword;
+    //        var countries = string.Join(",", filters.Countries);
+    //        var cities = string.Join(",",filters.Cities);
+    //        var themes = string.Join(",", filters.Themes);
+    //        var skills = string.Join(",", filters.Skills);
+    //        var sortColumn = "title";
+    //        var sortOrder = "ASC";
+    //        var pageIndex = 1;
+    //        var pageSize = 6;
+    //        List<SpGetAllMissions> missionCards = _context.GetAllMissions.FromSqlInterpolated($@"
+    //            EXECUTE dbo.spGetAllMissions
+    //                @SearchKeyword = {searchKeyword},
+    //                @Countries = {countries},
+    //                @Cities = {cities},
+    //                @Themes = {themes},
+    //                @Skills = {skills},
+    //                @SortColumn = {sortColumn},
+    //                @SortOrder = {sortOrder},
+    //                @PageIndex = {pageIndex},
+    //                @PageSize = {pageSize}")
+    //            .ToList();
+    //}
 }

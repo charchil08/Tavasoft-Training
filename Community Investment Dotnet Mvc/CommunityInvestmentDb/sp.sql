@@ -1,4 +1,4 @@
-CREATE FUNCTION is_part_of_cities_fn(@countriesid NVARCHAR(MAX), @citiesid NVARCHAR(MAX))
+alter FUNCTION is_part_of_cities_fn(@countriesid NVARCHAR(MAX), @citiesid NVARCHAR(MAX))
 RETURNS TABLE
 AS
 RETURN
@@ -33,6 +33,7 @@ BEGIN
 		ShortDesc varchar(128),
 		StartDate datetime,
 		EndDate datetime,
+		OrganizationName varchar(100),
 		CityId bigint,
 		CityName varchar(255),
 		DocumentName varchar(255),
@@ -49,7 +50,7 @@ BEGIN
 	)
 
 	insert into @mission_card
-	select m.mission_id, m.title, m.short_description, m.[start_date], m.end_date, m.city_id, c.[name], md.document_name, md.document_path, mty.mission_type_id, mty.[name], mt.mission_theme_id, mt.[title] , tm.total_seat , tm.enrolled_user , tm.deadline
+	select m.mission_id, m.title, m.short_description, m.[start_date], m.end_date, m.organization_name, m.city_id, c.[name], md.document_name, md.document_path, mty.mission_type_id, mty.[name], mt.mission_theme_id, mt.[title] , tm.total_seat , tm.enrolled_user , tm.deadline
 	from mission m
 		inner join city c on c.city_id = m.city_id
 		inner join mission_document md on md.mission_id = m.mission_id
