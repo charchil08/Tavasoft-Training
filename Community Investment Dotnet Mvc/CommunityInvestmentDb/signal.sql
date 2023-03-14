@@ -139,7 +139,10 @@ values
 (22, 'orphange vol 22', 9000, 0)
 go
 
-exec spGetMissionDetail @MissionId=2
+exec spGetMissionDetail @MissionId=7
+go
+select * from goal_mission
+go
 
 select STRING_AGG(skill.skill_name, ', ') from mission_skill
 inner join skill on skill.skill_id = mission_skill.skill_id
@@ -156,3 +159,18 @@ select AVG(CAST(rating AS decimal(10,2))) FROM mission_rating
 
 --json based ->
 --dictionary ->
+select distinct m.mission_id, m.[title],  s.skill_id, s.skill_name, av.availability_id, av.[name],
+		 3.5
+		from mission m
+		inner join time_mission tm on tm.mission_id = m.mission_id
+		inner join city ct on ct.city_id = m.city_id
+		inner join mission_theme mt on mt.mission_theme_id = m.mission_theme_id
+		inner join dbo.[availability] av on av.availability_id = m.availability_id
+		inner join mission_skill ms on ms.mission_id = m.mission_id
+		inner join skill s on s.skill_id = ms.skill_id
+		where m.mission_id = 2
+
+
+
+delete from favourite_mission
+select * from favourite_mission

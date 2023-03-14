@@ -831,3 +831,8 @@ GO
 -- unique index on mission_rating
 CREATE UNIQUE INDEX idx_unique_combination ON dbo.mission_rating (mission_id, [user_id]) 
 WHERE mission_id IS NOT NULL AND [user_id] IS NOT NULL;
+
+-- unique index on favourite_mission
+CREATE UNIQUE INDEX idx_unique_combination_favourite_mission ON dbo.favourite_mission (mission_id, [user_id]) 
+WHERE mission_id IS NOT NULL AND [user_id] IS NOT NULL;
+go

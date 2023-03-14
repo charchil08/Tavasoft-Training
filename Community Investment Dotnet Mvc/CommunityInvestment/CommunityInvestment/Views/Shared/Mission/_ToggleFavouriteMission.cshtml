@@ -1,0 +1,6 @@
+﻿@using CommunityInvestment.Models.ViewModels.Mission
+@model ToggleFavouriteMission
+
+<partial name="_Notification" />
+<i class="bi @Model.ButtonIconClassName" style="@(Model.ButtonIconClassName == "bi-heart-fill" ? "color:#D01E28" : "")" ></i>
+<span class="btn_share_apply fw-bold">@Model.ButtonClassText</span>

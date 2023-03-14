@@ -1,51 +1,91 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@using CommunityInvestment.Entities.StoredProcModels
+@model SpMissionDetail
+
 @{
     ViewData["Title"] = "Mission Details";
 }
-
+<partial name="_Notification" />
 <div class="container-fluid container-lg mission_details">
     <div class="row mb-4">
         <div class="slider_wrapper col-lg-6" style="max-height:660px">
-            <partial name="_DropdownSlider" ></partial>
+            <partial name="_DropdownSlider"></partial>
         </div>
         <ul class="list-group list-group-flush mission_header col-lg-6">
             <li class="list-group-item">
-                <h1 class="title">CSR initiative stands for Coffee & Farmer Equity</h1>
-                <p class="card-text my-4 short_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <h1 class="title">@Model.Title</h1>
+                <p class="card-text my-4 short_desc">@Model.ShortDesc</p>
             </li>
             <li class="list-group-item text-center border-bottom-0 py-0">
                 <p class="border-opacity-50 rounded-pill border-1 bg-white mx-auto border border-secondary px-2 time_goal_section mb-0">
-                    Plant 10,000 Trees
+                    @if (@Model.GoalObjectiveText == null)
+                    {
+                        @Model.StartDate.ToString().Substring(0,10) @(Model.StartDate.HasValue ? " - " : "") @Model.EndDate.ToString().Substring(0,10)
+                    }
+                    else
+                    {
+                        @Model.GoalObjectiveText
+                    }
                 </p>
             </li>
             <li class="list-group-item container">
                 <div class="row py-0">
-                    <div class="d-flex flex-row col-6 justify-content-center">
-                        <img src="~/assets/Seats-left.png" class="h_fit_content me-1" alt="volunteered" />
-                        <div class="">
-                            <p class="py-0 my-0 fw-bold">10</p>
-                            <p class="py-0 my-0 text-muted" style="font-size:16px;">seats left</p>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row col-6">
-                        <img src="~/assets/achieved.png" class="h_fit_content me-1" alt="deadline" />
-                        <div class="container">
-                            <div class="progress" style="height:12px;">
-                                <div class="progress-bar bg_progressbar" role="progressbar" aria-label="Warning example" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    @if (@Model.GoalObjectiveText == null)
+                    {
+                        <div class="d-flex flex-row col-6 justify-content-center">
+                            <img src="~/assets/Already-volunteered.png" class="h_fit_content me-1" alt="volunteered" />
+                            <div class="">
+                                <p class="py-0 my-0 fw-bold">@Model.EnrolledUser </p>
+                                <p class="py-0 my-0 text-muted" style="font-size:16px;">Already Volunteered</p>
                             </div>
-                            <p class="py-0 my-0 text-">8000 achieved</p>
                         </div>
-                    </div>
+                        <div class="d-flex flex-row col-6">
+                            <img src="~/assets/deadline.png" class="h_fit_content me-1" alt="deadline" />
+                            <div class="container">
+                                <div class="">
+                                    <p class="py-0 my-0 fw-bold">@Model.Deadline.ToString().Substring(0,10) </p>
+                                    <p class="py-0 my-0 text-muted">Deadline</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    }
+                    else
+                    {
+                        <div class="d-flex flex-row col-6 justify-content-center">
+                            <img src="~/assets/Seats-left.png" class="h_fit_content me-1" alt="seats left" />
+                            <div class="">
+                                <p class="py-0 my-0 fw-bold">@Model.SeatsLeft</p>
+                                <p class="py-0 my-0 text-muted" style="font-size:16px;">seats left</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row col-6">
+                            <img src="~/assets/achieved.png" class="h_fit_content me-1" alt="deadline" />
+                            <div class="container">
+                                <div class="progess_self w-75">
+                                    <div class="progress_done" style="width:@((Model.AchievedGoalValue*100)/(@Model.SeatsLeft+Model.AchievedGoalValue))%" ></div>
+                                </div>
+                                <p class="py-0 my-0 text-">@Model.AchievedGoalValue achieved</p>
+                            </div>
+                        </div>
+                    }
                 </div>
             </li>
             <li class="list-group-item container-fluid">
                 <div class="row my-4 g-2 g-md-0 gx-md-2 align-middle">
                     <div class="col-sm-6 text-center">
-                        <button type="submit" class="btn btn-light rounded-pill w-100  bg-transparent" style="border-color:#757575;">
-                            <img src="/assets/heart1.png">
-                            <span class="btn_share_apply fw-bold">Add to Favourite</span>
+                        <button type="submit" class="btn btn-light rounded-pill w-100 bg-transparent" data-target="1" id="btnToggleFavouriteMission" style="border-color:#757575;" @(Model.IsFavouriteMission == true ? "disabled" : "") >
+                            @if (@Model.IsFavouriteMission == true)
+                            {
+                                <i class="bi bi-heart-fill" style="color:#D01E28"></i>
+                                <span class="btn_share_apply fw-bold">Added to Favourites</span>
+                            }
+                            else
+                            {
+                                <i class="bi bi-heart"></i>
+                                <span class="btn_share_apply fw-bold">Add to Favourites</span>
+                            }
+
                         </button>
                     </div>
                     <div class="col-sm-6 text-center">
@@ -71,14 +111,14 @@
                         <img class="mt-1 ps-1" style="width:fit-content;" src="~/assets/pin1.png" alt="location">
                         <div class="me-1 ps-1">
                             <p class="mb-0">City</p>
-                            <p class="mb-0 fw-bold ">London</p>
+                            <p class="mb-0 fw-bold" id="City{@Model.CityId}" >@Model.CityName</p>
                         </div>
                     </div>
                     <div class="border border-1 w-50 w-sm-25 mx-sm-2 filter_box d-flex justify-content-between flex-column">
                         <img class="mt-1 ps-1" style="width:fit-content;" src="~/assets/web.png" alt="location">
                         <div class="me-1 ps-1">
                             <p class="mb-0">Theme</p>
-                            <p class="mb-0 fw-bold ">Environment</p>
+                            <p class="mb-0 fw-bold" id="Theme{@Model.ThemeId}" >@Model.ThemeName</p>
                         </div>
                     </div>
                     <div class="border border-1 w-50 w-sm-25 mx-sm-2 filter_box d-flex justify-content-between flex-column">
@@ -92,7 +132,7 @@
                         <img class="mt-1 ps-1" style="width:fit-content;" src="~/assets/organization.png" alt="location">
                         <div class="me-1 ps-1">
                             <p class="mb-0">Organization</p>
-                            <p class="mb-0 fw-bold ">CSE Network</p>
+                            <p class="mb-0 fw-bold ">@Model.OrganizationName</p>
                         </div>
                     </div>
                 </div>
@@ -313,24 +353,30 @@
                 <li class="list-group-item d-flex my-1">
                     <p class="col-2 col-xxl-3 mb-0">Skills</p>
                     <p class="col-10 col-xxl-9 mb-0 d-flex justify-content-end justify-content-sm-start">
-                        <span>Cool,</span>
-                        <span>Easy going,</span>
-                        <span>Math,</span>
-                        <span>Computer</span>
+                        @(Model.SkillName == null ? "No Any skill required" : Model.SkillName )
                     </p>
                 </li>
                 <li class="list-group-item d-flex my-1">
                     <p class="col-2 col-xxl-3 mb-0">Days</p>
-                    <p class="col-10 col-xxl-9 mb-0 d-flex justify-content-end justify-content-sm-start">Weekend only</p>
+                    <p class="col-10 col-xxl-9 mb-0 d-flex justify-content-end justify-content-sm-start">@Model.AvailibilityDays</p>
                 </li>
                 <li class="list-group-item d-flex my-1">
                     <p class="col-2 col-xxl-3 mb-0">Rating</p>
-                    <p class="col-10 col-xxl-9 mb-0 d-flex justify-content-end justify-content-sm-start">
-                        <img src="~/assets/selected-star.png" alt="rating">
-                        <img src="~/assets/selected-star.png" alt="rating">
-                        <img src="~/assets/selected-star.png" alt="rating">
-                        <img src="~/assets/selected-star.png" alt="rating">
-                        <img src="~/assets/selected-star.png" alt="rating">
+                    <p class="col-10 col-xxl-9 mb-0 d-flex justify-content-end justify-content-sm-start star_rating">
+                       
+                    @for (var i = 1; i <= Math.Floor(@Model.Rating); i++)
+                    {
+                        <span class="star">&#9733;</span>
+                    }
+                    @if (@Model.Rating != Math.Floor(@Model.Rating))
+                    {
+                        <span class="star_half">&#9733;</span>
+                    }
+                    @for(var i=1;i<=5-Math.Ceiling(@Model.Rating);i++)
+                    {
+                        <span class="star_empty">&#9733;</span>
+                    }
+              
                         <span>(by 125 users)</span>
                     </p>
                 </li>

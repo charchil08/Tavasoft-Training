@@ -1,0 +1,21 @@
+﻿@{
+    // Access the ViewDataDictionary
+    ViewDataDictionary viewData = ViewData as ViewDataDictionary;
+    // Get the value of the "Rating" key from the ViewDataDictionary
+    double rating = (double)viewData["Rating"];
+}
+
+<div class="star_rating">
+    @for (var i = 1; i <= Math.Floor(rating); i++)
+    {
+        <span class="star">&#9733;</span>
+    }
+    @if (rating != Math.Floor(rating))
+    {
+        <span class="star_half">&#9733;</span>
+    }
+    @for (var i = 1; i <= 5 - Math.Ceiling(rating); i++)
+    {
+        <span class="star_empty">&#9733;</span>
+    }
+</div>

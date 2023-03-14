@@ -13,7 +13,7 @@ RETURN
 )
 go
 
-create proc spGetAllMissions
+alter proc spGetAllMissions
 	(
 	@SearchKeyword varchar(100) = NULL,
 	@Countries varchar(100) = NULL,
@@ -157,14 +157,7 @@ end
 go
 
 
-<<<<<<< HEAD
 alter proc spFetchCityBasedOnCountry
-=======
-
-
-
-create proc spFetchCityBasedOnCountry
->>>>>>> 053b92a4854a566492f847327733a71439745dd6
 (
 	@Countries varchar(100) = NULL
 )
@@ -179,7 +172,8 @@ go
 
 alter proc spGetMissionDetail
 (
-	@MissionId bigint
+	@MissionId bigint,
+	@UserId bigint = 8
 )
 as 
 begin
@@ -192,13 +186,13 @@ begin
 		--Time_mission
 		StartDate datetime,
 		EndDate datetime,
-		SeatsLeft int,
 		Deadline datetime,
+		EnrolledUser int,
 
 		--Goal mission
 		GoalObjectiveText varchar(255),
-		GoalValue int,
 		AchievedGoalValue int,
+		SeatsLeft int,
 
 		CityId bigint,
 		CityName varchar(255),
@@ -207,15 +201,17 @@ begin
 		OrganizationName varchar(128),
 
 		--Skill
-		SkillId bigint,
-		SkillName varchar(64),
+		SkillName varchar(2048),
 
 		--availability
 		AvailabilityId tinyint,
 		AvailibilityDays varchar(16), 
 
 		--rating & (user ramianing)
-		Rating decimal(10,2)
+		Rating decimal(10,2),
+
+		--Fav mission
+		IsFavouriteMission bit
 	)
 
 	declare @MissionType tinyint
@@ -224,44 +220,57 @@ begin
 	declare @MissionRating decimal(10,2)
 	set @MissionRating = (select AVG(CAST(mr.rating as decimal(2,1))) from mission_rating mr where mission_id = @MissionId)
 
+	declare @FavMission bit
+	if((select count(*) from favourite_mission where mission_id=@MissionId and [user_id]=@UserId) <> 0)
+	begin
+		set @FavMission = 1
+	end
+	else
+	begin
+		set @FavMission = 0
+	end
+
+	declare @SkillString varchar(2048)
+	set @SkillString = (
+	select STRING_AGG(skill.skill_name, ', ') from mission_skill
+	inner join skill on skill.skill_id = mission_skill.skill_id
+	where mission_skill.mission_id = @MissionId)
+
+
+
 	if (@MissionType = 1)
 	begin
 		insert into @mission_detail 
-		(MissionId, Title, ShortDesc, Description, StartDate, EndDate, SeatsLeft, Deadline, CityId, CityName, ThemeId, ThemeName, OrganizationName, SkillId, SkillName, AvailabilityId, AvailibilityDays, Rating)	
+		(MissionId, Title, ShortDesc, Description, StartDate, EndDate, EnrolledUser, Deadline, CityId, CityName, ThemeId, ThemeName, OrganizationName, SkillName, AvailabilityId, AvailibilityDays, Rating, IsFavouriteMission)	
 		select m.mission_id, m.[title], m.short_description, m.[description], m.[start_date], m.[end_date],
-		 (tm.total_seat - tm.enrolled_user) as 'SeatsLeft', tm.deadline, ct.city_id, ct.[name], mt.mission_theme_id,
-		 mt.[title] as 'ThemeName', m.organization_name, s.skill_id, s.skill_name, av.availability_id, av.[name],
-		 @MissionRating  
+		 tm.enrolled_user, tm.deadline, ct.city_id, ct.[name], mt.mission_theme_id,
+		 mt.[title] as 'ThemeName', m.organization_name,@SkillString , av.availability_id, av.[name],
+		 @MissionRating, @FavMission  
 		from mission m
 		inner join time_mission tm on tm.mission_id = m.mission_id
 		inner join city ct on ct.city_id = m.city_id
 		inner join mission_theme mt on mt.mission_theme_id = m.mission_theme_id
 		inner join dbo.[availability] av on av.availability_id = m.availability_id
-		inner join mission_skill ms on ms.mission_id = m.mission_id
-		inner join skill s on s.skill_id = ms.skill_id
 		where m.mission_id = @MissionId
 	end
 
 	else
 	begin
 		insert into @mission_detail 
-		(MissionId, Title, ShortDesc, Description, GoalObjectiveText, SeatsLeft, AchievedGoalValue, CityId, CityName, ThemeId, ThemeName, OrganizationName, SkillId, SkillName, AvailabilityId, AvailibilityDays,Rating)
+		(MissionId, Title, ShortDesc, Description, GoalObjectiveText, SeatsLeft, AchievedGoalValue, CityId, CityName, ThemeId, ThemeName, OrganizationName, SkillName, AvailabilityId, AvailibilityDays,Rating, IsFavouriteMission)
 		
 		select m.mission_id, m.[title], m.short_description, m.[description], gm.goal_objective_text,
 		 (gm.goal_value - gm.achieved_goal_value), gm.achieved_goal_value, ct.city_id, ct.[name], mt.mission_theme_id,
-		 mt.[title] as 'ThemeName', m.organization_name, s.skill_id, s.skill_name, av.availability_id, av.[name],
-		 @MissionRating
+		 mt.[title] as 'ThemeName', m.organization_name,@SkillString, av.availability_id, av.[name],
+		 @MissionRating, @FavMission
 		from mission m
 		inner join goal_mission gm on gm.mission_id = m.mission_id
 		inner join city ct on ct.city_id = m.city_id
 		inner join mission_theme mt on mt.mission_theme_id = m.mission_theme_id
 		inner join dbo.[availability] av on av.availability_id = m.availability_id
-		inner join mission_skill ms on ms.mission_id = m.mission_id
-		inner join skill s on s.skill_id = ms.skill_id
 		where m.mission_id = @MissionId
 	end
-
-	select * from @mission_detail for JSON PATH, ROOT('SpMissionDetail')
-
+	select * from @mission_detail
+	--select * from @mission_detail for JSON PATH, ROOT('SpMissionDetail')
 end
 go

@@ -78,3 +78,42 @@ $(document).ready(function () {
         console.log(box)
     })
 });
+
+function ToggleFavouriteMission(thisAttr) {
+    console.log(thisAttr);
+    debugger;
+    let sendData = {
+        MissionId: Number.parseInt(window.location.search.replace("?MissionId=", "")),
+        Toggler: Number.parseInt(thisAttr.dataset.target)
+    };
+    $.ajax({
+        url: "/Home/ToggleFavouriteMission",
+        method: "POST",
+        dataType: "html",
+        contentType: "application/json",
+        data: JSON.stringify(sendData),
+        success: function (data) {
+            debugger;
+            console.log(data);
+            $("#btnToggleFavouriteMission").html(data);
+            if (sendData.Toggler === 1) {
+                thisAttr.setAttribute("data-target", "0");
+                thisAttr.setAttribute("disabled", true);
+            }
+            else {
+                thisAttr.setAttribute("data-target", "1");
+                thisAttr.setAttribute("disabled", false);
+            }
+        },
+        error: function (request, error) {
+            debugger;
+            console.table({ ...request })
+        }
+    });
+}
+
+$(document).ready(function () {
+    document.getElementById("btnToggleFavouriteMission").addEventListener("click", function () {
+        ToggleFavouriteMission(this);
+    });
+})

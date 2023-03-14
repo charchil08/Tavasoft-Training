@@ -4,7 +4,7 @@
 
 @foreach (var item in Model)
 {
-    <div class="col-md-6 col-lg-4">
+    <div class="col-md-6 col-lg-4 my-3">
         <div class="card">
             <div class="card text-bg-dark border-0">
                 <img src="@item.DocumentPath"
@@ -71,6 +71,7 @@
                         <span class="star_empty">&#9733;</span>
                     }
                 </div>
+                @*@Html.Partial("_StarRating", viewData)*@
             </div>
             <div class="list-group text-center border-bottom-0">
                 <p class="border-opacity-50 rounded-pill border-1 bg-white mx-auto border border-secondary px-2 time_goal_section">
@@ -100,7 +101,7 @@
             <div class="list-group border-bottom-0 card-body d-flex flex-row justify-content-center">
                 <button type="submit"
                     class="btn btn-outline-warning custom_btn d-flex flex-row justify-content-around align-items-center btn_apply">
-                    <span>Apply</span>
+                    <span>View Details</span>
                     <i class="bi bi-arrow-right"></i>
                 </button>
             </div>

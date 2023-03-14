@@ -99,6 +99,26 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: var(--clr-gray);
 }
 
+/*Progressbar*/
+.progess_self {
+    height: 18px;
+    background-color: #E9ECEF;
+    border: 1px solid #E9ECEF;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress_done {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--clr-orange);
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+
 .active > .page-link, .page-link.active {
     background-color: var(--clr-orange);
     border-color: var(--clr-orange);
@@ -192,27 +212,7 @@ header .header_profile .profile_img {
     font-size: 24px;
 }
 
-.star {
-    color: orange;
-}
 
-.star_half, .star_empty {
-    position: relative;
-    color: grey;
-    display: inline-block;
-}
-
-    .star_half:before {
-        content: "\2605";
-        position: absolute;
-        left: 0;
-        top: 0;
-        overflow: hidden;
-        width: 50%;
-        color: orange;
-    }
-
-/*Star rating done*/
 
 .mission_cards .sort_by {
     max-width: 170px;
@@ -491,3 +491,46 @@ header .header_profile .profile_img {
 .story_list_page .nested_card:hover .card-img-overlay {
     display: flex !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.star {
+    color: orange !important;
+}
+
+.star_half, .star_empty {
+    position: relative;
+    color: grey !important;
+    display: inline-block;
+}
+
+    .star_half:before {
+        content: "\2605";
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        width: 50%;
+        color: orange !important;
+    }
+
+.mission_information .star, .mission_information .star_half, .mission_information .star_empty {
+    font-size: 18px;
+}
+/*Star rating done*/
+

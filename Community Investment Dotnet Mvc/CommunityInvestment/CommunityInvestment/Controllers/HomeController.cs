@@ -5,7 +5,6 @@ using CommunityInvestment.Models.ViewModels.Mission;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Linq;
-using Dapper;
 using System.Data.SqlClient;
 using System.Data;
 using Microsoft.EntityFrameworkCore;
@@ -16,13 +15,15 @@ namespace CommunityInvestment.Controllers
     public class HomeController : Controller
     {
         private readonly CommunityInvestmentContext _context;
-        private readonly IConfiguration _configuration;
+        private static readonly IConfiguration _configuration = new ConfigurationBuilder()
+                                                                .SetBasePath(Directory.GetCurrentDirectory())
+                                                                .AddJsonFile("appsettings.json")
+                                                                .Build();
+        private static readonly string _connectionString = _configuration.GetConnectionString("CiConnection");
 
-
-        public HomeController(CommunityInvestmentContext context, IConfiguration configuration)
+        public HomeController(CommunityInvestmentContext context)
         {
             _context = context;
-            _configuration = configuration;
         }
 
         public IActionResult Index()
@@ -38,8 +39,71 @@ namespace CommunityInvestment.Controllers
             return View(sfm);
         }
 
-        public IActionResult MissionDetail()
+        [HttpGet]
+        //QueryString - MissionId
+        //https://localhost:7012/Home/MissionDetail/?MissionId=2
+        public IActionResult MissionDetail([FromQuery] long MissionId)
         {
+            SpMissionDetail missionDetail = new();
+            using (SqlConnection connection = new(_connectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand cmd = new("spGetMissionDetail", connection))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandTimeout = 120;
+                    using (SqlDataAdapter adapter = new(cmd))
+                    {
+
+                        cmd.Parameters.AddWithValue("@MissionId", MissionId);
+                        try
+                        {
+                            DataSet ds = new();
+                            adapter.Fill(ds);
+                           
+                            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                            {
+                                missionDetail.MissionId = (long)ds.Tables[0].Rows[0]["MissionId"];
+                                missionDetail.Title = (string)ds.Tables[0].Rows[0]["Title"];
+                                missionDetail.ShortDesc = (string)ds.Tables[0].Rows[0]["ShortDesc"];
+                                missionDetail.Description = (string)ds.Tables[0].Rows[0]["Description"];
+                                
+                                missionDetail.StartDate = ds.Tables[0].Rows[0]["StartDate"]!= System.DBNull.Value ? (DateTime)ds.Tables[0].Rows[0]["StartDate"]: null;
+                                missionDetail.EndDate = ds.Tables[0].Rows[0]["EndDate"]!= DBNull.Value ? (DateTime)ds.Tables[0].Rows[0]["EndDate"]: null;
+                                missionDetail.EnrolledUser = ds.Tables[0].Rows[0]["EnrolledUser"] != System.DBNull.Value ? (int)ds.Tables[0].Rows[0]["EnrolledUser"] : null;
+                                missionDetail.Deadline = ds.Tables[0].Rows[0]["Deadline"]!= System.DBNull.Value ? (DateTime)ds.Tables[0].Rows[0]["Deadline"]: null;
+
+                                missionDetail.GoalObjectiveText = ds.Tables[0].Rows[0]["GoalObjectiveText"]!= System.DBNull.Value ? (string)ds.Tables[0].Rows[0]["GoalObjectiveText"]: null;
+                                missionDetail.SeatsLeft = ds.Tables[0].Rows[0]["SeatsLeft"] != System.DBNull.Value ? (int)ds.Tables[0].Rows[0]["SeatsLeft"] : null;
+                                missionDetail.AchievedGoalValue = ds.Tables[0].Rows[0]["AchievedGoalValue"]!= System.DBNull.Value ? (int)ds.Tables[0].Rows[0]["AchievedGoalValue"]: null;
+                                
+                                missionDetail.CityId = (long)ds.Tables[0].Rows[0]["CityId"];
+                                missionDetail.CityName = (string)ds.Tables[0].Rows[0]["CityName"];
+                                missionDetail.ThemeId = (long)ds.Tables[0].Rows[0]["ThemeId"];
+                                missionDetail.ThemeName = (string)ds.Tables[0].Rows[0]["ThemeName"];
+                                missionDetail.OrganizationName = (string)ds.Tables[0].Rows[0]["OrganizationName"];
+                                missionDetail.SkillName = ds.Tables[0].Rows[0]["SkillName"] != System.DBNull.Value ? (string?)ds.Tables[0].Rows[0]["SkillName"] : null; 
+                                missionDetail.AvailabilityId = (byte)ds.Tables[0].Rows[0]["AvailabilityId"];
+                                missionDetail.AvailibilityDays = (string)ds.Tables[0].Rows[0]["AvailibilityDays"];
+                                missionDetail.Rating = (decimal)ds.Tables[0].Rows[0]["Rating"];
+
+                                missionDetail.IsFavouriteMission= Convert.ToBoolean(ds.Tables[0].Rows[0]["IsFavouriteMission"]);
+
+                            }
+                            connection.Close();
+                            return View(missionDetail);
+
+                        }
+                        catch (Exception ex)
+                        {
+                            connection.Close();
+                        }
+
+                    }
+                }
+
+            }
             return View();
         }
 
@@ -135,6 +199,79 @@ namespace CommunityInvestment.Controllers
                 return PartialView("_NoMissionFound");
             }
 
+        }
+
+
+        //[HttpPost]
+        public IActionResult ToggleFavouriteMission([FromBody]ToggleFavouriteFilter model)
+        {
+            long UserId = 8;
+
+            try
+            {
+                if(model.Toggler == 1)
+                {
+                    FavouriteMission favouriteMission = new FavouriteMission()
+                    {
+                        MissionId = model.MissionId,
+                        UserId = UserId,
+                    };
+
+                    _context.FavouriteMissions.Add(favouriteMission);
+                    TempData["success"] = "Mission Added to favourites";
+                    _context.SaveChanges();
+
+                    ToggleFavouriteMission toggleFavouriteMission = new()
+                    {
+                        ButtonClassText = "Added to Favourites",
+                        ButtonIconClassName = "bi-heart-fill"
+                    };
+
+                    return PartialView("Mission/_ToggleFavouriteMission", toggleFavouriteMission);
+
+                    #region return json "parseerror"
+                    //return Json(new
+                    //{
+                    //    status = "success",
+                    //    toggleCode = 1,
+                    //    message = "Mission Added to favourites"
+                    //});
+                    #endregion
+                }
+                else
+                {
+                    FavouriteMission? favouriteMission = _context.FavouriteMissions.FirstOrDefault(f => f.MissionId == model.MissionId && f.UserId == UserId);
+                    if(favouriteMission == null)
+                    {
+                        TempData["error"] = "Not added to fav mission";
+                        throw new Exception("Not added to fav mission");
+                    }else
+                    {
+                       var RemovedFavMission =  _context.FavouriteMissions.Remove(favouriteMission);
+                       TempData["success"] = "Removed from favourite mission";
+                    }
+                    ToggleFavouriteMission toggleFavouriteMission = new()
+                    {
+                        ButtonClassText = "Add to Favourites",
+                        ButtonIconClassName = "bi-heart"
+                    };
+                    return PartialView("Mission/_ToggleFavouriteMission", toggleFavouriteMission);
+                    #region
+                    //return Json(new
+                    //{
+                    //    status = "success",
+                    //    toggleCode = 0,
+                    //    message = "Removed from favourite mission"
+                    //});
+                    #endregion
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["error"] = "something went wrong";
+                Console.WriteLine(ex.Message);
+                return View();
+            }
         }
     }
 }
